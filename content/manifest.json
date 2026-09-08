@@ -1,0 +1,4490 @@
+{
+  "version": 2,
+  "grades": [
+    {
+      "id": "grade1",
+      "name": "一年级",
+      "lessonCount": 2
+    },
+    {
+      "id": "grade2",
+      "name": "二年级",
+      "lessonCount": 1
+    },
+    {
+      "id": "grade3",
+      "name": "三年级",
+      "lessonCount": 13
+    },
+    {
+      "id": "grade4",
+      "name": "四年级",
+      "lessonCount": 0
+    },
+    {
+      "id": "grade5",
+      "name": "五年级",
+      "lessonCount": 0
+    },
+    {
+      "id": "grade6",
+      "name": "六年级",
+      "lessonCount": 0
+    }
+  ],
+  "lessons": [
+    {
+      "title": "《咏鹅》",
+      "author": "[唐] 骆宾王",
+      "source": "",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "骆": {
+          "pinyin": "luò",
+          "meaning": "骆宾王的姓。"
+        },
+        "宾": {
+          "pinyin": "bīn",
+          "meaning": "骆宾王名字中的字。"
+        },
+        "王": {
+          "pinyin": "wáng",
+          "meaning": "骆宾王名字中的字。"
+        },
+        "咏": {
+          "pinyin": "yǒng",
+          "meaning": "歌唱。"
+        },
+        "鹅": {
+          "pinyin": "é",
+          "meaning": "一种常见的水鸟。"
+        },
+        "曲": {
+          "pinyin": "qū",
+          "meaning": "弯曲。"
+        },
+        "项": {
+          "pinyin": "xiàng",
+          "meaning": "脖子的后面。"
+        },
+        "拨": {
+          "pinyin": "bō",
+          "meaning": "拨动水波。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "骆": {
+          "pinyin": "luò",
+          "meaning": "骆宾王的姓。"
+        },
+        "宾": {
+          "pinyin": "bīn",
+          "meaning": "骆宾王名字中的字。"
+        },
+        "王": {
+          "pinyin": "wáng",
+          "meaning": "骆宾王名字中的字。"
+        },
+        "咏": {
+          "pinyin": "yǒng",
+          "meaning": "歌唱。"
+        },
+        "鹅": {
+          "pinyin": "é",
+          "meaning": "一种常见的水鸟。"
+        },
+        "曲": {
+          "pinyin": "qū",
+          "meaning": "弯曲。"
+        },
+        "项": {
+          "pinyin": "xiàng",
+          "meaning": "脖子的后面。"
+        },
+        "拨": {
+          "pinyin": "bō",
+          "meaning": "拨动水波。"
+        }
+      },
+      "sections": {
+        "title": "《咏鹅》",
+        "author": "[唐] 骆宾王",
+        "original": "鹅，鹅，鹅，曲项向天歌。\n白毛浮绿水，红掌拨清波。",
+        "translation": "白鹅啊白鹅，弯曲着脖子向着天空歌唱。\n洁白的羽毛漂浮在碧绿的水面上，红红的脚掌拨动着清清的水波。",
+        "lineTranslations": "白鹅啊白鹅，弯曲着脖子向着天空歌唱。\n洁白的羽毛漂浮在碧绿的水面上，红红的脚掌拨动着清清的水波。",
+        "knowledgePoints": "1. 曲项：弯曲的脖子。\n2. 拨：划动，拨开水波。",
+        "characterInfo": "唐：táng｜朝代名。\n骆：luò｜骆宾王的姓。\n宾：bīn｜骆宾王名字中的字。\n王：wáng｜骆宾王名字中的字。\n咏：yǒng｜歌唱。\n鹅：é｜一种常见的水鸟。\n曲：qū｜弯曲。\n项：xiàng｜脖子的后面。\n拨：bō｜拨动水波。"
+      },
+      "original": "鹅，鹅，鹅，曲项向天歌。\n白毛浮绿水，红掌拨清波。",
+      "translation": "白鹅啊白鹅，弯曲着脖子向着天空歌唱。\n洁白的羽毛漂浮在碧绿的水面上，红红的脚掌拨动着清清的水波。",
+      "lineTranslations": [
+        "白鹅啊白鹅，弯曲着脖子向着天空歌唱。",
+        "洁白的羽毛漂浮在碧绿的水面上，红红的脚掌拨动着清清的水波。"
+      ],
+      "knowledgePoints": [
+        "曲项：弯曲的脖子。",
+        "拨：划动，拨开水波。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "鹅，鹅，鹅，曲项向天歌。",
+          "translation": "白鹅啊白鹅，弯曲着脖子向着天空歌唱。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "白毛浮绿水，红掌拨清波。",
+          "translation": "洁白的羽毛漂浮在碧绿的水面上，红红的脚掌拨动着清清的水波。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "鹅，鹅，鹅，曲项向天歌。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "鹅"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "鹅"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "鹅"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "曲"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "项"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "向"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "歌"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "白毛浮绿水，红掌拨清波。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "白"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "毛"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "浮"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "绿"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "红"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "掌"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "拨"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "清"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "波"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "鹅，鹅，鹅，曲项向天歌。",
+      "parseWarnings": [],
+      "id": "grade1-lesson1",
+      "gradeId": "grade1",
+      "gradeName": "一年级",
+      "lessonNo": 1,
+      "filePath": "content/grade1/lesson1.txt"
+    },
+    {
+      "title": "《静夜思》",
+      "author": "[唐] 李白",
+      "source": "唐代",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "李": {
+          "pinyin": "lǐ",
+          "meaning": "李白的姓。"
+        },
+        "白": {
+          "pinyin": "bái",
+          "meaning": "李白名字中的字，也指白色。"
+        },
+        "疑": {
+          "pinyin": "yí",
+          "meaning": "怀疑、好像。"
+        },
+        "霜": {
+          "pinyin": "shuāng",
+          "meaning": "接近地面的水汽凝成的白色冰晶。"
+        },
+        "举": {
+          "pinyin": "jǔ",
+          "meaning": "抬起。"
+        },
+        "低": {
+          "pinyin": "dī",
+          "meaning": "向下。"
+        },
+        "思": {
+          "pinyin": "sī",
+          "meaning": "想念。"
+        },
+        "故": {
+          "pinyin": "gù",
+          "meaning": "旧的，也指家乡。"
+        },
+        "乡": {
+          "pinyin": "xiāng",
+          "meaning": "家乡。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "李": {
+          "pinyin": "lǐ",
+          "meaning": "李白的姓。"
+        },
+        "白": {
+          "pinyin": "bái",
+          "meaning": "李白名字中的字，也指白色。"
+        },
+        "疑": {
+          "pinyin": "yí",
+          "meaning": "怀疑、好像。"
+        },
+        "霜": {
+          "pinyin": "shuāng",
+          "meaning": "接近地面的水汽凝成的白色冰晶。"
+        },
+        "举": {
+          "pinyin": "jǔ",
+          "meaning": "抬起。"
+        },
+        "低": {
+          "pinyin": "dī",
+          "meaning": "向下。"
+        },
+        "思": {
+          "pinyin": "sī",
+          "meaning": "想念。"
+        },
+        "故": {
+          "pinyin": "gù",
+          "meaning": "旧的，也指家乡。"
+        },
+        "乡": {
+          "pinyin": "xiāng",
+          "meaning": "家乡。"
+        }
+      },
+      "sections": {
+        "title": "《静夜思》",
+        "author": "[唐] 李白",
+        "source": "唐代",
+        "original": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。",
+        "translation": "明亮的月光洒在床前，好像地上泛起了一层白霜。\n抬起头看天上的明月，低下头思念远方的家乡。",
+        "lineTranslations": "明亮的月光洒在床前，好像地上泛起了一层白霜。\n抬起头看天上的明月，低下头思念远方的家乡。",
+        "knowledgePoints": "1. 举头：抬起头。\n2. 故乡：自己的家乡。",
+        "characterInfo": "唐：táng｜朝代名。\n李：lǐ｜李白的姓。\n白：bái｜李白名字中的字，也指白色。\n疑：yí｜怀疑、好像。\n霜：shuāng｜接近地面的水汽凝成的白色冰晶。\n举：jǔ｜抬起。\n低：dī｜向下。\n思：sī｜想念。\n故：gù｜旧的，也指家乡。\n乡：xiāng｜家乡。"
+      },
+      "original": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。",
+      "translation": "明亮的月光洒在床前，好像地上泛起了一层白霜。\n抬起头看天上的明月，低下头思念远方的家乡。",
+      "lineTranslations": [
+        "明亮的月光洒在床前，好像地上泛起了一层白霜。",
+        "抬起头看天上的明月，低下头思念远方的家乡。"
+      ],
+      "knowledgePoints": [
+        "举头：抬起头。",
+        "故乡：自己的家乡。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "床前明月光，疑是地上霜。",
+          "translation": "明亮的月光洒在床前，好像地上泛起了一层白霜。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "举头望明月，低头思故乡。",
+          "translation": "抬起头看天上的明月，低下头思念远方的家乡。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "床前明月光，疑是地上霜。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "床"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "前"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "明"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "月"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "光"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "疑"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "是"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "地"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "上"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "霜"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "举头望明月，低头思故乡。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "举"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "头"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "望"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "明"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "月"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "低"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "头"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "思"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "故"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "乡"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "床前明月光，疑是地上霜。",
+      "parseWarnings": [],
+      "id": "grade1-lesson2",
+      "gradeId": "grade1",
+      "gradeName": "一年级",
+      "lessonNo": 2,
+      "filePath": "content/grade1/lesson2.txt"
+    },
+    {
+      "title": "《画》",
+      "author": "[唐] 王维",
+      "source": "《全唐诗》",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "王": {
+          "pinyin": "wáng",
+          "meaning": "王维的姓。"
+        },
+        "维": {
+          "pinyin": "wéi",
+          "meaning": "王维名字中的字。"
+        },
+        "色": {
+          "pinyin": "sè",
+          "meaning": "颜色、景色。"
+        },
+        "近": {
+          "pinyin": "jìn",
+          "meaning": "距离短，走近。"
+        },
+        "听": {
+          "pinyin": "tīng",
+          "meaning": "用耳朵感受声音。"
+        },
+        "无": {
+          "pinyin": "wú",
+          "meaning": "没有。"
+        },
+        "还": {
+          "pinyin": "hái",
+          "meaning": "仍然、还在。"
+        },
+        "惊": {
+          "pinyin": "jīng",
+          "meaning": "受到惊吓。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "王": {
+          "pinyin": "wáng",
+          "meaning": "王维的姓。"
+        },
+        "维": {
+          "pinyin": "wéi",
+          "meaning": "王维名字中的字。"
+        },
+        "色": {
+          "pinyin": "sè",
+          "meaning": "颜色、景色。"
+        },
+        "近": {
+          "pinyin": "jìn",
+          "meaning": "距离短，走近。"
+        },
+        "听": {
+          "pinyin": "tīng",
+          "meaning": "用耳朵感受声音。"
+        },
+        "无": {
+          "pinyin": "wú",
+          "meaning": "没有。"
+        },
+        "还": {
+          "pinyin": "hái",
+          "meaning": "仍然、还在。"
+        },
+        "惊": {
+          "pinyin": "jīng",
+          "meaning": "受到惊吓。"
+        }
+      },
+      "sections": {
+        "title": "《画》",
+        "author": "[唐] 王维",
+        "source": "《全唐诗》",
+        "original": "远看山有色，近听水无声。\n春去花还在，人来鸟不惊。",
+        "translation": "远远看去，山色鲜明；走近后听水，却听不到声音。\n春天过去了花还在，人走近时鸟儿也没有受惊飞走。",
+        "lineTranslations": "远远看去，山色鲜明；走近后听水，却听不到声音。\n春天过去了花还在，人走近时鸟儿也没有受惊飞走。",
+        "knowledgePoints": "1. 色：颜色，也指景色。\n2. 惊：受到惊吓。",
+        "characterInfo": "唐：táng｜朝代名。\n王：wáng｜王维的姓。\n维：wéi｜王维名字中的字。\n色：sè｜颜色、景色。\n近：jìn｜距离短，走近。\n听：tīng｜用耳朵感受声音。\n无：wú｜没有。\n还：hái｜仍然、还在。\n惊：jīng｜受到惊吓。",
+        "appreciation": "诗中写的是一幅有山有水、有花有鸟的画，读起来像在欣赏一幅静静的山水图。"
+      },
+      "original": "远看山有色，近听水无声。\n春去花还在，人来鸟不惊。",
+      "translation": "远远看去，山色鲜明；走近后听水，却听不到声音。\n春天过去了花还在，人走近时鸟儿也没有受惊飞走。",
+      "lineTranslations": [
+        "远远看去，山色鲜明；走近后听水，却听不到声音。",
+        "春天过去了花还在，人走近时鸟儿也没有受惊飞走。"
+      ],
+      "knowledgePoints": [
+        "色：颜色，也指景色。",
+        "惊：受到惊吓。"
+      ],
+      "notes": "",
+      "appreciation": "诗中写的是一幅有山有水、有花有鸟的画，读起来像在欣赏一幅静静的山水图。",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "远看山有色，近听水无声。",
+          "translation": "远远看去，山色鲜明；走近后听水，却听不到声音。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "春去花还在，人来鸟不惊。",
+          "translation": "春天过去了花还在，人走近时鸟儿也没有受惊飞走。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "远看山有色，近听水无声。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "远"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "看"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "色"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "近"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "听"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "声"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "春去花还在，人来鸟不惊。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "春"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "去"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "花"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "还"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "在"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "来"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "鸟"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "惊"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "远看山有色，近听水无声。",
+      "parseWarnings": [],
+      "id": "grade2-lesson1",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "lessonNo": 1,
+      "filePath": "content/grade2/lesson1.txt"
+    },
+    {
+      "title": "所见",
+      "author": "[清] 袁枚",
+      "source": "三年级上册 · 语文园地一",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "清": {
+          "pinyin": "qīng",
+          "meaning": "朝代名。"
+        },
+        "袁": {
+          "pinyin": "yuán",
+          "meaning": "袁枚的姓。"
+        },
+        "枚": {
+          "pinyin": "méi",
+          "meaning": "袁枚名字中的字。"
+        },
+        "振": {
+          "pinyin": "zhèn",
+          "meaning": "振动、回荡。"
+        },
+        "樾": {
+          "pinyin": "yuè",
+          "meaning": "树荫。"
+        },
+        "欲": {
+          "pinyin": "yù",
+          "meaning": "想要。"
+        },
+        "捕": {
+          "pinyin": "bǔ",
+          "meaning": "捉拿、捕捉。"
+        },
+        "鸣": {
+          "pinyin": "míng",
+          "meaning": "鸟兽发出声音。"
+        },
+        "蝉": {
+          "pinyin": "chán",
+          "meaning": "一种会鸣叫的昆虫。"
+        }
+      },
+      "characters": {
+        "清": {
+          "pinyin": "qīng",
+          "meaning": "朝代名。"
+        },
+        "袁": {
+          "pinyin": "yuán",
+          "meaning": "袁枚的姓。"
+        },
+        "枚": {
+          "pinyin": "méi",
+          "meaning": "袁枚名字中的字。"
+        },
+        "振": {
+          "pinyin": "zhèn",
+          "meaning": "振动、回荡。"
+        },
+        "樾": {
+          "pinyin": "yuè",
+          "meaning": "树荫。"
+        },
+        "欲": {
+          "pinyin": "yù",
+          "meaning": "想要。"
+        },
+        "捕": {
+          "pinyin": "bǔ",
+          "meaning": "捉拿、捕捉。"
+        },
+        "鸣": {
+          "pinyin": "míng",
+          "meaning": "鸟兽发出声音。"
+        },
+        "蝉": {
+          "pinyin": "chán",
+          "meaning": "一种会鸣叫的昆虫。"
+        }
+      },
+      "sections": {
+        "title": "所见",
+        "author": "[清] 袁枚",
+        "source": "三年级上册 · 语文园地一",
+        "original": "牧童骑黄牛，\n歌声振林樾。\n意欲捕鸣蝉，\n忽然闭口立。",
+        "translation": "牧童骑在黄牛背上，嘹亮的歌声在树林中回荡。他正想捕捉正在鸣叫的知了，忽然闭住嘴巴，静静地站立起来。",
+        "lineTranslations": "牧童骑着黄牛，歌声在树林中回荡。\n嘹亮的歌声振动树林，传得很远。\n心里想要捕捉正在鸣叫的知了。\n忽然闭住嘴巴，静静地站立起来。",
+        "knowledgePoints": "1. 振：振荡、回荡。\n2. 林樾：指道旁成荫的树。\n3. 意欲：想要。",
+        "characterInfo": "清：qīng｜朝代名。\n袁：yuán｜袁枚的姓。\n枚：méi｜袁枚名字中的字。\n振：zhèn｜振动、回荡。\n樾：yuè｜树荫。\n欲：yù｜想要。\n捕：bǔ｜捉拿、捕捉。\n鸣：míng｜鸟兽发出声音。\n蝉：chán｜一种会鸣叫的昆虫。"
+      },
+      "original": "牧童骑黄牛，\n歌声振林樾。\n意欲捕鸣蝉，\n忽然闭口立。",
+      "translation": "牧童骑在黄牛背上，嘹亮的歌声在树林中回荡。他正想捕捉正在鸣叫的知了，忽然闭住嘴巴，静静地站立起来。",
+      "lineTranslations": [
+        "牧童骑着黄牛，歌声在树林中回荡。",
+        "嘹亮的歌声振动树林，传得很远。",
+        "心里想要捕捉正在鸣叫的知了。",
+        "忽然闭住嘴巴，静静地站立起来。"
+      ],
+      "knowledgePoints": [
+        "振：振荡、回荡。",
+        "林樾：指道旁成荫的树。",
+        "意欲：想要。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "牧童骑黄牛，",
+          "translation": "牧童骑着黄牛，歌声在树林中回荡。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "歌声振林樾。",
+          "translation": "嘹亮的歌声振动树林，传得很远。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "意欲捕鸣蝉，",
+          "translation": "心里想要捕捉正在鸣叫的知了。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "忽然闭口立。",
+          "translation": "忽然闭住嘴巴，静静地站立起来。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "牧童骑黄牛，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "牧"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "童"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "骑"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "黄"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "牛"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "歌声振林樾。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "歌"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "声"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "振"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "林"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "樾"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "意欲捕鸣蝉，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "意"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "欲"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "捕"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "鸣"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "蝉"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "忽然闭口立。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "忽"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "然"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "闭"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "口"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "立"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "牧童骑黄牛，",
+      "parseWarnings": [],
+      "id": "grade3-lesson1",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 1,
+      "filePath": "content/grade3/lesson1.txt"
+    },
+    {
+      "title": "山行",
+      "author": "[唐] 杜牧",
+      "source": "三年级上册 · 《古诗三首》",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "杜": {
+          "pinyin": "dù",
+          "meaning": "杜牧的姓。"
+        },
+        "牧": {
+          "pinyin": "mù",
+          "meaning": "杜牧名字中的字，也有放牧的意思。"
+        },
+        "寒": {
+          "pinyin": "hán",
+          "meaning": "冷，这里指深秋。"
+        },
+        "径": {
+          "pinyin": "jìng",
+          "meaning": "小路。"
+        },
+        "斜": {
+          "pinyin": "xié",
+          "meaning": "不正，倾斜。"
+        },
+        "霜": {
+          "pinyin": "shuāng",
+          "meaning": "附着在地面或植物上的白色冰晶。"
+        },
+        "枫": {
+          "pinyin": "fēng",
+          "meaning": "枫树，秋天叶子会变红。"
+        },
+        "坐": {
+          "pinyin": "zuò",
+          "meaning": "因为。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "杜": {
+          "pinyin": "dù",
+          "meaning": "杜牧的姓。"
+        },
+        "牧": {
+          "pinyin": "mù",
+          "meaning": "杜牧名字中的字，也有放牧的意思。"
+        },
+        "寒": {
+          "pinyin": "hán",
+          "meaning": "冷，这里指深秋。"
+        },
+        "径": {
+          "pinyin": "jìng",
+          "meaning": "小路。"
+        },
+        "斜": {
+          "pinyin": "xié",
+          "meaning": "不正，倾斜。"
+        },
+        "霜": {
+          "pinyin": "shuāng",
+          "meaning": "附着在地面或植物上的白色冰晶。"
+        },
+        "枫": {
+          "pinyin": "fēng",
+          "meaning": "枫树，秋天叶子会变红。"
+        },
+        "坐": {
+          "pinyin": "zuò",
+          "meaning": "因为。"
+        }
+      },
+      "sections": {
+        "title": "山行",
+        "author": "[唐] 杜牧",
+        "source": "三年级上册 · 《古诗三首》",
+        "original": "远上寒山石径斜，\n白云生处有人家。\n停车坐爱枫林晚，\n霜叶红于二月花。",
+        "translation": "沿着弯弯曲曲的石头小路登上寒山，白云升腾的地方隐约有人家。停下车来，是因为喜爱傍晚的枫树林，经霜的枫叶比二月的春花还要红。",
+        "lineTranslations": "远远地向寒山上行走，石头小路倾斜。\n白云升腾的地方隐约有人家。\n停下车来，是因为喜爱傍晚的枫树林。\n经霜的枫叶比二月的春花还要红。",
+        "knowledgePoints": "1. 寒山：深秋时节的山。\n2. 坐：因为。\n3. 红于：比……更红。",
+        "characterInfo": "唐：táng｜朝代名。\n杜：dù｜杜牧的姓。\n牧：mù｜杜牧名字中的字，也有放牧的意思。\n寒：hán｜冷，这里指深秋。\n径：jìng｜小路。\n斜：xié｜不正，倾斜。\n霜：shuāng｜附着在地面或植物上的白色冰晶。\n枫：fēng｜枫树，秋天叶子会变红。\n坐：zuò｜因为。"
+      },
+      "original": "远上寒山石径斜，\n白云生处有人家。\n停车坐爱枫林晚，\n霜叶红于二月花。",
+      "translation": "沿着弯弯曲曲的石头小路登上寒山，白云升腾的地方隐约有人家。停下车来，是因为喜爱傍晚的枫树林，经霜的枫叶比二月的春花还要红。",
+      "lineTranslations": [
+        "远远地向寒山上行走，石头小路倾斜。",
+        "白云升腾的地方隐约有人家。",
+        "停下车来，是因为喜爱傍晚的枫树林。",
+        "经霜的枫叶比二月的春花还要红。"
+      ],
+      "knowledgePoints": [
+        "寒山：深秋时节的山。",
+        "坐：因为。",
+        "红于：比……更红。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "远上寒山石径斜，",
+          "translation": "远远地向寒山上行走，石头小路倾斜。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "白云生处有人家。",
+          "translation": "白云升腾的地方隐约有人家。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "停车坐爱枫林晚，",
+          "translation": "停下车来，是因为喜爱傍晚的枫树林。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "霜叶红于二月花。",
+          "translation": "经霜的枫叶比二月的春花还要红。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "远上寒山石径斜，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "远"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "上"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "寒"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "石"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "径"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "斜"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "白云生处有人家。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "白"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "云"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "生"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "处"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "家"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "停车坐爱枫林晚，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "停"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "车"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "坐"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "枫"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "林"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "晚"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "霜叶红于二月花。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "霜"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "叶"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "红"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "二"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "月"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "花"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "远上寒山石径斜，",
+      "parseWarnings": [],
+      "id": "grade3-lesson2",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 2,
+      "filePath": "content/grade3/lesson2.txt"
+    },
+    {
+      "title": "赠刘景文",
+      "author": "[宋] 苏轼",
+      "source": "三年级上册 · 《古诗三首》",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "宋": {
+          "pinyin": "sòng",
+          "meaning": "朝代名。"
+        },
+        "苏": {
+          "pinyin": "sū",
+          "meaning": "苏轼的姓。"
+        },
+        "轼": {
+          "pinyin": "shì",
+          "meaning": "苏轼名字中的字。"
+        },
+        "擎": {
+          "pinyin": "qíng",
+          "meaning": "举，向上托。"
+        },
+        "残": {
+          "pinyin": "cán",
+          "meaning": "剩余、不完整。"
+        },
+        "犹": {
+          "pinyin": "yóu",
+          "meaning": "还、仍然。"
+        },
+        "傲": {
+          "pinyin": "ào",
+          "meaning": "不怕、不屈服。"
+        },
+        "橙": {
+          "pinyin": "chéng",
+          "meaning": "橙子。"
+        },
+        "橘": {
+          "pinyin": "jú",
+          "meaning": "橘子。"
+        }
+      },
+      "characters": {
+        "宋": {
+          "pinyin": "sòng",
+          "meaning": "朝代名。"
+        },
+        "苏": {
+          "pinyin": "sū",
+          "meaning": "苏轼的姓。"
+        },
+        "轼": {
+          "pinyin": "shì",
+          "meaning": "苏轼名字中的字。"
+        },
+        "擎": {
+          "pinyin": "qíng",
+          "meaning": "举，向上托。"
+        },
+        "残": {
+          "pinyin": "cán",
+          "meaning": "剩余、不完整。"
+        },
+        "犹": {
+          "pinyin": "yóu",
+          "meaning": "还、仍然。"
+        },
+        "傲": {
+          "pinyin": "ào",
+          "meaning": "不怕、不屈服。"
+        },
+        "橙": {
+          "pinyin": "chéng",
+          "meaning": "橙子。"
+        },
+        "橘": {
+          "pinyin": "jú",
+          "meaning": "橘子。"
+        }
+      },
+      "sections": {
+        "title": "赠刘景文",
+        "author": "[宋] 苏轼",
+        "source": "三年级上册 · 《古诗三首》",
+        "original": "荷尽已无擎雨盖，\n菊残犹有傲霜枝。\n一年好景君须记，\n最是橙黄橘绿时。",
+        "translation": "荷花凋谢了，连擎雨的荷叶也枯萎了；菊花虽然凋残，却还有傲霜的枝条。一年中最好的景色你一定要记住，正是在橙子金黄、橘子青绿的时节。",
+        "lineTranslations": "荷花凋谢，荷叶也像举着雨伞一样枯萎。\n菊花虽然凋残，却还有傲霜的枝条。\n一年中最好的景色你一定要记住。\n最美的就是橙子金黄、橘子青绿的时节。",
+        "knowledgePoints": "1. 尽：完、没有了。\n2. 擎：举，向上托。\n3. 君须记：你一定要记住。",
+        "characterInfo": "宋：sòng｜朝代名。\n苏：sū｜苏轼的姓。\n轼：shì｜苏轼名字中的字。\n擎：qíng｜举，向上托。\n残：cán｜剩余、不完整。\n犹：yóu｜还、仍然。\n傲：ào｜不怕、不屈服。\n橙：chéng｜橙子。\n橘：jú｜橘子。"
+      },
+      "original": "荷尽已无擎雨盖，\n菊残犹有傲霜枝。\n一年好景君须记，\n最是橙黄橘绿时。",
+      "translation": "荷花凋谢了，连擎雨的荷叶也枯萎了；菊花虽然凋残，却还有傲霜的枝条。一年中最好的景色你一定要记住，正是在橙子金黄、橘子青绿的时节。",
+      "lineTranslations": [
+        "荷花凋谢，荷叶也像举着雨伞一样枯萎。",
+        "菊花虽然凋残，却还有傲霜的枝条。",
+        "一年中最好的景色你一定要记住。",
+        "最美的就是橙子金黄、橘子青绿的时节。"
+      ],
+      "knowledgePoints": [
+        "尽：完、没有了。",
+        "擎：举，向上托。",
+        "君须记：你一定要记住。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "荷尽已无擎雨盖，",
+          "translation": "荷花凋谢，荷叶也像举着雨伞一样枯萎。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "菊残犹有傲霜枝。",
+          "translation": "菊花虽然凋残，却还有傲霜的枝条。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "一年好景君须记，",
+          "translation": "一年中最好的景色你一定要记住。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "最是橙黄橘绿时。",
+          "translation": "最美的就是橙子金黄、橘子青绿的时节。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "荷尽已无擎雨盖，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "荷"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "尽"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "已"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "擎"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "雨"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "盖"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "菊残犹有傲霜枝。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "菊"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "残"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "犹"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "傲"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "霜"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "枝"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "一年好景君须记，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "年"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "好"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "景"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "君"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "须"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "记"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "最是橙黄橘绿时。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "最"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "是"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "橙"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "黄"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "橘"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "绿"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "时"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "荷尽已无擎雨盖，",
+      "parseWarnings": [],
+      "id": "grade3-lesson3",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 3,
+      "filePath": "content/grade3/lesson3.txt"
+    },
+    {
+      "title": "夜书所见",
+      "author": "[宋] 叶绍翁",
+      "source": "三年级上册 · 《古诗三首》",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "宋": {
+          "pinyin": "sòng",
+          "meaning": "朝代名。"
+        },
+        "叶": {
+          "pinyin": "yè",
+          "meaning": "叶绍翁的姓。"
+        },
+        "绍": {
+          "pinyin": "shào",
+          "meaning": "叶绍翁名字中的字。"
+        },
+        "翁": {
+          "pinyin": "wēng",
+          "meaning": "叶绍翁名字中的字。"
+        },
+        "萧": {
+          "pinyin": "xiāo",
+          "meaning": "形容风吹树叶的声音。"
+        },
+        "梧": {
+          "pinyin": "wú",
+          "meaning": "梧桐树。"
+        },
+        "桐": {
+          "pinyin": "tóng",
+          "meaning": "梧桐树。"
+        },
+        "挑": {
+          "pinyin": "tiāo",
+          "meaning": "捉取。"
+        },
+        "促": {
+          "pinyin": "cù",
+          "meaning": "催促，这里指蟋蟀。"
+        },
+        "织": {
+          "pinyin": "zhī",
+          "meaning": "编织，这里指蟋蟀的别称。"
+        },
+        "篱": {
+          "pinyin": "lí",
+          "meaning": "篱笆。"
+        }
+      },
+      "characters": {
+        "宋": {
+          "pinyin": "sòng",
+          "meaning": "朝代名。"
+        },
+        "叶": {
+          "pinyin": "yè",
+          "meaning": "叶绍翁的姓。"
+        },
+        "绍": {
+          "pinyin": "shào",
+          "meaning": "叶绍翁名字中的字。"
+        },
+        "翁": {
+          "pinyin": "wēng",
+          "meaning": "叶绍翁名字中的字。"
+        },
+        "萧": {
+          "pinyin": "xiāo",
+          "meaning": "形容风吹树叶的声音。"
+        },
+        "梧": {
+          "pinyin": "wú",
+          "meaning": "梧桐树。"
+        },
+        "桐": {
+          "pinyin": "tóng",
+          "meaning": "梧桐树。"
+        },
+        "挑": {
+          "pinyin": "tiāo",
+          "meaning": "捉取。"
+        },
+        "促": {
+          "pinyin": "cù",
+          "meaning": "催促，这里指蟋蟀。"
+        },
+        "织": {
+          "pinyin": "zhī",
+          "meaning": "编织，这里指蟋蟀的别称。"
+        },
+        "篱": {
+          "pinyin": "lí",
+          "meaning": "篱笆。"
+        }
+      },
+      "sections": {
+        "title": "夜书所见",
+        "author": "[宋] 叶绍翁",
+        "source": "三年级上册 · 《古诗三首》",
+        "original": "萧萧梧叶送寒声，\n江上秋风动客情。\n知有儿童挑促织，\n夜深篱落一灯明。",
+        "translation": "萧萧的秋风吹动梧桐树叶，送来阵阵寒意；江上的秋风触动了客居在外的诗人的情思。料想是孩子们在捉蟋蟀，夜深了，篱笆旁还有一盏灯亮着。",
+        "lineTranslations": "萧萧的秋风吹动梧桐树叶，送来寒意。\n江上的秋风触动了客居他乡的人的情思。\n知道是孩子们在捉蟋蟀。\n夜深了，篱笆旁还有一盏灯亮着。",
+        "knowledgePoints": "1. 萧萧：这里形容风吹梧桐叶发出的声音。\n2. 客情：旅客思乡的情怀。\n3. 挑促织：捉蟋蟀。",
+        "characterInfo": "宋：sòng｜朝代名。\n叶：yè｜叶绍翁的姓。\n绍：shào｜叶绍翁名字中的字。\n翁：wēng｜叶绍翁名字中的字。\n萧：xiāo｜形容风吹树叶的声音。\n梧：wú｜梧桐树。\n桐：tóng｜梧桐树。\n挑：tiāo｜捉取。\n促：cù｜催促，这里指蟋蟀。\n织：zhī｜编织，这里指蟋蟀的别称。\n篱：lí｜篱笆。"
+      },
+      "original": "萧萧梧叶送寒声，\n江上秋风动客情。\n知有儿童挑促织，\n夜深篱落一灯明。",
+      "translation": "萧萧的秋风吹动梧桐树叶，送来阵阵寒意；江上的秋风触动了客居在外的诗人的情思。料想是孩子们在捉蟋蟀，夜深了，篱笆旁还有一盏灯亮着。",
+      "lineTranslations": [
+        "萧萧的秋风吹动梧桐树叶，送来寒意。",
+        "江上的秋风触动了客居他乡的人的情思。",
+        "知道是孩子们在捉蟋蟀。",
+        "夜深了，篱笆旁还有一盏灯亮着。"
+      ],
+      "knowledgePoints": [
+        "萧萧：这里形容风吹梧桐叶发出的声音。",
+        "客情：旅客思乡的情怀。",
+        "挑促织：捉蟋蟀。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "萧萧梧叶送寒声，",
+          "translation": "萧萧的秋风吹动梧桐树叶，送来寒意。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "江上秋风动客情。",
+          "translation": "江上的秋风触动了客居他乡的人的情思。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "知有儿童挑促织，",
+          "translation": "知道是孩子们在捉蟋蟀。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "夜深篱落一灯明。",
+          "translation": "夜深了，篱笆旁还有一盏灯亮着。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "萧萧梧叶送寒声，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "萧"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "萧"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "梧"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "叶"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "送"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "寒"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "声"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "江上秋风动客情。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "江"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "上"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "秋"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "风"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "动"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "客"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "情"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "知有儿童挑促织，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "儿"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "童"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "挑"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "促"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "织"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "夜深篱落一灯明。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "夜"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "深"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "篱"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "落"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "灯"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "明"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "萧萧梧叶送寒声，",
+      "parseWarnings": [],
+      "id": "grade3-lesson4",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 4,
+      "filePath": "content/grade3/lesson4.txt"
+    },
+    {
+      "title": "语文园地二：秋天的词语",
+      "author": "三年级上册",
+      "source": "语文园地二 · 日积月累",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {},
+      "characters": {},
+      "sections": {
+        "title": "语文园地二：秋天的词语",
+        "author": "三年级上册",
+        "source": "语文园地二 · 日积月累",
+        "original": "秋高气爽  天高云淡  秋风习习\n一叶知秋  金桂飘香  层林尽染\n五谷丰登  果实累累  春华秋实",
+        "translation": "这些词语写出了秋天天空的开阔、秋风的轻柔、桂花的香气、树林的色彩和丰收的景象。",
+        "knowledgePoints": "1. 秋高气爽：形容秋天天空晴朗，气候凉爽。\n2. 层林尽染：山上一层层的树林经霜打变得五彩斑斓。\n3. 五谷丰登：各种粮食都获得丰收。"
+      },
+      "original": "秋高气爽  天高云淡  秋风习习\n一叶知秋  金桂飘香  层林尽染\n五谷丰登  果实累累  春华秋实",
+      "translation": "这些词语写出了秋天天空的开阔、秋风的轻柔、桂花的香气、树林的色彩和丰收的景象。",
+      "lineTranslations": [],
+      "knowledgePoints": [
+        "秋高气爽：形容秋天天空晴朗，气候凉爽。",
+        "层林尽染：山上一层层的树林经霜打变得五彩斑斓。",
+        "五谷丰登：各种粮食都获得丰收。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "秋高气爽  天高云淡  秋风习习",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "一叶知秋  金桂飘香  层林尽染",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "五谷丰登  果实累累  春华秋实",
+          "translation": "",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "秋高气爽  天高云淡  秋风习习",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "秋"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "高"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "气"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "爽"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "高"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "云"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "淡"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "秋"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "风"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "习"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "习"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "一叶知秋  金桂飘香  层林尽染",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "叶"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "秋"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "金"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "桂"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "飘"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "香"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "层"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "林"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "尽"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "染"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "五谷丰登  果实累累  春华秋实",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "五"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "谷"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "丰"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "登"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "果"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "实"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "累"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "累"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "春"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "华"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "秋"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "实"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "秋高气爽  天高云淡  秋风习习",
+      "parseWarnings": [],
+      "id": "grade3-lesson5",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 5,
+      "filePath": "content/grade3/lesson5.txt"
+    },
+    {
+      "title": "语文园地三：说理名句",
+      "author": "三年级上册",
+      "source": "语文园地三 · 日积月累",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {},
+      "characters": {},
+      "sections": {
+        "title": "语文园地三：说理名句",
+        "author": "三年级上册",
+        "source": "语文园地三 · 日积月累",
+        "original": "灯不拨不亮，理不辩不明。\n有理走遍天下，无理寸步难行。\n一时强弱在于力，万古胜负在于理。",
+        "translation": "灯芯不拨动就不会明亮，道理不辩论就不会明白；有道理到哪里都行得通，没有道理一步也难走；一时的强弱取决于力量，长久的胜负取决于道理。",
+        "knowledgePoints": "1. 拨：拨动灯芯。\n2. 辩：辨析、说明道理。\n3. 这些句子告诉我们要讲道理、明辨是非。"
+      },
+      "original": "灯不拨不亮，理不辩不明。\n有理走遍天下，无理寸步难行。\n一时强弱在于力，万古胜负在于理。",
+      "translation": "灯芯不拨动就不会明亮，道理不辩论就不会明白；有道理到哪里都行得通，没有道理一步也难走；一时的强弱取决于力量，长久的胜负取决于道理。",
+      "lineTranslations": [],
+      "knowledgePoints": [
+        "拨：拨动灯芯。",
+        "辩：辨析、说明道理。",
+        "这些句子告诉我们要讲道理、明辨是非。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "灯不拨不亮，理不辩不明。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "有理走遍天下，无理寸步难行。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "一时强弱在于力，万古胜负在于理。",
+          "translation": "",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "灯不拨不亮，理不辩不明。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "灯"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "拨"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "亮"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "理"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "辩"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "明"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "有理走遍天下，无理寸步难行。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "理"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "走"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "遍"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "下"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "理"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "寸"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "步"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "难"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "行"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "一时强弱在于力，万古胜负在于理。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "时"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "强"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "弱"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "在"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "力"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "万"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "古"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "胜"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "负"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "在"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "理"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "灯不拨不亮，理不辩不明。",
+      "parseWarnings": [],
+      "id": "grade3-lesson7",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 7,
+      "filePath": "content/grade3/lesson7.txt"
+    },
+    {
+      "title": "司马光",
+      "author": "课文选段",
+      "source": "三年级上册 · 语文园地四",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {},
+      "characters": {},
+      "sections": {
+        "title": "司马光",
+        "author": "课文选段",
+        "source": "三年级上册 · 语文园地四",
+        "original": "群儿戏于庭，一儿登瓮，足跌没水中。众皆弃去。\n光持石击瓮破之，水迸，儿得活。",
+        "translation": "一群孩子在庭院里玩耍，一个孩子爬上大水缸，失足掉进水里被淹没了。其他孩子都离开了。司马光拿起石头把水缸砸破，水流了出来，孩子得以活命。",
+        "knowledgePoints": "1. 庭：庭院。\n2. 瓮：一种口小腹大的陶器。\n3. 迸：涌出。",
+        "exercises": "[排序]\n提示：想一想故事发生的顺序。\n句子：群儿戏于庭\n句子：一儿登瓮\n句子：足跌没水中\n句子：光持石击瓮破之\n[/排序]\n[选择]\n题目：司马光是怎样救出同伴的？\n选项：A｜砸破水缸\n选项：B｜请大人帮忙\n选项：C｜跳进水缸\n答案：A\n解析：司马光拿起石头砸破了水缸。\n[/选择]"
+      },
+      "original": "群儿戏于庭，一儿登瓮，足跌没水中。众皆弃去。\n光持石击瓮破之，水迸，儿得活。",
+      "translation": "一群孩子在庭院里玩耍，一个孩子爬上大水缸，失足掉进水里被淹没了。其他孩子都离开了。司马光拿起石头把水缸砸破，水流了出来，孩子得以活命。",
+      "lineTranslations": [],
+      "knowledgePoints": [
+        "庭：庭院。",
+        "瓮：一种口小腹大的陶器。",
+        "迸：涌出。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "群儿戏于庭，一儿登瓮，足跌没水中。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "众皆弃去。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "光持石击瓮破之，水迸，儿得活。",
+          "translation": "",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "type": "order",
+          "prompt": "想一想故事发生的顺序。",
+          "items": [
+            {
+              "id": "item-1",
+              "text": "群儿戏于庭",
+              "tokens": [
+                {
+                  "id": "item-1-0",
+                  "text": "群"
+                },
+                {
+                  "id": "item-1-1",
+                  "text": "儿"
+                },
+                {
+                  "id": "item-1-2",
+                  "text": "戏"
+                },
+                {
+                  "id": "item-1-3",
+                  "text": "于"
+                },
+                {
+                  "id": "item-1-4",
+                  "text": "庭"
+                }
+              ]
+            },
+            {
+              "id": "item-2",
+              "text": "一儿登瓮",
+              "tokens": [
+                {
+                  "id": "item-2-0",
+                  "text": "一"
+                },
+                {
+                  "id": "item-2-1",
+                  "text": "儿"
+                },
+                {
+                  "id": "item-2-2",
+                  "text": "登"
+                },
+                {
+                  "id": "item-2-3",
+                  "text": "瓮"
+                }
+              ]
+            },
+            {
+              "id": "item-3",
+              "text": "足跌没水中",
+              "tokens": [
+                {
+                  "id": "item-3-0",
+                  "text": "足"
+                },
+                {
+                  "id": "item-3-1",
+                  "text": "跌"
+                },
+                {
+                  "id": "item-3-2",
+                  "text": "没"
+                },
+                {
+                  "id": "item-3-3",
+                  "text": "水"
+                },
+                {
+                  "id": "item-3-4",
+                  "text": "中"
+                }
+              ]
+            },
+            {
+              "id": "item-4",
+              "text": "光持石击瓮破之",
+              "tokens": [
+                {
+                  "id": "item-4-0",
+                  "text": "光"
+                },
+                {
+                  "id": "item-4-1",
+                  "text": "持"
+                },
+                {
+                  "id": "item-4-2",
+                  "text": "石"
+                },
+                {
+                  "id": "item-4-3",
+                  "text": "击"
+                },
+                {
+                  "id": "item-4-4",
+                  "text": "瓮"
+                },
+                {
+                  "id": "item-4-5",
+                  "text": "破"
+                },
+                {
+                  "id": "item-4-6",
+                  "text": "之"
+                }
+              ]
+            }
+          ],
+          "mode": "sentences",
+          "id": "order-1"
+        },
+        {
+          "type": "choice",
+          "prompt": "司马光是怎样救出同伴的？",
+          "options": [
+            {
+              "id": "A",
+              "text": "砸破水缸"
+            },
+            {
+              "id": "B",
+              "text": "请大人帮忙"
+            },
+            {
+              "id": "C",
+              "text": "跳进水缸"
+            }
+          ],
+          "answer": "A",
+          "explanation": "司马光拿起石头砸破了水缸。",
+          "id": "choice-2"
+        },
+        {
+          "id": "default-character-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "群儿戏于庭，一儿登瓮，足跌没水中。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "群"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "儿"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "戏"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "庭"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "儿"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "登"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "瓮"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "足"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "跌"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "没"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "中"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "众皆弃去。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "众"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "皆"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "弃"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "去"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "光持石击瓮破之，水迸，儿得活。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "光"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "持"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "石"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "击"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "瓮"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "破"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "迸"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "儿"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "得"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "活"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "群儿戏于庭，一儿登瓮，足跌没水中。",
+      "parseWarnings": [],
+      "id": "grade3-lesson8",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 8,
+      "filePath": "content/grade3/lesson8.txt"
+    },
+    {
+      "title": "望天门山",
+      "author": "[唐] 李白",
+      "source": "三年级上册 · 《古诗三首》",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "李": {
+          "pinyin": "lǐ",
+          "meaning": "李白的姓。"
+        },
+        "白": {
+          "pinyin": "bái",
+          "meaning": "李白名字中的字。"
+        },
+        "断": {
+          "pinyin": "duàn",
+          "meaning": "断开。"
+        },
+        "楚": {
+          "pinyin": "chǔ",
+          "meaning": "楚江，长江的一段。"
+        },
+        "碧": {
+          "pinyin": "bì",
+          "meaning": "青绿色。"
+        },
+        "回": {
+          "pinyin": "huí",
+          "meaning": "回旋、转弯。"
+        },
+        "孤": {
+          "pinyin": "gū",
+          "meaning": "单独、孤单。"
+        },
+        "帆": {
+          "pinyin": "fān",
+          "meaning": "船上的风帆。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "李": {
+          "pinyin": "lǐ",
+          "meaning": "李白的姓。"
+        },
+        "白": {
+          "pinyin": "bái",
+          "meaning": "李白名字中的字。"
+        },
+        "断": {
+          "pinyin": "duàn",
+          "meaning": "断开。"
+        },
+        "楚": {
+          "pinyin": "chǔ",
+          "meaning": "楚江，长江的一段。"
+        },
+        "碧": {
+          "pinyin": "bì",
+          "meaning": "青绿色。"
+        },
+        "回": {
+          "pinyin": "huí",
+          "meaning": "回旋、转弯。"
+        },
+        "孤": {
+          "pinyin": "gū",
+          "meaning": "单独、孤单。"
+        },
+        "帆": {
+          "pinyin": "fān",
+          "meaning": "船上的风帆。"
+        }
+      },
+      "sections": {
+        "title": "望天门山",
+        "author": "[唐] 李白",
+        "source": "三年级上册 · 《古诗三首》",
+        "original": "天门中断楚江开，\n碧水东流至此回。\n两岸青山相对出，\n孤帆一片日边来。",
+        "translation": "天门山被楚江从中间冲断，碧绿的江水向东流到这里回旋。两岸的青山相对而出，一叶孤帆从天边驶来。",
+        "lineTranslations": "天门山被楚江从中间冲断。\n碧绿的江水向东流到这里回旋。\n两岸的青山相对而出。\n一叶孤帆从天边驶来。",
+        "knowledgePoints": "1. 中断：从中间断开。\n2. 至此回：到这里回旋。\n3. 孤帆：一只小船。",
+        "characterInfo": "唐：táng｜朝代名。\n李：lǐ｜李白的姓。\n白：bái｜李白名字中的字。\n断：duàn｜断开。\n楚：chǔ｜楚江，长江的一段。\n碧：bì｜青绿色。\n回：huí｜回旋、转弯。\n孤：gū｜单独、孤单。\n帆：fān｜船上的风帆。"
+      },
+      "original": "天门中断楚江开，\n碧水东流至此回。\n两岸青山相对出，\n孤帆一片日边来。",
+      "translation": "天门山被楚江从中间冲断，碧绿的江水向东流到这里回旋。两岸的青山相对而出，一叶孤帆从天边驶来。",
+      "lineTranslations": [
+        "天门山被楚江从中间冲断。",
+        "碧绿的江水向东流到这里回旋。",
+        "两岸的青山相对而出。",
+        "一叶孤帆从天边驶来。"
+      ],
+      "knowledgePoints": [
+        "中断：从中间断开。",
+        "至此回：到这里回旋。",
+        "孤帆：一只小船。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "天门中断楚江开，",
+          "translation": "天门山被楚江从中间冲断。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "碧水东流至此回。",
+          "translation": "碧绿的江水向东流到这里回旋。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "两岸青山相对出，",
+          "translation": "两岸的青山相对而出。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "孤帆一片日边来。",
+          "translation": "一叶孤帆从天边驶来。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "天门中断楚江开，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "门"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "中"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "断"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "楚"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "江"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "开"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "碧水东流至此回。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "碧"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "东"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "流"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "至"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "此"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "回"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "两岸青山相对出，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "两"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "岸"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "青"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "相"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "对"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "出"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "孤帆一片日边来。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "孤"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "帆"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "片"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "边"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "来"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "天门中断楚江开，",
+      "parseWarnings": [],
+      "id": "grade3-lesson9",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 9,
+      "filePath": "content/grade3/lesson9.txt"
+    },
+    {
+      "title": "饮湖上初晴后雨",
+      "author": "[宋] 苏轼",
+      "source": "三年级上册 · 《古诗三首》",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "宋": {
+          "pinyin": "sòng",
+          "meaning": "朝代名。"
+        },
+        "苏": {
+          "pinyin": "sū",
+          "meaning": "苏轼的姓。"
+        },
+        "轼": {
+          "pinyin": "shì",
+          "meaning": "苏轼名字中的字。"
+        },
+        "潋": {
+          "pinyin": "liàn",
+          "meaning": "水波闪动。"
+        },
+        "滟": {
+          "pinyin": "yàn",
+          "meaning": "水面波光闪耀。"
+        },
+        "空": {
+          "pinyin": "kōng",
+          "meaning": "空濛，迷蒙。"
+        },
+        "蒙": {
+          "pinyin": "méng",
+          "meaning": "模糊、迷蒙。"
+        },
+        "西": {
+          "pinyin": "xī shī",
+          "meaning": "古代传说中的美女。"
+        },
+        "妆": {
+          "pinyin": "zhuāng",
+          "meaning": "打扮。"
+        },
+        "宜": {
+          "pinyin": "yí",
+          "meaning": "合适。"
+        }
+      },
+      "characters": {
+        "宋": {
+          "pinyin": "sòng",
+          "meaning": "朝代名。"
+        },
+        "苏": {
+          "pinyin": "sū",
+          "meaning": "苏轼的姓。"
+        },
+        "轼": {
+          "pinyin": "shì",
+          "meaning": "苏轼名字中的字。"
+        },
+        "潋": {
+          "pinyin": "liàn",
+          "meaning": "水波闪动。"
+        },
+        "滟": {
+          "pinyin": "yàn",
+          "meaning": "水面波光闪耀。"
+        },
+        "空": {
+          "pinyin": "kōng",
+          "meaning": "空濛，迷蒙。"
+        },
+        "蒙": {
+          "pinyin": "méng",
+          "meaning": "模糊、迷蒙。"
+        },
+        "西": {
+          "pinyin": "xī shī",
+          "meaning": "古代传说中的美女。"
+        },
+        "妆": {
+          "pinyin": "zhuāng",
+          "meaning": "打扮。"
+        },
+        "宜": {
+          "pinyin": "yí",
+          "meaning": "合适。"
+        }
+      },
+      "sections": {
+        "title": "饮湖上初晴后雨",
+        "author": "[宋] 苏轼",
+        "source": "三年级上册 · 《古诗三首》",
+        "original": "水光潋滟晴方好，\n山色空蒙雨亦奇。\n欲把西湖比西子，\n淡妆浓抹总相宜。",
+        "translation": "晴天的西湖水面波光闪动，景色正好；雨中的山色迷蒙，也十分奇妙。如果把西湖比作西施，无论淡妆还是浓妆，总是很合适。",
+        "lineTranslations": "晴天的西湖水面波光闪动，景色正好。\n雨中的山色迷蒙，也十分奇妙。\n想把西湖比作西施。\n无论淡妆还是浓妆，总是很合适。",
+        "knowledgePoints": "1. 潋滟：水波荡漾、波光闪动的样子。\n2. 空蒙：细雨迷蒙的样子。\n3. 相宜：合适。",
+        "characterInfo": "宋：sòng｜朝代名。\n苏：sū｜苏轼的姓。\n轼：shì｜苏轼名字中的字。\n潋：liàn｜水波闪动。\n滟：yàn｜水面波光闪耀。\n空：kōng｜空濛，迷蒙。\n蒙：méng｜模糊、迷蒙。\n西施：xī shī｜古代传说中的美女。\n妆：zhuāng｜打扮。\n宜：yí｜合适。"
+      },
+      "original": "水光潋滟晴方好，\n山色空蒙雨亦奇。\n欲把西湖比西子，\n淡妆浓抹总相宜。",
+      "translation": "晴天的西湖水面波光闪动，景色正好；雨中的山色迷蒙，也十分奇妙。如果把西湖比作西施，无论淡妆还是浓妆，总是很合适。",
+      "lineTranslations": [
+        "晴天的西湖水面波光闪动，景色正好。",
+        "雨中的山色迷蒙，也十分奇妙。",
+        "想把西湖比作西施。",
+        "无论淡妆还是浓妆，总是很合适。"
+      ],
+      "knowledgePoints": [
+        "潋滟：水波荡漾、波光闪动的样子。",
+        "空蒙：细雨迷蒙的样子。",
+        "相宜：合适。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "水光潋滟晴方好，",
+          "translation": "晴天的西湖水面波光闪动，景色正好。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "山色空蒙雨亦奇。",
+          "translation": "雨中的山色迷蒙，也十分奇妙。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "欲把西湖比西子，",
+          "translation": "想把西湖比作西施。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "淡妆浓抹总相宜。",
+          "translation": "无论淡妆还是浓妆，总是很合适。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "水光潋滟晴方好，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "光"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "潋"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "滟"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "晴"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "方"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "好"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "山色空蒙雨亦奇。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "色"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "空"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "蒙"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "雨"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "亦"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "奇"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "欲把西湖比西子，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "欲"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "把"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "西"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "湖"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "比"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "西"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "子"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "淡妆浓抹总相宜。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "淡"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "妆"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "浓"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "抹"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "总"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "相"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "宜"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "水光潋滟晴方好，",
+      "parseWarnings": [],
+      "id": "grade3-lesson10",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 10,
+      "filePath": "content/grade3/lesson10.txt"
+    },
+    {
+      "title": "望洞庭",
+      "author": "[唐] 刘禹锡",
+      "source": "三年级上册 · 《古诗三首》",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "刘": {
+          "pinyin": "liú",
+          "meaning": "刘禹锡的姓。"
+        },
+        "禹": {
+          "pinyin": "yǔ",
+          "meaning": "刘禹锡名字中的字。"
+        },
+        "锡": {
+          "pinyin": "xī",
+          "meaning": "刘禹锡名字中的字。"
+        },
+        "和": {
+          "pinyin": "hé",
+          "meaning": "和谐、协调。"
+        },
+        "潭": {
+          "pinyin": "tán",
+          "meaning": "深水池，这里指湖面。"
+        },
+        "磨": {
+          "pinyin": "mó",
+          "meaning": "打磨。"
+        },
+        "遥": {
+          "pinyin": "yáo",
+          "meaning": "远远地。"
+        },
+        "翠": {
+          "pinyin": "cuì",
+          "meaning": "青绿色。"
+        },
+        "螺": {
+          "pinyin": "luó",
+          "meaning": "田螺。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "刘": {
+          "pinyin": "liú",
+          "meaning": "刘禹锡的姓。"
+        },
+        "禹": {
+          "pinyin": "yǔ",
+          "meaning": "刘禹锡名字中的字。"
+        },
+        "锡": {
+          "pinyin": "xī",
+          "meaning": "刘禹锡名字中的字。"
+        },
+        "和": {
+          "pinyin": "hé",
+          "meaning": "和谐、协调。"
+        },
+        "潭": {
+          "pinyin": "tán",
+          "meaning": "深水池，这里指湖面。"
+        },
+        "磨": {
+          "pinyin": "mó",
+          "meaning": "打磨。"
+        },
+        "遥": {
+          "pinyin": "yáo",
+          "meaning": "远远地。"
+        },
+        "翠": {
+          "pinyin": "cuì",
+          "meaning": "青绿色。"
+        },
+        "螺": {
+          "pinyin": "luó",
+          "meaning": "田螺。"
+        }
+      },
+      "sections": {
+        "title": "望洞庭",
+        "author": "[唐] 刘禹锡",
+        "source": "三年级上册 · 《古诗三首》",
+        "original": "湖光秋月两相和，\n潭面无风镜未磨。\n遥望洞庭山水翠，\n白银盘里一青螺。",
+        "translation": "洞庭湖的水光和秋月交相辉映，湖面风平浪静，像一面没有打磨的镜子。远远望去，洞庭湖的山水一片翠绿，像白银盘里放着一枚青色的田螺。",
+        "lineTranslations": "洞庭湖的水光和秋月交相辉映。\n湖面风平浪静，像一面没有打磨的镜子。\n远远望去，洞庭湖的山水一片翠绿。\n像白银盘里放着一枚青色的田螺。",
+        "knowledgePoints": "1. 和：和谐，这里指水色和月色融为一体。\n2. 潭面：湖面。\n3. 青螺：青绿色的田螺，这里用来比喻洞庭湖中的君山。",
+        "characterInfo": "唐：táng｜朝代名。\n刘：liú｜刘禹锡的姓。\n禹：yǔ｜刘禹锡名字中的字。\n锡：xī｜刘禹锡名字中的字。\n和：hé｜和谐、协调。\n潭：tán｜深水池，这里指湖面。\n磨：mó｜打磨。\n遥：yáo｜远远地。\n翠：cuì｜青绿色。\n螺：luó｜田螺。"
+      },
+      "original": "湖光秋月两相和，\n潭面无风镜未磨。\n遥望洞庭山水翠，\n白银盘里一青螺。",
+      "translation": "洞庭湖的水光和秋月交相辉映，湖面风平浪静，像一面没有打磨的镜子。远远望去，洞庭湖的山水一片翠绿，像白银盘里放着一枚青色的田螺。",
+      "lineTranslations": [
+        "洞庭湖的水光和秋月交相辉映。",
+        "湖面风平浪静，像一面没有打磨的镜子。",
+        "远远望去，洞庭湖的山水一片翠绿。",
+        "像白银盘里放着一枚青色的田螺。"
+      ],
+      "knowledgePoints": [
+        "和：和谐，这里指水色和月色融为一体。",
+        "潭面：湖面。",
+        "青螺：青绿色的田螺，这里用来比喻洞庭湖中的君山。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "湖光秋月两相和，",
+          "translation": "洞庭湖的水光和秋月交相辉映。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "潭面无风镜未磨。",
+          "translation": "湖面风平浪静，像一面没有打磨的镜子。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "遥望洞庭山水翠，",
+          "translation": "远远望去，洞庭湖的山水一片翠绿。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "白银盘里一青螺。",
+          "translation": "像白银盘里放着一枚青色的田螺。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "湖光秋月两相和，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "湖"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "光"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "秋"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "月"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "两"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "相"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "和"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "潭面无风镜未磨。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "潭"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "面"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "风"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "镜"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "未"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "磨"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "遥望洞庭山水翠，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "遥"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "望"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "洞"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "庭"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "翠"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "白银盘里一青螺。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "白"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "银"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "盘"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "里"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "青"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "螺"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "湖光秋月两相和，",
+      "parseWarnings": [],
+      "id": "grade3-lesson11",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 11,
+      "filePath": "content/grade3/lesson11.txt"
+    },
+    {
+      "title": "早发白帝城",
+      "author": "[唐] 李白",
+      "source": "三年级上册 · 语文园地五",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "李": {
+          "pinyin": "lǐ",
+          "meaning": "李白的姓。"
+        },
+        "白": {
+          "pinyin": "bái",
+          "meaning": "李白名字中的字。"
+        },
+        "辞": {
+          "pinyin": "cí",
+          "meaning": "告别。"
+        },
+        "帝": {
+          "pinyin": "dì",
+          "meaning": "帝王，这里指白帝城。"
+        },
+        "陵": {
+          "pinyin": "líng",
+          "meaning": "山丘，这里指江陵。"
+        },
+        "猿": {
+          "pinyin": "yuán",
+          "meaning": "猿猴。"
+        },
+        "啼": {
+          "pinyin": "tí",
+          "meaning": "鸣叫。"
+        },
+        "舟": {
+          "pinyin": "zhōu",
+          "meaning": "船。"
+        },
+        "峦": {
+          "pinyin": "luán",
+          "meaning": "连绵的山。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "李": {
+          "pinyin": "lǐ",
+          "meaning": "李白的姓。"
+        },
+        "白": {
+          "pinyin": "bái",
+          "meaning": "李白名字中的字。"
+        },
+        "辞": {
+          "pinyin": "cí",
+          "meaning": "告别。"
+        },
+        "帝": {
+          "pinyin": "dì",
+          "meaning": "帝王，这里指白帝城。"
+        },
+        "陵": {
+          "pinyin": "líng",
+          "meaning": "山丘，这里指江陵。"
+        },
+        "猿": {
+          "pinyin": "yuán",
+          "meaning": "猿猴。"
+        },
+        "啼": {
+          "pinyin": "tí",
+          "meaning": "鸣叫。"
+        },
+        "舟": {
+          "pinyin": "zhōu",
+          "meaning": "船。"
+        },
+        "峦": {
+          "pinyin": "luán",
+          "meaning": "连绵的山。"
+        }
+      },
+      "sections": {
+        "title": "早发白帝城",
+        "author": "[唐] 李白",
+        "source": "三年级上册 · 语文园地五",
+        "original": "朝辞白帝彩云间，\n千里江陵一日还。\n两岸猿声啼不住，\n轻舟已过万重山。",
+        "translation": "清晨告别彩云间的白帝城，千里之外的江陵一天就可以到达。两岸猿猴的叫声还在不停，轻快的小船已经驶过重重山峦。",
+        "lineTranslations": "清晨告别彩云间的白帝城。\n千里之外的江陵一天就可以到达。\n两岸猿猴的叫声还在不停。\n轻快的小船已经驶过重重山峦。",
+        "knowledgePoints": "1. 朝：早晨。\n2. 辞：告别。\n3. 还：返回。",
+        "characterInfo": "唐：táng｜朝代名。\n李：lǐ｜李白的姓。\n白：bái｜李白名字中的字。\n辞：cí｜告别。\n帝：dì｜帝王，这里指白帝城。\n陵：líng｜山丘，这里指江陵。\n猿：yuán｜猿猴。\n啼：tí｜鸣叫。\n舟：zhōu｜船。\n峦：luán｜连绵的山。"
+      },
+      "original": "朝辞白帝彩云间，\n千里江陵一日还。\n两岸猿声啼不住，\n轻舟已过万重山。",
+      "translation": "清晨告别彩云间的白帝城，千里之外的江陵一天就可以到达。两岸猿猴的叫声还在不停，轻快的小船已经驶过重重山峦。",
+      "lineTranslations": [
+        "清晨告别彩云间的白帝城。",
+        "千里之外的江陵一天就可以到达。",
+        "两岸猿猴的叫声还在不停。",
+        "轻快的小船已经驶过重重山峦。"
+      ],
+      "knowledgePoints": [
+        "朝：早晨。",
+        "辞：告别。",
+        "还：返回。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "朝辞白帝彩云间，",
+          "translation": "清晨告别彩云间的白帝城。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "千里江陵一日还。",
+          "translation": "千里之外的江陵一天就可以到达。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "两岸猿声啼不住，",
+          "translation": "两岸猿猴的叫声还在不停。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "轻舟已过万重山。",
+          "translation": "轻快的小船已经驶过重重山峦。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "朝辞白帝彩云间，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "朝"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "辞"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "白"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "帝"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "彩"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "云"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "间"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "千里江陵一日还。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "千"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "里"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "江"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "陵"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "还"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "两岸猿声啼不住，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "两"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "岸"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "猿"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "声"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "啼"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "住"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "轻舟已过万重山。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "轻"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "舟"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "已"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "过"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "万"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "重"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "山"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "朝辞白帝彩云间，",
+      "parseWarnings": [],
+      "id": "grade3-lesson12",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 12,
+      "filePath": "content/grade3/lesson12.txt"
+    },
+    {
+      "title": "采莲曲",
+      "author": "[唐] 王昌龄",
+      "source": "三年级上册 · 语文园地六",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "王": {
+          "pinyin": "wáng",
+          "meaning": "王昌龄的姓。"
+        },
+        "昌": {
+          "pinyin": "chāng",
+          "meaning": "王昌龄名字中的字。"
+        },
+        "龄": {
+          "pinyin": "líng",
+          "meaning": "王昌龄名字中的字。"
+        },
+        "罗": {
+          "pinyin": "luó",
+          "meaning": "轻软的丝织品。"
+        },
+        "裙": {
+          "pinyin": "qún",
+          "meaning": "裙子。"
+        },
+        "芙": {
+          "pinyin": "fú",
+          "meaning": "芙蓉，荷花。"
+        },
+        "蓉": {
+          "pinyin": "róng",
+          "meaning": "芙蓉，荷花。"
+        },
+        "乱": {
+          "pinyin": "luàn",
+          "meaning": "混杂、混入。"
+        },
+        "始": {
+          "pinyin": "shǐ",
+          "meaning": "才、开始。"
+        },
+        "觉": {
+          "pinyin": "jué",
+          "meaning": "察觉、发现。"
+        }
+      },
+      "characters": {
+        "唐": {
+          "pinyin": "táng",
+          "meaning": "朝代名。"
+        },
+        "王": {
+          "pinyin": "wáng",
+          "meaning": "王昌龄的姓。"
+        },
+        "昌": {
+          "pinyin": "chāng",
+          "meaning": "王昌龄名字中的字。"
+        },
+        "龄": {
+          "pinyin": "líng",
+          "meaning": "王昌龄名字中的字。"
+        },
+        "罗": {
+          "pinyin": "luó",
+          "meaning": "轻软的丝织品。"
+        },
+        "裙": {
+          "pinyin": "qún",
+          "meaning": "裙子。"
+        },
+        "芙": {
+          "pinyin": "fú",
+          "meaning": "芙蓉，荷花。"
+        },
+        "蓉": {
+          "pinyin": "róng",
+          "meaning": "芙蓉，荷花。"
+        },
+        "乱": {
+          "pinyin": "luàn",
+          "meaning": "混杂、混入。"
+        },
+        "始": {
+          "pinyin": "shǐ",
+          "meaning": "才、开始。"
+        },
+        "觉": {
+          "pinyin": "jué",
+          "meaning": "察觉、发现。"
+        }
+      },
+      "sections": {
+        "title": "采莲曲",
+        "author": "[唐] 王昌龄",
+        "source": "三年级上册 · 语文园地六",
+        "original": "荷叶罗裙一色裁，\n芙蓉向脸两边开。\n乱入池中看不见，\n闻歌始觉有人来。",
+        "translation": "采莲女的罗裙像荷叶一样碧绿，荷花映照着她们的脸庞，在两边盛开。她们混入荷叶丛中便看不见了，听到歌声才发觉有人走来。",
+        "lineTranslations": "采莲女的罗裙像荷叶一样碧绿。\n荷花映照着她们的脸庞，在两边盛开。\n她们混入荷叶丛中便看不见了。\n听到歌声才发觉有人走来。",
+        "knowledgePoints": "1. 罗裙：用丝罗制成的裙子。\n2. 芙蓉：荷花。\n3. 始觉：才发现。",
+        "characterInfo": "唐：táng｜朝代名。\n王：wáng｜王昌龄的姓。\n昌：chāng｜王昌龄名字中的字。\n龄：líng｜王昌龄名字中的字。\n罗：luó｜轻软的丝织品。\n裙：qún｜裙子。\n芙：fú｜芙蓉，荷花。\n蓉：róng｜芙蓉，荷花。\n乱：luàn｜混杂、混入。\n始：shǐ｜才、开始。\n觉：jué｜察觉、发现。"
+      },
+      "original": "荷叶罗裙一色裁，\n芙蓉向脸两边开。\n乱入池中看不见，\n闻歌始觉有人来。",
+      "translation": "采莲女的罗裙像荷叶一样碧绿，荷花映照着她们的脸庞，在两边盛开。她们混入荷叶丛中便看不见了，听到歌声才发觉有人走来。",
+      "lineTranslations": [
+        "采莲女的罗裙像荷叶一样碧绿。",
+        "荷花映照着她们的脸庞，在两边盛开。",
+        "她们混入荷叶丛中便看不见了。",
+        "听到歌声才发觉有人走来。"
+      ],
+      "knowledgePoints": [
+        "罗裙：用丝罗制成的裙子。",
+        "芙蓉：荷花。",
+        "始觉：才发现。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "荷叶罗裙一色裁，",
+          "translation": "采莲女的罗裙像荷叶一样碧绿。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "芙蓉向脸两边开。",
+          "translation": "荷花映照着她们的脸庞，在两边盛开。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "乱入池中看不见，",
+          "translation": "她们混入荷叶丛中便看不见了。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "闻歌始觉有人来。",
+          "translation": "听到歌声才发觉有人走来。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "荷叶罗裙一色裁，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "荷"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "叶"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "罗"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "裙"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "色"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "裁"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "芙蓉向脸两边开。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "芙"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "蓉"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "向"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "脸"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "两"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "边"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "开"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "乱入池中看不见，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "乱"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "入"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "池"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "中"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "看"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "见"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "闻歌始觉有人来。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "闻"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "歌"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "始"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "觉"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "来"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "荷叶罗裙一色裁，",
+      "parseWarnings": [],
+      "id": "grade3-lesson14",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 14,
+      "filePath": "content/grade3/lesson14.txt"
+    },
+    {
+      "title": "语文园地七：名言警句",
+      "author": "三年级上册",
+      "source": "语文园地七 · 日积月累",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {},
+      "characters": {},
+      "sections": {
+        "title": "语文园地七：名言警句",
+        "author": "三年级上册",
+        "source": "语文园地七 · 日积月累",
+        "original": "不迁怒，不贰过。——《论语》\n爱人若爱其身。——《墨子》\n仁者爱人，有礼者敬人。——《孟子》\n与人善言，暖于布帛；伤人以言，深于矛戟。——《荀子》",
+        "translation": "不要把怒气发泄到别人身上，不要重复犯同样的错误；爱别人要像爱自己一样；仁慈的人爱护别人，有礼貌的人尊敬别人；用友善的话待人比布帛还温暖，用伤人的话说人比矛戟刺得还深。",
+        "knowledgePoints": "1. 迁怒：把对某人的怒气发泄到另一个人身上。\n2. 贰过：再犯同样的错误。\n3. 布帛：布和丝织品，泛指织物。"
+      },
+      "original": "不迁怒，不贰过。——《论语》\n爱人若爱其身。——《墨子》\n仁者爱人，有礼者敬人。——《孟子》\n与人善言，暖于布帛；伤人以言，深于矛戟。——《荀子》",
+      "translation": "不要把怒气发泄到别人身上，不要重复犯同样的错误；爱别人要像爱自己一样；仁慈的人爱护别人，有礼貌的人尊敬别人；用友善的话待人比布帛还温暖，用伤人的话说人比矛戟刺得还深。",
+      "lineTranslations": [],
+      "knowledgePoints": [
+        "迁怒：把对某人的怒气发泄到另一个人身上。",
+        "贰过：再犯同样的错误。",
+        "布帛：布和丝织品，泛指织物。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "不迁怒，不贰过。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "——《论语》",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "爱人若爱其身。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "——《墨子》",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-5",
+          "text": "仁者爱人，有礼者敬人。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-6",
+          "text": "——《孟子》",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-7",
+          "text": "与人善言，暖于布帛；",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-8",
+          "text": "伤人以言，深于矛戟。",
+          "translation": "",
+          "note": ""
+        },
+        {
+          "id": "line-9",
+          "text": "——《荀子》",
+          "translation": "",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "不迁怒，不贰过。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "迁"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "怒"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "贰"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "过"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "——《论语》",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "论"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "语"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "爱人若爱其身。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "若"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "其"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "身"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "——《墨子》",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "墨"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "子"
+                }
+              ]
+            },
+            {
+              "id": "default-item-5",
+              "text": "仁者爱人，有礼者敬人。",
+              "tokens": [
+                {
+                  "id": "default-item-5-0",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-5-1",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-5-2",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-5-3",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-5-4",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-5-5",
+                  "text": "礼"
+                },
+                {
+                  "id": "default-item-5-6",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-5-7",
+                  "text": "敬"
+                },
+                {
+                  "id": "default-item-5-8",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-6",
+              "text": "——《孟子》",
+              "tokens": [
+                {
+                  "id": "default-item-6-0",
+                  "text": "孟"
+                },
+                {
+                  "id": "default-item-6-1",
+                  "text": "子"
+                }
+              ]
+            },
+            {
+              "id": "default-item-7",
+              "text": "与人善言，暖于布帛；",
+              "tokens": [
+                {
+                  "id": "default-item-7-0",
+                  "text": "与"
+                },
+                {
+                  "id": "default-item-7-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-7-2",
+                  "text": "善"
+                },
+                {
+                  "id": "default-item-7-3",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-7-4",
+                  "text": "暖"
+                },
+                {
+                  "id": "default-item-7-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-7-6",
+                  "text": "布"
+                },
+                {
+                  "id": "default-item-7-7",
+                  "text": "帛"
+                }
+              ]
+            },
+            {
+              "id": "default-item-8",
+              "text": "伤人以言，深于矛戟。",
+              "tokens": [
+                {
+                  "id": "default-item-8-0",
+                  "text": "伤"
+                },
+                {
+                  "id": "default-item-8-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-8-2",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-8-3",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-8-4",
+                  "text": "深"
+                },
+                {
+                  "id": "default-item-8-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-8-6",
+                  "text": "矛"
+                },
+                {
+                  "id": "default-item-8-7",
+                  "text": "戟"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "不迁怒，不贰过。",
+      "parseWarnings": [],
+      "id": "grade3-lesson15",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 15,
+      "filePath": "content/grade3/lesson15.txt"
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

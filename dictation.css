@@ -1,0 +1,33 @@
+.dictation-entry { width:100%; margin:18px 0; min-height:52px; font-size:1rem; }
+.dictation-dialog { position:fixed; inset:0; width:100%; height:100%; max-width:none; max-height:none; margin:0; padding:20px; border:0; background:#f7f2e8; color:#283f33; overflow:auto; }
+.dictation-dialog::backdrop { background:#f7f2e8; }
+.dictation-shell { width:min(100%,760px); margin:0 auto; padding:clamp(18px,4vw,38px); border:1px solid #e4dccb; border-radius:26px; background:#fffdf7; box-sizing:border-box; }
+.dictation-shell header { display:flex; justify-content:space-between; align-items:start; gap:12px; border-bottom:1px solid #eee6d6; padding-bottom:16px; }
+.dictation-shell h1 { font-size:clamp(1.7rem,5vw,2.4rem); margin:10px 0; }
+.dictation-shell h2 { font-size:1.4rem; margin:20px 0; }
+.dictation-shell p { line-height:1.8; }
+.dictation-shell .button { min-height:48px; font-size:1rem; white-space:normal; }
+.dictation-shell [hidden] { display:none !important; }
+.dictation-guide { padding:14px; border-radius:14px; background:#eef5e9; }
+.dictation-poem { text-align:center; padding:14px; border-radius:18px; background:#fff6df; }
+.dictation-poem p,.dictation-answer { font-family:'Songti SC',serif; font-size:clamp(1.2rem,4vw,1.65rem); overflow-wrap:anywhere; }
+.dictation-poem small { display:block; font:14px/1.8 sans-serif; color:#52734d; }
+.dictation-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+.dictation-shell progress { width:100%; height:16px; accent-color:#71945e; }
+.dictation-hint { border-left:4px solid #e6bc67; padding:12px; background:#fff6df; border-radius:8px; }
+.dictation-saving { font-size:14px; color:#66725f; margin-top:26px; }
+.dictation-award { font-size:56px; text-align:center; color:#b98a2f; margin-top:24px; }
+@media(max-width:520px) { .dictation-dialog { padding:8px; box-sizing:border-box; } .dictation-shell header { flex-wrap:wrap; } .dictation-actions .button { flex:1 1 140px; } }
+.dictation-slots { display:flex; justify-content:center; flex-wrap:wrap; gap:8px; margin:18px 0; }
+.dictation-slot { width:42px; height:42px; display:grid; place-items:center; border:1px dashed #cbd7c4; border-radius:10px; color:#a5b29f; background:#f7faf3; font-size:1.2rem; }
+.dictation-slot.is-current { border:2px solid #e5b459; color:#a97820; background:#fff8e5; box-shadow:0 0 0 4px rgba(229,180,89,.12); }
+.dictation-slot.is-complete { border-color:#9db394; color:#557955; background:#edf5e9; font-weight:900; }
+.dictation-writer-card { width:min(100%,286px); margin:20px auto 12px; padding:10px; border:1px solid #dce5d5; border-radius:20px; background:#f5f8f0; box-shadow:0 5px 14px rgba(67,76,58,.08); }
+.dictation-writer-target { position:relative; width:260px; height:260px; max-width:100%; margin:auto; border-radius:14px; overflow:hidden; background-color:#fffef8; background-image:linear-gradient(#d8e1d2 1px,transparent 1px),linear-gradient(90deg,#d8e1d2 1px,transparent 1px),linear-gradient(45deg,transparent 49.5%,#eadfc7 49.5%,#eadfc7 50.5%,transparent 50.5%),linear-gradient(-45deg,transparent 49.5%,#eadfc7 49.5%,#eadfc7 50.5%,transparent 50.5%); background-size:50% 50%,50% 50%,100% 100%,100% 100%; }
+.dictation-writer-target svg { position:relative; z-index:1; width:100%; height:100%; touch-action:none; }
+.dictation-touch-canvas { position:relative; z-index:2; width:100%; height:100%; display:block; touch-action:none; }
+.dictation-fallback-character { position:absolute; inset:0; display:grid; place-items:center; color:rgba(40,63,51,.75); font:180px/1 'Songti SC',serif; pointer-events:none; }
+.dictation-status { min-height:2em; color:#557955; text-align:center; font-size:15px; }
+.dictation-hint { text-align:center; }
+.dictation-entry { width:100%; margin:18px 0; min-height:52px; font-size:1rem; }
+@media(max-width:520px) { .dictation-slot { width:36px; height:36px; } .dictation-writer-target { width:min(260px,78vw); height:min(260px,78vw); } }

@@ -4,128 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f7f2e8" />
-    <meta name="description" content="给孩子的古诗古文阅读、汉字书写与诗句排序练习。" />
+    <meta name="description" content="古文乐园：适合小小读书人的古文阅读乐园。" />
     <title>古文乐园 · 小小读书人</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dictation.css" />
   </head>
   <body>
     <div class="page-decoration page-decoration--one" aria-hidden="true"></div>
     <div class="page-decoration page-decoration--two" aria-hidden="true"></div>
     <div class="app-shell">
-      <header class="topbar">
-        <a class="brand" href="#top" aria-label="古文乐园首页">
-          <span class="brand-mark" aria-hidden="true">墨</span>
-          <span>
-            <span class="brand-kicker">每天一点古韵</span>
-            <span class="brand-name">古文乐园</span>
-          </span>
-        </a>
-        <div class="topbar-progress" aria-label="今日学习进度">
-          <span class="progress-sparkle" aria-hidden="true">✦</span>
-          <span><strong id="top-progress-count">0</strong> 句已点亮</span>
-          <span class="progress-track" aria-hidden="true"><span id="top-progress-bar"></span></span>
-        </div>
-      </header>
-
-      <main id="top">
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>小小读书人的每日一课</p>
-            <h1 id="hero-title">古诗古文，<br /><em>写在心里</em></h1>
-            <p class="hero-description">读一句，写一个字，再把诗句拼回来。<br class="desktop-break" />让每次练习都像发现一颗小小的星星。</p>
-            <div class="hero-actions">
-              <button class="button button--primary button--large" id="start-button" type="button">
-                <span aria-hidden="true">开始今天的练习</span><span class="button-arrow" aria-hidden="true">→</span>
-              </button>
-              <span class="hero-note"><span aria-hidden="true">⌁</span> 约 5 分钟</span>
-            </div>
-          </div>
-          <div class="hero-art" aria-label="一轮明月和书卷插画" role="img">
-            <div class="moon" aria-hidden="true"></div>
-            <div class="hero-cloud hero-cloud--one" aria-hidden="true"></div>
-            <div class="hero-cloud hero-cloud--two" aria-hidden="true"></div>
-            <div class="hero-mountain hero-mountain--back" aria-hidden="true"></div>
-            <div class="hero-mountain hero-mountain--front" aria-hidden="true"></div>
-            <div class="hero-book" aria-hidden="true"><span>一</span><span>页</span><span>诗</span></div>
-            <span class="hero-star hero-star--one" aria-hidden="true">✦</span>
-            <span class="hero-star hero-star--two" aria-hidden="true">·</span>
-            <span class="hero-star hero-star--three" aria-hidden="true">✧</span>
-          </div>
-        </section>
-
-        <section class="section-block collection-section" aria-labelledby="collection-title">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">收藏的课文</p>
-              <h2 id="collection-title">今天读哪一篇？</h2>
-            </div>
-            <p class="section-tip"><span class="tip-icon" aria-hidden="true">☼</span> 每篇都藏着一个小秘密</p>
-          </div>
-          <div class="filter-row">
-            <div class="category-tabs" id="category-tabs" role="tablist" aria-label="筛选课文类型">
-              <button class="category-tab is-active" type="button" role="tab" aria-selected="true" data-category="all">全部</button>
-              <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="poem">古诗</button>
-              <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="prose">古文</button>
-            </div>
-            <span class="result-count" id="result-count" aria-live="polite"></span>
-          </div>
-          <div id="work-grid" class="work-grid" aria-live="polite"></div>
-        </section>
-
-        <section class="section-block practice-section" id="practice" aria-labelledby="practice-title">
-          <div class="section-heading practice-heading">
-            <div>
-              <p class="section-kicker">今日练习</p>
-              <h2 id="practice-title">读一读，排一排</h2>
-            </div>
-            <button class="text-button" id="random-button" type="button"><span aria-hidden="true">⌘</span> 换一篇</button>
-          </div>
-          <div class="practice-layout">
-            <article class="poem-card" id="poem-card" aria-labelledby="poem-title"></article>
-            <aside class="exercise-card" id="exercise-card" aria-labelledby="exercise-title"></aside>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <span>把古人的好句子，读给今天的自己。</span>
-        <span class="footer-seal" aria-hidden="true">乐</span>
-      </footer>
+      <div id="app" aria-live="polite">
+        <div class="loading-state"><span class="loading-mark" aria-hidden="true">墨</span><p>正在打开古文小书架……</p></div>
+      </div>
+      <footer class="footer"><span>把古人的好句子，读给今天的自己。</span><span class="footer-seal" aria-hidden="true">乐</span></footer>
     </div>
-
-    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <div id="character-modal" class="modal-backdrop is-hidden" role="presentation">
       <section class="character-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-hint">
         <button class="modal-close" id="modal-close" type="button" aria-label="关闭汉字练习">×</button>
         <div class="modal-header">
           <span class="modal-eyebrow">汉字小课堂</span>
-          <h2 id="modal-title">学写「<span id="modal-character">字</span>」</h2>
+          <h2 id="modal-title"><span id="modal-character">字</span></h2>
           <p id="modal-hint">先看笔顺，再在田字格里试一试</p>
           <p class="modal-detail"><span id="modal-pinyin">zì</span><span class="modal-detail-divider" aria-hidden="true">·</span><span id="modal-meaning">汉字小伙伴</span></p>
         </div>
         <div class="writer-stage" id="writer-stage">
           <div class="writer-grid" aria-hidden="true"></div>
           <div id="writer-target" class="writer-target" aria-label="汉字书写练习区"></div>
-          <div id="writer-fallback" class="writer-fallback is-hidden" aria-live="polite">
-            <span id="fallback-character">字</span>
-            <small>笔顺动画加载中，先观察这个字的结构吧</small>
-          </div>
+          <div id="writer-fallback" class="writer-fallback is-hidden" aria-live="polite"><span id="fallback-character">字</span><small>笔顺动画加载中，先观察这个字的结构吧</small></div>
         </div>
         <p class="writer-status" id="writer-status" aria-live="polite">点击“演示笔顺”，再开始描写。</p>
-        <div class="modal-actions">
-          <button class="button button--soft" id="animate-button" type="button"><span aria-hidden="true">◌</span> 演示笔顺</button>
-          <button class="button button--primary" id="practice-button" type="button"><span aria-hidden="true">✎</span> 开始书写</button>
-        </div>
+        <div class="modal-actions"><button class="button button--soft" id="animate-button" type="button"><span aria-hidden="true">◌</span> 演示笔顺</button><button class="button button--soft" id="speak-character" type="button"><span aria-hidden="true">🔊</span> 听读音</button><button class="button button--primary" id="practice-button" type="button"><span aria-hidden="true">✎</span> 开始书写 / 我来试一试</button></div>
         <button class="modal-done" id="modal-done" type="button">我写好了，继续探索 <span aria-hidden="true">→</span></button>
       </section>
     </div>
-
-    <div id="celebration" class="celebration" aria-hidden="true">
-      <span>✦</span><span>✧</span><span>·</span><span>✦</span><span>✧</span>
-    </div>
-
+    <div id="celebration" class="celebration" aria-hidden="true"><span>✦</span><span>✧</span><span>·</span><span>✦</span><span>✧</span></div>
     <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@2.0.2/dist/hanzi-writer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.18.2/dist/index.js"></script>
+    <script src="dictation.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
