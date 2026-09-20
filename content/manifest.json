@@ -14,7 +14,7 @@
     {
       "id": "grade3",
       "name": "三年级",
-      "lessonCount": 13
+      "lessonCount": 14
     },
     {
       "id": "grade4",
@@ -2098,6 +2098,297 @@
       "gradeName": "三年级",
       "lessonNo": 5,
       "filePath": "content/grade3/lesson5.txt"
+    },
+    {
+      "title": "舟夜书所见",
+      "author": "[清] 查慎行",
+      "source": "三年级古诗积累",
+      "story": "",
+      "intro": "",
+      "type": "",
+      "audio": "",
+      "characterInfo": {
+        "清": {
+          "pinyin": "qīng",
+          "meaning": "朝代名。"
+        },
+        "查": {
+          "pinyin": "zhā",
+          "meaning": "查慎行的姓。"
+        },
+        "慎": {
+          "pinyin": "shèn",
+          "meaning": "谨慎、小心。"
+        },
+        "行": {
+          "pinyin": "xíng",
+          "meaning": "查慎行名字中的字。"
+        },
+        "见": {
+          "pinyin": "jiàn",
+          "meaning": "显现、看见。"
+        },
+        "渔": {
+          "pinyin": "yú",
+          "meaning": "捕鱼。"
+        },
+        "孤": {
+          "pinyin": "gū",
+          "meaning": "单独、孤单。"
+        },
+        "萤": {
+          "pinyin": "yíng",
+          "meaning": "萤火虫。"
+        },
+        "簇": {
+          "pinyin": "cù",
+          "meaning": "拥聚、聚集。"
+        },
+        "浪": {
+          "pinyin": "làng",
+          "meaning": "水面起伏的波纹。"
+        },
+        "散": {
+          "pinyin": "sàn",
+          "meaning": "散开。"
+        },
+        "河": {
+          "pinyin": "hé",
+          "meaning": "河流。"
+        },
+        "星": {
+          "pinyin": "xīng",
+          "meaning": "夜空中发光的星体。"
+        }
+      },
+      "characters": {
+        "清": {
+          "pinyin": "qīng",
+          "meaning": "朝代名。"
+        },
+        "查": {
+          "pinyin": "zhā",
+          "meaning": "查慎行的姓。"
+        },
+        "慎": {
+          "pinyin": "shèn",
+          "meaning": "谨慎、小心。"
+        },
+        "行": {
+          "pinyin": "xíng",
+          "meaning": "查慎行名字中的字。"
+        },
+        "见": {
+          "pinyin": "jiàn",
+          "meaning": "显现、看见。"
+        },
+        "渔": {
+          "pinyin": "yú",
+          "meaning": "捕鱼。"
+        },
+        "孤": {
+          "pinyin": "gū",
+          "meaning": "单独、孤单。"
+        },
+        "萤": {
+          "pinyin": "yíng",
+          "meaning": "萤火虫。"
+        },
+        "簇": {
+          "pinyin": "cù",
+          "meaning": "拥聚、聚集。"
+        },
+        "浪": {
+          "pinyin": "làng",
+          "meaning": "水面起伏的波纹。"
+        },
+        "散": {
+          "pinyin": "sàn",
+          "meaning": "散开。"
+        },
+        "河": {
+          "pinyin": "hé",
+          "meaning": "河流。"
+        },
+        "星": {
+          "pinyin": "xīng",
+          "meaning": "夜空中发光的星体。"
+        }
+      },
+      "sections": {
+        "title": "舟夜书所见",
+        "author": "[清] 查慎行",
+        "source": "三年级古诗积累",
+        "original": "月黑见渔灯，\n孤光一点萤。\n微微风簇浪，\n散作满河星。",
+        "translation": "漆黑的夜晚，江面上闪现着一盏渔灯。灯光孤零零的，像一点小小的萤火。微风轻轻吹来，江面泛起一层层细浪，水面上的波浪散开，仿佛满河都是闪烁的星星。",
+        "lineTranslations": "漆黑的夜晚，江面上闪现着一盏渔灯。\n孤零零的灯光像一点小小的萤火。\n微风轻轻吹来，江面泛起一层层细浪。\n水面上的波浪散开，仿佛满河都是闪烁的星星。",
+        "knowledgePoints": "1. 见：同“现”，显现。\n2. 簇：拥聚、聚集，这里指风吹起浪花。\n3. 萤：萤火虫，诗中用来形容灯光微弱。\n4. 散作：散开，仿佛变成。",
+        "characterInfo": "清：qīng｜朝代名。\n查：zhā｜查慎行的姓。\n慎：shèn｜谨慎、小心。\n行：xíng｜查慎行名字中的字。\n见：jiàn｜显现、看见。\n渔：yú｜捕鱼。\n孤：gū｜单独、孤单。\n萤：yíng｜萤火虫。\n簇：cù｜拥聚、聚集。\n浪：làng｜水面起伏的波纹。\n散：sàn｜散开。\n河：hé｜河流。\n星：xīng｜夜空中发光的星体。"
+      },
+      "original": "月黑见渔灯，\n孤光一点萤。\n微微风簇浪，\n散作满河星。",
+      "translation": "漆黑的夜晚，江面上闪现着一盏渔灯。灯光孤零零的，像一点小小的萤火。微风轻轻吹来，江面泛起一层层细浪，水面上的波浪散开，仿佛满河都是闪烁的星星。",
+      "lineTranslations": [
+        "漆黑的夜晚，江面上闪现着一盏渔灯。",
+        "孤零零的灯光像一点小小的萤火。",
+        "微风轻轻吹来，江面泛起一层层细浪。",
+        "水面上的波浪散开，仿佛满河都是闪烁的星星。"
+      ],
+      "knowledgePoints": [
+        "见：同“现”，显现。",
+        "簇：拥聚、聚集，这里指风吹起浪花。",
+        "萤：萤火虫，诗中用来形容灯光微弱。",
+        "散作：散开，仿佛变成。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "月黑见渔灯，",
+          "translation": "漆黑的夜晚，江面上闪现着一盏渔灯。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "孤光一点萤。",
+          "translation": "孤零零的灯光像一点小小的萤火。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "微微风簇浪，",
+          "translation": "微风轻轻吹来，江面泛起一层层细浪。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "散作满河星。",
+          "translation": "水面上的波浪散开，仿佛满河都是闪烁的星星。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "月黑见渔灯，",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "月"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "黑"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "见"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "渔"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "灯"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "孤光一点萤。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "孤"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "光"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "点"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "萤"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "微微风簇浪，",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "微"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "微"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "风"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "簇"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "浪"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "散作满河星。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "散"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "作"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "满"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "河"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "星"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "月黑见渔灯，",
+      "parseWarnings": [],
+      "id": "grade3-lesson6",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 6,
+      "filePath": "content/grade3/lesson6.txt"
     },
     {
       "title": "语文园地三：说理名句",
