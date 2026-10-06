@@ -34,7 +34,12 @@
           <div id="writer-fallback" class="writer-fallback is-hidden" aria-live="polite"><span id="fallback-character">字</span><small>笔顺动画加载中，先观察这个字的结构吧</small></div>
         </div>
         <p class="writer-status" id="writer-status" aria-live="polite">点击“演示笔顺”，再开始描写。</p>
-        <div class="modal-actions"><button class="button button--soft" id="animate-button" type="button"><span aria-hidden="true">◌</span> 演示笔顺</button><button class="button button--soft" id="speak-character" type="button"><span aria-hidden="true">🔊</span> 听读音</button><button class="button button--primary" id="practice-button" type="button"><span aria-hidden="true">✎</span> 开始书写 / 我来试一试</button></div>
+        <div class="modal-actions"><button class="button button--soft" id="animate-button" type="button"><span aria-hidden="true">◌</span> 演示笔顺</button><button class="button button--soft" id="speak-character" type="button"><span aria-hidden="true">🔊</span> 听读音</button><button class="button button--primary" id="practice-button" type="button" aria-expanded="false" aria-controls="practice-options"><span aria-hidden="true">✎</span> 我来试一试</button></div>
+        <fieldset class="practice-options" id="practice-options" hidden>
+          <legend>选一种方式练习</legend>
+          <button class="button button--soft practice-option" id="practice-trace" type="button" aria-pressed="false"><span>描红练习</span><small>沿着淡字轮廓写</small></button>
+          <button class="button button--soft practice-option" id="practice-blank" type="button" aria-pressed="false"><span>空白田字格</span><small>没有轮廓，自己写</small></button>
+        </fieldset>
         <button class="modal-done" id="modal-done" type="button">我写好了，继续探索 <span aria-hidden="true">→</span></button>
       </section>
     </div>

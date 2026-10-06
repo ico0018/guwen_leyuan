@@ -13,7 +13,7 @@
   const state = {
     manifest: null, lessons: [], toastTimer: null, learning: loadLearning(),
     activeLessonId: "", orderBanks: {}, orderPlaced: {}, orderFeedback: {}, choiceFeedback: {}, orderItemIndexes: {}, characterAudio: null,
-    activeCharacter: "", writer: null, writerQuizStarted: false, modalPreviouslyFocused: null
+    activeCharacter: "", writer: null, writerQuizStarted: false, writerPracticeMode: null, writerSession: 0, modalPreviouslyFocused: null
   };
   const HUMAN_AUDIO_BASE_URL = "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/hsk";
   const app = document.getElementById("app");
@@ -25,6 +25,7 @@
     fallbackCharacter: document.getElementById("fallback-character"), writerTarget: document.getElementById("writer-target"),
     writerFallback: document.getElementById("writer-fallback"), writerStatus: document.getElementById("writer-status"),
     animateButton: document.getElementById("animate-button"), speakCharacter: document.getElementById("speak-character"), practiceButton: document.getElementById("practice-button"),
+    practiceOptions: document.getElementById("practice-options"), practiceTrace: document.getElementById("practice-trace"), practiceBlank: document.getElementById("practice-blank"),
     modalDone: document.getElementById("modal-done"), celebration: document.getElementById("celebration")
   };
 
@@ -261,8 +262,11 @@
   }
   function openCharacterModal(character) {
     const lesson = state.lessons.find((item) => item.id === state.activeLessonId) || {}; const info = characterInfo(lesson, character);
-    state.activeCharacter = character; state.writerQuizStarted = false; state.modalPreviouslyFocused = document.activeElement;
-    els.modalCharacter.textContent = character; els.modalPinyin.textContent = info.pinyin || getAutomaticPinyin(character); els.modalMeaning.textContent = info.meaning || "结合课文读一读这个字"; els.speakCharacter.setAttribute("aria-label", `听汉字${character}的读音`); els.fallbackCharacter.textContent = character; els.writerTarget.innerHTML = ""; els.writerFallback.classList.add("is-hidden"); els.writerStatus.textContent = "点击“演示笔顺”，再开始描红。"; els.practiceButton.textContent = "✎ 开始书写 / 我来试一试"; els.modal.classList.remove("is-hidden"); document.body.style.overflow = "hidden"; window.setTimeout(() => els.modalClose.focus(), 0); initWriter(character);
+    state.writer?.cancelQuiz(); state.writerSession += 1;
+    state.activeCharacter = character; state.writerQuizStarted = false; state.writerPracticeMode = null; state.modalPreviouslyFocused = document.activeElement;
+    els.practiceOptions.hidden = true; els.practiceButton.setAttribute("aria-expanded", "false");
+    els.practiceTrace.setAttribute("aria-pressed", "false"); els.practiceBlank.setAttribute("aria-pressed", "false"); els.fallbackCharacter.hidden = false;
+    els.modalCharacter.textContent = character; els.modalPinyin.textContent = info.pinyin || getAutomaticPinyin(character); els.modalMeaning.textContent = info.meaning || "结合课文读一读这个字"; els.speakCharacter.setAttribute("aria-label", `听汉字${character}的读音`); els.fallbackCharacter.textContent = character; els.writerTarget.innerHTML = ""; els.writerFallback.classList.add("is-hidden"); els.writerStatus.textContent = "先看笔顺，再点击“我来试一试”选择练习方式。"; els.practiceButton.textContent = "✎ 我来试一试"; els.modal.classList.remove("is-hidden"); document.body.style.overflow = "hidden"; window.setTimeout(() => els.modalClose.focus(), 0); initWriter(character);
   }
   function resolveAudioPath(path) {
     if (!path) return "";
@@ -329,12 +333,39 @@
       state.writer.animateCharacter();
     } catch (error) { els.writerFallback.classList.remove("is-hidden"); els.writerStatus.textContent = "这个字的动画暂时没准备好，但仍可以在田字格中练习。"; }
   }
-  function startWriterQuiz() {
-    if (!state.writer || typeof state.writer.quiz !== "function") { els.writerStatus.textContent = "请在田字格中认真写一遍，再点击“我写好了”。"; state.writerQuizStarted = true; return; }
-    if (state.writerQuizStarted) return; state.writerQuizStarted = true; els.writerStatus.textContent = "跟着淡淡的笔顺提示，一笔一画来。";
-    state.writer.quiz({ leniency: 1.18, showHintAfterMisses: 2, highlightOnComplete: true, onMistake: () => { els.writerStatus.textContent = "这一笔再观察一下方向，慢慢来。"; }, onCorrectStroke: (strokeData) => { els.writerStatus.textContent = `第 ${strokeData.strokeNum + 1} 笔完成，继续加油！`; }, onComplete: () => { state.writer.showCharacter({ duration: 0 }); els.writerStatus.textContent = "太棒了，笔顺完成！可以继续探索下一字。"; showToast("汉字写得真认真 ✦"); } });
+  function showWriterPracticeOptions() {
+    els.practiceOptions.hidden = false;
+    els.practiceButton.setAttribute("aria-expanded", "true");
+    (state.writerPracticeMode === "blank" ? els.practiceBlank : els.practiceTrace).focus();
   }
-  function closeCharacterModal() { if (!els.modal) return; if (state.characterAudio) { state.characterAudio.pause(); state.characterAudio.currentTime = 0; state.characterAudio = null; } els.modal.classList.add("is-hidden"); document.body.style.overflow = ""; if (state.modalPreviouslyFocused && typeof state.modalPreviouslyFocused.focus === "function") state.modalPreviouslyFocused.focus(); }
+  function startWriterQuiz(mode) {
+    const writer = state.writer;
+    const token = ++state.writerSession;
+    const tracing = mode === "trace";
+    state.writerPracticeMode = mode;
+    state.writerQuizStarted = true;
+    els.practiceTrace.setAttribute("aria-pressed", String(tracing));
+    els.practiceBlank.setAttribute("aria-pressed", String(!tracing));
+    els.fallbackCharacter.hidden = !tracing;
+    if (!writer || typeof writer.quiz !== "function") { els.writerStatus.textContent = "笔顺练习暂时不可用，请稍后重新打开这个字再试。"; return; }
+    writer.cancelQuiz();
+    if (tracing) writer.showOutline({ duration: 0 });
+    else writer.hideOutline({ duration: 0 });
+    els.writerStatus.textContent = tracing ? "跟着淡淡的字形轮廓，一笔一画来。" : "在空白田字格里按笔顺写。写错两次，会提示这一笔。";
+    writer.quiz({
+      leniency: 1.18, strokeFadeDuration: 0, showHintAfterMisses: 2, highlightOnComplete: true,
+      onMistake: () => { if (token === state.writerSession) els.writerStatus.textContent = "这一笔再观察一下方向，慢慢来。"; },
+      onCorrectStroke: (strokeData) => { if (token === state.writerSession) els.writerStatus.textContent = `第 ${strokeData.strokeNum + 1} 笔完成，继续加油！`; },
+      onComplete: () => {
+        if (token !== state.writerSession) return;
+        writer.showCharacter({ duration: 0 });
+        state.writerQuizStarted = false;
+        els.writerStatus.textContent = "太棒了，笔顺完成！可以再练一次，或继续探索下一字。";
+        showToast("汉字写得真认真 ✦");
+      }
+    });
+  }
+  function closeCharacterModal() { if (!els.modal) return; state.writerSession += 1; state.writer?.cancelQuiz(); state.writerQuizStarted = false; if (state.characterAudio) { state.characterAudio.pause(); state.characterAudio.currentTime = 0; state.characterAudio = null; } els.modal.classList.add("is-hidden"); document.body.style.overflow = ""; if (state.modalPreviouslyFocused && typeof state.modalPreviouslyFocused.focus === "function") state.modalPreviouslyFocused.focus(); }
   function markCharacterLearned() { if (!state.activeLessonId || !state.activeCharacter) return; const lesson = lessonRecord(state.activeLessonId); lesson.characters = lesson.characters || {}; lesson.characters[state.activeCharacter] = true; saveLearning(); }
   function renderLoadError() { app.innerHTML = `${header()}<main class="page-main"><section class="empty-state"><span class="empty-icon" aria-hidden="true">!</span><h1>小书架暂时打不开</h1><p>请确认已经运行静态服务器，并且先执行内容扫描。</p><button class="button button--primary" id="retry-button" type="button">再试一次</button></section></main>`; document.getElementById("retry-button").addEventListener("click", loadManifest); }
   async function loadManifest() {
@@ -345,8 +376,10 @@
   function bindModalActions() {
     if (!els.modal) return;
     els.modalClose.addEventListener("click", closeCharacterModal); els.modalDone.addEventListener("click", () => { markCharacterLearned(); closeCharacterModal(); }); els.speakCharacter.addEventListener("click", () => readCharacterAloud(state.activeCharacter));
-    els.animateButton.addEventListener("click", () => { if (state.writer && typeof state.writer.animateCharacter === "function") { state.writer.animateCharacter(); els.writerStatus.textContent = "看清楚了吗？现在轮到你来写。"; } else els.writerStatus.textContent = "请按汉字的结构，从上到下、从左到右观察。"; });
-    els.practiceButton.addEventListener("click", startWriterQuiz); els.modal.addEventListener("click", (event) => { if (event.target === els.modal) closeCharacterModal(); }); document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !els.modal.classList.contains("is-hidden")) closeCharacterModal(); });
+    els.animateButton.addEventListener("click", () => { if (state.writer && typeof state.writer.animateCharacter === "function") { state.writerSession += 1; state.writerQuizStarted = false; state.writerPracticeMode = null; els.practiceTrace.setAttribute("aria-pressed", "false"); els.practiceBlank.setAttribute("aria-pressed", "false"); state.writer.animateCharacter(); els.writerStatus.textContent = "看清楚了吗？选择描红或空白田字格，再来写一遍。"; } else els.writerStatus.textContent = "请按汉字的结构，从上到下、从左到右观察。"; });
+    els.practiceButton.addEventListener("click", showWriterPracticeOptions);
+    els.practiceTrace.addEventListener("click", () => startWriterQuiz("trace")); els.practiceBlank.addEventListener("click", () => startWriterQuiz("blank"));
+    els.modal.addEventListener("click", (event) => { if (event.target === els.modal) closeCharacterModal(); }); document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !els.modal.classList.contains("is-hidden")) closeCharacterModal(); });
   }
   window.addEventListener("hashchange", () => { if (state.manifest) render(); });
   bindModalActions(); loadManifest();

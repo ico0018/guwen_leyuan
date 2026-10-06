@@ -49,6 +49,13 @@ button:focus-visible,a:focus-visible,summary:focus-visible { outline:3px solid r
 .writer-fallback small { color:var(--muted); font-size:.68rem; }
 .writer-status { min-height:1.5em; margin:0 auto 14px; color:var(--ink-soft); font-size:.76rem; }
 .modal-actions { display:flex; justify-content:center; flex-wrap:wrap; gap:9px; }
+.practice-options { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 0; padding:12px; border:1px solid #d7e2d3; border-radius:14px; text-align:left; }
+.practice-options[hidden] { display:none; }
+.practice-options legend { padding:0 6px; color:var(--moss-dark); font-size:.76rem; font-weight:850; }
+.practice-option { flex:1 1 145px; flex-direction:column; gap:4px; min-height:65px; }
+.practice-option small { font-size:.68rem; font-weight:400; }
+.practice-option[aria-pressed="true"] { color:#fffdf7; background:var(--moss-dark); border-color:var(--moss-dark); }
+.practice-option:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
 .modal-done { margin-top:17px; border:0; color:var(--coral-dark); background:transparent; font-size:.76rem; font-weight:850; cursor:pointer; }
 .modal-done:hover { color:var(--moss-dark); }
 .lesson-exercises { margin-top:17px; padding:21px; border:1px solid #eadfca; border-radius:16px; background:linear-gradient(145deg,#fffaf0,#f8f6ed); }
