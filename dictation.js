@@ -59,6 +59,7 @@
     let writerStatus = "用手指在田字格里一笔一画写。写对后会自动进入下一个字。";
     let activeWriter = null;
     let writerToken = 0;
+    let completionTimer = null;
     const dialog = document.createElement("dialog");
     dialog.className = "dictation-dialog";
     dialog.setAttribute("aria-labelledby", "dictation-title");
@@ -72,7 +73,10 @@
     }
     function close() { save(); if (dialog.open) dialog.close(); }
     dialog.addEventListener("close", () => {
+      window.clearTimeout(completionTimer);
+      completionTimer = null;
       writerToken += 1;
+      activeWriter?.cancelQuiz?.();
       activeWriter = null;
       document.body.style.overflow = previousOverflow;
       dialog.remove();
@@ -93,21 +97,35 @@
       draw();
     }
     function finishCharacter() {
+      if (stage !== "write" || completionTimer !== null) return;
       const chars = currentCharacters();
+      const character = chars[record.charIndex];
+      // Keep this writer mounted while the completed character is on display.
+      writerToken += 1;
+      activeWriter?.showCharacter?.({ duration: 0 });
+      const slot = dialog.querySelectorAll(".dictation-slot")[record.charIndex];
+      if (slot) {
+        slot.className = "dictation-slot is-complete";
+        slot.textContent = character;
+        slot.setAttribute("aria-label", `第 ${record.charIndex + 1} 个字“${character}”已完成`);
+      }
+      dialog.querySelector("#dictation-writer-target")?.classList.add("is-complete");
+      dialog.querySelectorAll('[data-do="hint"], [data-do="fallback-complete"]').forEach((button) => { button.disabled = true; });
+      const status = dialog.querySelector("#dictation-status");
+      if (status) status.textContent = `“${character}”写对啦！看一看完整的字，再继续。`;
       if (record.charIndex + 1 < chars.length) {
         record.charIndex += 1;
         hintLevel = currentHintLevel();
         writerStatus = "写对啦！继续写下一个字。";
-        save();
-        draw();
-        return;
+      } else {
+        record.completedLines[record.lineIndex] = true;
+        record.charIndex = 0;
+        stage = "lineSuccess";
+        writerStatus = "这一句写完啦，休息一下再继续。";
       }
-      record.completedLines[record.lineIndex] = true;
-      record.charIndex = 0;
-      stage = "lineSuccess";
-      writerStatus = "这一句写完啦，休息一下再继续。";
+      // Save immediately so exiting during the pause does not lose this character.
       save();
-      draw();
+      completionTimer = window.setTimeout(() => { completionTimer = null; draw(); }, 1000);
     }
     function finishLine() {
       if (record.lineIndex + 1 >= lines.length) {
@@ -182,6 +200,9 @@
     }
 
     function draw() {
+      window.clearTimeout(completionTimer);
+      completionTimer = null;
+      writerToken += 1;
       const index = record.lineIndex;
       const current = lines[index] || "";
       const chars = currentCharacters();
@@ -198,11 +219,11 @@
       } else {
         const progressValue = index + completed / Math.max(1, chars.length);
         const hintText = hintLevel >= 2 ? `本字是“${escape(character)}”，看清后再写一遍。` : hintLevel === 1 ? "先看淡淡的笔顺轮廓，再用手指写一遍。" : "想不起来也没关系，可以先看笔顺提示。";
-        const slots = chars.map((char, charIndex) => charIndex < record.charIndex ? `<span class="dictation-slot is-complete" aria-label="第 ${charIndex + 1} 个字已完成">✓</span>` : charIndex === record.charIndex ? `<span class="dictation-slot is-current" aria-label="正在写第 ${charIndex + 1} 个字">写</span>` : `<span class="dictation-slot" aria-label="第 ${charIndex + 1} 个字，空白">□</span>`).join("");
+        const slots = chars.map((char, charIndex) => charIndex < record.charIndex ? `<span class="dictation-slot is-complete" aria-label="第 ${charIndex + 1} 个字“${escape(char)}”已完成">${escape(char)}</span>` : charIndex === record.charIndex ? `<span class="dictation-slot is-current" aria-label="正在写第 ${charIndex + 1} 个字">写</span>` : `<span class="dictation-slot" aria-label="第 ${charIndex + 1} 个字，空白">□</span>`).join("");
         body = `<p class="dictation-guide">第 ${index + 1} / ${lines.length} 句 · 正在写第 ${record.charIndex + 1} 个字，共 ${chars.length} 个字</p><progress max="${lines.length}" value="${progressValue}" aria-label="全文默写进度"></progress><div class="dictation-slots" aria-label="这句诗的默写进度">${slots}</div><div class="dictation-writer-card"><div id="dictation-writer-target" class="dictation-writer-target" aria-label="请在田字格里写字"></div></div><p class="dictation-status" id="dictation-status" role="status">${escape(writerStatus)}</p><div class="dictation-actions">${button("hint", hintLevel >= 2 ? "再演示一次笔顺" : hintLevel === 1 ? "显示这个字" : "看笔顺提示")}${button("fallback-complete", "写好了，完成本字", true)}</div><p class="dictation-hint" role="status">${hintText}</p>`;
       }
       dialog.innerHTML = `<div class="dictation-shell"><header><div><p class="section-kicker">小小默写家 · ${stage === "prepare" ? "读一读" : stage === "done" ? "收获星星" : "想一想，写一写"}</p><h1 id="dictation-title">${escape(lesson.title)}</h1><p>${escape(lesson.author || "")}</p></div>${button("exit", "保存并退出")}</header>${body}<p class="dictation-saving">${storageWorks ? "进度保存在这台设备，随时可以回来继续。" : "这台设备暂时不能保存进度，请尽量在本次完成。"}</p></div>`;
-      action("exit", close); action("close", close); action("start", () => { stage = record.done ? "done" : "write"; hintLevel = currentHintLevel(); save(); draw(); }); action("restart", reset); action("next-line", finishLine);
+      action("exit", close); action("close", close); action("start", () => { stage = record.done ? "done" : record.completedLines[record.lineIndex] ? "lineSuccess" : "write"; hintLevel = currentHintLevel(); save(); draw(); }); action("restart", reset); action("next-line", finishLine);
       action("hint", () => { if (hintLevel < 2) setHintLevel(hintLevel + 1); else if (activeWriter && typeof activeWriter.animateCharacter === "function") activeWriter.animateCharacter(); });
       action("fallback-complete", finishCharacter);
       if (stage === "write") {
