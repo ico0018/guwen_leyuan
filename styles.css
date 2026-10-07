@@ -101,3 +101,19 @@ button.answer-slot { border-style:solid; color:var(--ink); background:#fffdf7; c
 @keyframes celebrate-pop { 0% { opacity:0; transform:translate(0,20px) scale(.4); } 35% { opacity:1; } 100% { opacity:0; transform:translate(var(--x,0),-75px) scale(1.2) rotate(18deg); } }
 :focus-visible { outline:3px solid rgba(231,130,111,.45); outline-offset:3px; }
 @media (max-width:680px) { .character-modal { padding:27px 16px 20px; border-radius:19px; }.writer-stage { width:min(260px,78vw); height:min(260px,78vw); }.writer-fallback span { font-size:7rem; }.lesson-exercises { padding:17px 13px; }.exercises-heading { align-items:start; }.answer-slots { gap:5px; padding:7px; }.answer-slot { min-width:28px; min-height:29px; }.scramble-chip { min-width:29px; min-height:30px; padding:3px 7px; }.choice-option { font-size:.72rem; } }
+
+
+/* 1–6 年级课内古诗目录 */
+.semester-section { margin-top: 2rem; }
+.semester-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.semester-heading h2 { margin: .15rem 0 0; font-size: clamp(1.35rem, 2.4vw, 1.8rem); }
+.semester-count, .catalog-badge { display: inline-flex; align-items: center; justify-content: center; min-height: 2rem; padding: .3rem .75rem; border-radius: 999px; background: rgba(171, 116, 73, .1); color: var(--ink-soft, #6b5142); font-size: .82rem; font-weight: 700; white-space: nowrap; }
+.lesson-card--catalog { border-style: dashed; }
+.catalog-pending { margin-top: 1.25rem; padding: clamp(1.25rem, 3vw, 2rem); border: 1px dashed rgba(113, 83, 62, .28); border-radius: 1.25rem; background: rgba(255, 250, 241, .72); }
+.catalog-pending h2 { margin: .2rem 0 .65rem; }
+.catalog-pending p { max-width: 44rem; }
+.catalog-hint { margin-top: .85rem; font-weight: 700; }
+@media (max-width: 640px) {
+  .semester-heading { align-items: center; }
+  .semester-section { margin-top: 1.5rem; }
+}

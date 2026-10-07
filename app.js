@@ -11,7 +11,7 @@
   ];
   const learningKey = "guwen-leyuan-learning-v2";
   const state = {
-    manifest: null, lessons: [], toastTimer: null, learning: loadLearning(),
+    manifest: null, curriculum: null, lessons: [], toastTimer: null, learning: loadLearning(),
     activeLessonId: "", orderBanks: {}, orderPlaced: {}, orderFeedback: {}, choiceFeedback: {}, orderItemIndexes: {}, characterAudio: null,
     activeCharacter: "", writer: null, writerQuizStarted: false, writerPracticeMode: null, writerSession: 0, modalPreviouslyFocused: null
   };
@@ -33,7 +33,74 @@
     return String(value == null ? "" : value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
   }
   function gradeOf(id) { return grades.find((grade) => grade.id === id) || grades[0]; }
-  function lessonsFor(gradeId) { return state.lessons.filter((lesson) => lesson.gradeId === gradeId).sort((a, b) => a.lessonNo - b.lessonNo); }
+  function lessonsFor(gradeId) { return state.lessons.filter((lesson) => lesson.gradeId === gradeId).sort((a, b) => (Number(a.curriculumIndex) || Number(a.lessonNo) || 0) - (Number(b.curriculumIndex) || Number(b.lessonNo) || 0)); }
+  function normalizeCatalogText(value) {
+    return String(value || "").replace(/[《》〈〉\s]/g, "").replace(/【/g, "[").replace(/】/g, "]");
+  }
+  function lessonHasOriginal(lesson) {
+    return Boolean(String((lesson && (lesson.original || (lesson.sections && lesson.sections.original))) || "").trim());
+  }
+  function mergeCurriculumLessons(manifestLessons, curriculum) {
+    if (!curriculum || !Array.isArray(curriculum.grades)) return Array.isArray(manifestLessons) ? manifestLessons : [];
+    const source = (Array.isArray(manifestLessons) ? manifestLessons : []).map((lesson, index) => ({ ...lesson, _catalogSourceIndex: index }));
+    const usedForExtra = new Set();
+    const output = [];
+    curriculum.grades.forEach((gradeEntry) => {
+      let gradeIndex = 0;
+      (gradeEntry.semesters || []).forEach((semester) => {
+        (semester.items || []).forEach((item, itemIndex) => {
+          gradeIndex += 1;
+          const titleKey = normalizeCatalogText(item.title);
+          const authorKey = normalizeCatalogText(item.author);
+          let best = null;
+          let bestScore = -1;
+          source.forEach((lesson, sourceIndex) => {
+            if (normalizeCatalogText(lesson.title) !== titleKey) return;
+            if (authorKey && normalizeCatalogText(lesson.author) !== authorKey) return;
+            const original = String(lesson.original || (lesson.sections && lesson.sections.original) || "");
+            if (item.distinguishing && original && !original.includes(item.distinguishing)) return;
+            let score = lesson.gradeId === gradeEntry.gradeId ? 100 : 0;
+            if (item.distinguishing && original.includes(item.distinguishing)) score += 80;
+            if (lessonHasOriginal(lesson)) score += 10;
+            if (score > bestScore) { best = { lesson, sourceIndex }; bestScore = score; }
+          });
+          const base = best ? best.lesson : {};
+          if (best) usedForExtra.add(best.sourceIndex);
+          const id = `${gradeEntry.gradeId}-${semester.id}-${String(itemIndex + 1).padStart(2, "0")}`;
+          output.push({
+            ...base,
+            id,
+            gradeId: gradeEntry.gradeId,
+            gradeName: gradeEntry.name || gradeOf(gradeEntry.gradeId).name,
+            lessonNo: gradeIndex,
+            curriculumIndex: gradeIndex,
+            semester: semester.name,
+            semesterId: semester.id,
+            semesterOrder: itemIndex + 1,
+            title: item.title,
+            author: item.author,
+            distinguishing: item.distinguishing || "",
+            preview: base.preview || (item.distinguishing ? `${item.distinguishing}……` : "已收录课内目录，正文讲解正在整理中。"),
+            curriculum: true,
+            catalogOnly: !lessonHasOriginal(base),
+            sourceLessonId: base.id || ""
+          });
+        });
+      });
+    });
+    source.forEach((lesson, index) => {
+      if (usedForExtra.has(index)) return;
+      output.push({
+        ...lesson,
+        semester: "补充",
+        semesterId: "extra",
+        semesterOrder: Number(lesson.lessonNo) || index + 1,
+        curriculumIndex: 9000 + (Number(lesson.lessonNo) || index + 1),
+        supplementary: true
+      });
+    });
+    return output;
+  }
   function route() {
     const raw = window.location.hash.replace(/^#\/?/, "") || "welcome";
     const parts = raw.split("/").filter(Boolean);
@@ -69,7 +136,9 @@
   function breadcrumb(label) { return `<nav class="breadcrumb" aria-label="当前位置"><a href="#/welcome">首页</a><span aria-hidden="true">›</span><span>${escapeHtml(label)}</span></nav>`; }
   function gradeCard(grade) {
     const items = lessonsFor(grade.id);
-    return `<a class="grade-card grade-card--${grade.color}" href="#/grade/${grade.id}"><span class="grade-number" aria-hidden="true">${grade.id.replace("grade", "")}</span><span class="grade-card-content"><span class="grade-label">${escapeHtml(grade.name)}</span><strong>${items.length ? `${items.length} 篇课文` : "暂时没有课文"}</strong><span>${escapeHtml(grade.phrase)}</span></span><span class="card-arrow" aria-hidden="true">→</span></a>`;
+    const curriculumItems = items.filter((item) => item.curriculum);
+    const count = curriculumItems.length || items.length;
+    return `<a class="grade-card grade-card--${grade.color}" href="#/grade/${grade.id}"><span class="grade-number" aria-hidden="true">${grade.id.replace("grade", "")}</span><span class="grade-card-content"><span class="grade-label">${escapeHtml(grade.name)}</span><strong>${count ? `${count} 首课内古诗` : "暂时没有课文"}</strong><span>${escapeHtml(grade.phrase)}</span></span><span class="card-arrow" aria-hidden="true">→</span></a>`;
   }
   function welcomeView() {
     const first = state.lessons[0];
@@ -79,11 +148,20 @@
   function gradesView() { return `${header()}<main class="page-main">${breadcrumb("选择年级")}<section class="page-intro"><p class="section-kicker">准备好了吗？</p><h1>选择你的年级</h1><p>每个书架都有适合你的古文小故事，没有课文的年级也会一直等你来。</p></section><section class="grade-grid grade-grid--large" aria-label="六个年级">${grades.map(gradeCard).join("")}</section></main>`; }
   function lessonCard(lesson) {
     const preview = lesson.preview || lesson.original || "这篇课文正在整理中。";
-    return `<a class="lesson-card" href="#/lesson/${escapeHtml(lesson.id)}"><div class="lesson-card-top"><span class="lesson-no">第 ${lesson.lessonNo} 课</span><span class="card-arrow" aria-hidden="true">→</span></div><h2>${escapeHtml(lesson.title)}</h2><p class="lesson-author">${escapeHtml(lesson.author || "未署名")}</p><p class="lesson-preview">${escapeHtml(preview)}</p><span class="lesson-link">打开课文 <span aria-hidden="true">✦</span></span></a>`;
+    const label = lesson.curriculum ? `${lesson.semester} · 第 ${lesson.semesterOrder} 首` : `补充 · 第 ${lesson.lessonNo} 篇`;
+    return `<a class="lesson-card ${lesson.catalogOnly ? "lesson-card--catalog" : ""}" href="#/lesson/${escapeHtml(lesson.id)}"><div class="lesson-card-top"><span class="lesson-no">${escapeHtml(label)}</span><span class="card-arrow" aria-hidden="true">→</span></div><h2>${escapeHtml(lesson.title)}</h2><p class="lesson-author">${escapeHtml(lesson.author || "未署名")}</p><p class="lesson-preview">${escapeHtml(preview)}</p><span class="lesson-link">${lesson.catalogOnly ? "查看目录信息" : "打开课文"} <span aria-hidden="true">✦</span></span></a>`;
+  }
+  function semesterSection(name, items) {
+    if (!items.length) return "";
+    const label = name === "补充" ? "已有的补充古文内容" : `${name}课内古诗`;
+    return `<section class="semester-section" aria-labelledby="semester-${escapeHtml(name)}"><div class="semester-heading"><div><p class="section-kicker">${name === "补充" ? "继续保留" : "按课本册次整理"}</p><h2 id="semester-${escapeHtml(name)}">${escapeHtml(label)}</h2></div><span class="semester-count">${items.length} 篇</span></div><div class="lesson-grid">${items.map(lessonCard).join("")}</div></section>`;
   }
   function gradeView(gradeId) {
     const grade = gradeOf(gradeId); const items = lessonsFor(grade.id);
-    return `${header()}<main class="page-main">${breadcrumb(grade.name)}<section class="page-intro page-intro--row"><div><p class="section-kicker">${escapeHtml(grade.name)} · 古文书架</p><h1>${escapeHtml(grade.name)}的课文</h1><p>挑一篇喜欢的，慢慢读，读出自己的小发现。</p></div><span class="lesson-count">${items.length} 篇</span></section>${items.length ? `<section class="lesson-grid" aria-label="${escapeHtml(grade.name)}课文列表">${items.map(lessonCard).join("")}</section>` : `<section class="empty-state"><span class="empty-icon" aria-hidden="true">☼</span><h2>这个书架还在长大</h2><p>暂时没有收录课文，先去看看其他年级吧。</p><a class="button button--soft" href="#/grades">换个年级看看 <span aria-hidden="true">→</span></a></section>`}</main>`;
+    const curriculumItems = items.filter((item) => item.curriculum);
+    const count = curriculumItems.length || items.length;
+    const groups = ["上册", "下册", "补充"].map((name) => [name, items.filter((item) => (item.semester || "补充") === name)]).filter((entry) => entry[1].length);
+    return `${header()}<main class="page-main">${breadcrumb(grade.name)}<section class="page-intro page-intro--row"><div><p class="section-kicker">${escapeHtml(grade.name)} · 古诗书架</p><h1>${escapeHtml(grade.name)}的课内古诗</h1><p>按上册、下册整理；已经制作详细内容的篇目可以直接进入讲解、选字排序和全文默写。</p></div><span class="lesson-count">${count} 首</span></section>${groups.length ? groups.map(([name, groupItems]) => semesterSection(name, groupItems)).join("") : `<section class="empty-state"><span class="empty-icon" aria-hidden="true">☼</span><h2>这个书架还在长大</h2><p>暂时没有收录课文，先去看看其他年级吧。</p><a class="button button--soft" href="#/grades">换个年级看看 <span aria-hidden="true">→</span></a></section>`}</main>`;
   }
   function block(label, content, className) { return content ? `<section class="lesson-block ${className || ""}"><h2>${label}</h2><div class="lesson-block-body">${escapeHtml(content).replace(/\n/g, "<br />")}</div></section>` : ""; }
   function knowledgeBlock(points) {
@@ -193,8 +271,13 @@
     if (!lesson) return `${header()}<main class="page-main">${breadcrumb("课文未找到")}<section class="empty-state"><span class="empty-icon" aria-hidden="true">?</span><h2>这篇课文还没有找到</h2><p>回到书架，再挑一篇看看吧。</p><a class="button button--primary" href="#/grades">回到年级选择</a></section></main>`;
     state.activeLessonId = lesson.id; markRead(lesson.id);
     const gradeItems = lessonsFor(lesson.gradeId); const index = gradeItems.findIndex((item) => item.id === lesson.id); const previous = gradeItems[index - 1]; const next = gradeItems[index + 1];
-    const original = lesson.original || (lesson.sections && lesson.sections.original) || "原文正在整理中。";
-    return `${header()}<main class="page-main lesson-page">${breadcrumb(`${gradeOf(lesson.gradeId).name} · ${lesson.title}`)}<article class="lesson-detail"><div class="lesson-detail-heading"><div><span class="lesson-no">${escapeHtml(gradeOf(lesson.gradeId).name)} · 第 ${lesson.lessonNo} 课</span><h1 class="lesson-title--study">${renderLineCharacters(lesson.title)}</h1><p class="lesson-author lesson-author--study">${renderLineCharacters(lesson.author || "未署名")}${lesson.source ? ` <span class="dot-divider">·</span> ${escapeHtml(lesson.source)}` : ""}</p></div><button class="read-button" type="button" data-speak="${escapeHtml(`${lesson.title}。${original}`)}"><span aria-hidden="true">◖</span> 听一听</button></div>${lesson.notes ? `<p class="lesson-note">${escapeHtml(lesson.notes)}</p>` : ""}<div class="original-card"><div class="original-label"><span aria-hidden="true">⌁</span> 原文</div><div class="original-text">${renderOriginalContent(lesson, original)}</div><button class="inline-speak" type="button" data-speak="${escapeHtml(original)}">朗读原文 <span aria-hidden="true">◖</span></button></div>${exercisesMarkup(lesson)}${knowledgeBlock(lesson.knowledgePoints)}${lesson.appreciation ? block("小小赏析", lesson.appreciation, "appreciation-block") : ""}</article><nav class="lesson-nav" aria-label="课文导航"><a class="button button--soft" href="#/grade/${escapeHtml(lesson.gradeId)}">← 返回列表</a><div class="lesson-nav-next">${previous ? `<a class="text-button" href="#/lesson/${escapeHtml(previous.id)}">← 上一篇</a>` : ""}${next ? `<a class="button button--primary" href="#/lesson/${escapeHtml(next.id)}">下一篇 <span aria-hidden="true">→</span></a>` : ""}</div></nav></main>`;
+    const original = lesson.original || (lesson.sections && lesson.sections.original) || "";
+    const hasOriginal = Boolean(String(original).trim());
+    const lessonLabel = lesson.curriculum ? `${gradeOf(lesson.gradeId).name} · ${lesson.semester} · 第 ${lesson.semesterOrder} 首` : `${gradeOf(lesson.gradeId).name} · 补充内容`;
+    const originalMarkup = hasOriginal
+      ? `<div class="original-card"><div class="original-label"><span aria-hidden="true">⌁</span> 原文</div><div class="original-text">${renderOriginalContent(lesson, original)}</div><button class="inline-speak" type="button" data-speak="${escapeHtml(original)}">朗读原文 <span aria-hidden="true">◖</span></button></div>`
+      : `<section class="catalog-pending"><p class="section-kicker">目录已收录</p><h2>原文与讲解正在整理</h2><p>这首诗已经放到正确的年级和册次中。后续补充对应 TXT 内容后，逐句讲解、选字排序和全文默写会自动启用。</p>${lesson.distinguishing ? `<p class="catalog-hint">识别句：${escapeHtml(lesson.distinguishing)}</p>` : ""}</section>`;
+    return `${header()}<main class="page-main lesson-page">${breadcrumb(`${gradeOf(lesson.gradeId).name} · ${lesson.title}`)}<article class="lesson-detail"><div class="lesson-detail-heading"><div><span class="lesson-no">${escapeHtml(lessonLabel)}</span><h1 class="lesson-title--study">${renderLineCharacters(lesson.title)}</h1><p class="lesson-author lesson-author--study">${renderLineCharacters(lesson.author || "未署名")}${lesson.source ? ` <span class="dot-divider">·</span> ${escapeHtml(lesson.source)}` : ""}</p></div>${hasOriginal ? `<button class="read-button" type="button" data-speak="${escapeHtml(`${lesson.title}。${original}`)}"><span aria-hidden="true">◖</span> 听一听</button>` : `<span class="catalog-badge">课内目录</span>`}</div>${lesson.notes ? `<p class="lesson-note">${escapeHtml(lesson.notes)}</p>` : ""}${originalMarkup}${hasOriginal ? exercisesMarkup(lesson) : ""}${hasOriginal ? knowledgeBlock(lesson.knowledgePoints) : ""}${hasOriginal && lesson.appreciation ? block("小小赏析", lesson.appreciation, "appreciation-block") : ""}</article><nav class="lesson-nav" aria-label="课文导航"><a class="button button--soft" href="#/grade/${escapeHtml(lesson.gradeId)}">← 返回列表</a><div class="lesson-nav-next">${previous ? `<a class="text-button" href="#/lesson/${escapeHtml(previous.id)}">← 上一篇</a>` : ""}${next ? `<a class="button button--primary" href="#/lesson/${escapeHtml(next.id)}">下一篇 <span aria-hidden="true">→</span></a>` : ""}</div></nav></main>`;
   }
   function render() {
     const current = route();
@@ -206,7 +289,7 @@
     app.querySelectorAll("[data-character]").forEach((button) => button.addEventListener("click", () => openCharacterModal(button.dataset.character)));
     const lesson = state.lessons.find((item) => item.id === state.activeLessonId); if (lesson) bindExerciseActions(lesson);
     const originalCard = app.querySelector(".original-card");
-    if (lesson && originalCard && window.GuwenDictation) window.GuwenDictation.mount(originalCard, lesson);
+    if (lesson && originalCard && lessonHasOriginal(lesson) && window.GuwenDictation) window.GuwenDictation.mount(originalCard, lesson);
   }
   function refreshExercises(lesson) { const container = document.getElementById("lesson-exercises"); if (!container) return; container.outerHTML = exercisesMarkup(lesson); bindExerciseActions(lesson); }
   function bindExerciseActions(lesson) {
@@ -370,7 +453,23 @@
   function renderLoadError() { app.innerHTML = `${header()}<main class="page-main"><section class="empty-state"><span class="empty-icon" aria-hidden="true">!</span><h1>小书架暂时打不开</h1><p>请确认已经运行静态服务器，并且先执行内容扫描。</p><button class="button button--primary" id="retry-button" type="button">再试一次</button></section></main>`; document.getElementById("retry-button").addEventListener("click", loadManifest); }
   async function loadManifest() {
     app.innerHTML = '<div class="loading-state"><span class="loading-mark" aria-hidden="true">墨</span><p>正在打开古文小书架……</p></div>';
-    try { const response = await fetch("content/manifest.json", { cache: "no-store" }); if (!response.ok) throw new Error(`manifest ${response.status}`); const manifest = await response.json(); if (!manifest || !Array.isArray(manifest.lessons)) throw new Error("invalid manifest"); state.manifest = manifest; state.lessons = manifest.lessons.slice().sort((a, b) => a.gradeId.localeCompare(b.gradeId, undefined, { numeric: true }) || a.lessonNo - b.lessonNo); render(); }
+    try {
+      const response = await fetch("content/manifest.json", { cache: "no-store" });
+      if (!response.ok) throw new Error(`manifest ${response.status}`);
+      const manifest = await response.json();
+      if (!manifest || !Array.isArray(manifest.lessons)) throw new Error("invalid manifest");
+      let curriculum = null;
+      try {
+        const curriculumResponse = await fetch("content/curriculum.json", { cache: "no-store" });
+        if (curriculumResponse.ok) curriculum = await curriculumResponse.json();
+      } catch (catalogError) {
+        console.warn("Unable to load curriculum catalog", catalogError);
+      }
+      state.manifest = manifest;
+      state.curriculum = curriculum;
+      state.lessons = mergeCurriculumLessons(manifest.lessons, curriculum).sort((a, b) => a.gradeId.localeCompare(b.gradeId, undefined, { numeric: true }) || (Number(a.curriculumIndex) || Number(a.lessonNo) || 0) - (Number(b.curriculumIndex) || Number(b.lessonNo) || 0));
+      render();
+    }
     catch (error) { console.error("Unable to load content manifest", error); renderLoadError(); }
   }
   function bindModalActions() {

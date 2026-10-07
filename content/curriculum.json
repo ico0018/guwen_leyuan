@@ -1,0 +1,582 @@
+{
+  "version": 1,
+  "title": "小学1~6年级课内古诗目录",
+  "source": "用户提供的《小学1~6年级课内必背古诗115首》目录图",
+  "placementCount": 116,
+  "grades": [
+    {
+      "gradeId": "grade1",
+      "name": "一年级",
+      "semesters": [
+        {
+          "id": "upper",
+          "name": "上册",
+          "items": [
+            {
+              "title": "咏鹅",
+              "author": "[唐] 骆宾王"
+            },
+            {
+              "title": "画",
+              "author": "[唐] 王维"
+            },
+            {
+              "title": "悯农（其二）",
+              "author": "[唐] 李绅"
+            },
+            {
+              "title": "江南",
+              "author": "汉乐府"
+            },
+            {
+              "title": "古朗月行",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "风",
+              "author": "[唐] 李峤"
+            }
+          ]
+        },
+        {
+          "id": "lower",
+          "name": "下册",
+          "items": [
+            {
+              "title": "春晓",
+              "author": "[唐] 孟浩然"
+            },
+            {
+              "title": "寻隐者不遇",
+              "author": "[唐] 贾岛"
+            },
+            {
+              "title": "赠汪伦",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "静夜思",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "池上",
+              "author": "[唐] 白居易"
+            },
+            {
+              "title": "小池",
+              "author": "[宋] 杨万里"
+            },
+            {
+              "title": "画鸡",
+              "author": "[明] 唐寅"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gradeId": "grade2",
+      "name": "二年级",
+      "semesters": [
+        {
+          "id": "upper",
+          "name": "上册",
+          "items": [
+            {
+              "title": "梅花",
+              "author": "[宋] 王安石"
+            },
+            {
+              "title": "小儿垂钓",
+              "author": "[唐] 胡令能"
+            },
+            {
+              "title": "登鹳雀楼",
+              "author": "[唐] 王之涣"
+            },
+            {
+              "title": "望庐山瀑布",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "江雪",
+              "author": "[唐] 柳宗元"
+            },
+            {
+              "title": "敕勒歌",
+              "author": "北朝民歌"
+            },
+            {
+              "title": "夜宿山寺",
+              "author": "[唐] 李白"
+            }
+          ]
+        },
+        {
+          "id": "lower",
+          "name": "下册",
+          "items": [
+            {
+              "title": "咏柳",
+              "author": "[唐] 贺知章"
+            },
+            {
+              "title": "村居",
+              "author": "[清] 高鼎"
+            },
+            {
+              "title": "赋得古原草送别",
+              "author": "[唐] 白居易"
+            },
+            {
+              "title": "绝句",
+              "author": "[唐] 杜甫",
+              "distinguishing": "两个黄鹂鸣翠柳"
+            },
+            {
+              "title": "晓出净慈寺送林子方",
+              "author": "[宋] 杨万里"
+            },
+            {
+              "title": "悯农（其一）",
+              "author": "[唐] 李绅"
+            },
+            {
+              "title": "江上渔者",
+              "author": "[宋] 范仲淹"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gradeId": "grade3",
+      "name": "三年级",
+      "semesters": [
+        {
+          "id": "upper",
+          "name": "上册",
+          "items": [
+            {
+              "title": "所见",
+              "author": "[清] 袁枚"
+            },
+            {
+              "title": "望洞庭",
+              "author": "[唐] 刘禹锡"
+            },
+            {
+              "title": "山行",
+              "author": "[唐] 杜牧"
+            },
+            {
+              "title": "夜书所见",
+              "author": "[宋] 叶绍翁"
+            },
+            {
+              "title": "舟夜书所见",
+              "author": "[清] 查慎行"
+            },
+            {
+              "title": "早发白帝城",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "鹿柴",
+              "author": "[唐] 王维"
+            },
+            {
+              "title": "望天门山",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "饮湖上初晴后雨",
+              "author": "[宋] 苏轼"
+            },
+            {
+              "title": "采莲曲",
+              "author": "[唐] 王昌龄"
+            }
+          ]
+        },
+        {
+          "id": "lower",
+          "name": "下册",
+          "items": [
+            {
+              "title": "绝句",
+              "author": "[唐] 杜甫",
+              "distinguishing": "迟日江山丽"
+            },
+            {
+              "title": "惠崇春江晚景",
+              "author": "[宋] 苏轼"
+            },
+            {
+              "title": "三衢道中",
+              "author": "[宋] 曾几"
+            },
+            {
+              "title": "忆江南",
+              "author": "[唐] 白居易"
+            },
+            {
+              "title": "滁州西涧",
+              "author": "[唐] 韦应物"
+            },
+            {
+              "title": "元日",
+              "author": "[宋] 王安石"
+            },
+            {
+              "title": "清明",
+              "author": "[唐] 杜牧"
+            },
+            {
+              "title": "九月九日忆山东兄弟",
+              "author": "[唐] 王维"
+            },
+            {
+              "title": "大林寺桃花",
+              "author": "[唐] 白居易"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gradeId": "grade4",
+      "name": "四年级",
+      "semesters": [
+        {
+          "id": "upper",
+          "name": "上册",
+          "items": [
+            {
+              "title": "浪淘沙·其七",
+              "author": "[唐] 刘禹锡"
+            },
+            {
+              "title": "鹿柴",
+              "author": "[唐] 王维"
+            },
+            {
+              "title": "暮江吟",
+              "author": "[唐] 白居易"
+            },
+            {
+              "title": "题西林壁",
+              "author": "[宋] 苏轼"
+            },
+            {
+              "title": "雪梅",
+              "author": "[宋] 卢钺"
+            },
+            {
+              "title": "嫦娥",
+              "author": "[唐] 李商隐"
+            },
+            {
+              "title": "出塞",
+              "author": "[唐] 王昌龄"
+            },
+            {
+              "title": "凉州词",
+              "author": "[唐] 王翰"
+            },
+            {
+              "title": "夏日绝句",
+              "author": "[宋] 李清照"
+            },
+            {
+              "title": "别董大",
+              "author": "[唐] 高适"
+            }
+          ]
+        },
+        {
+          "id": "lower",
+          "name": "下册",
+          "items": [
+            {
+              "title": "四时田园杂兴（其二十五）",
+              "author": "[宋] 范成大"
+            },
+            {
+              "title": "宿新市徐公店",
+              "author": "[宋] 杨万里"
+            },
+            {
+              "title": "清平乐·村居",
+              "author": "[宋] 辛弃疾"
+            },
+            {
+              "title": "卜算子·咏梅",
+              "author": "毛泽东"
+            },
+            {
+              "title": "江畔独步寻花",
+              "author": "[唐] 杜甫"
+            },
+            {
+              "title": "蜂",
+              "author": "[唐] 罗隐"
+            },
+            {
+              "title": "独坐敬亭山",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "芙蓉楼送辛渐",
+              "author": "[唐] 王昌龄"
+            },
+            {
+              "title": "塞下曲",
+              "author": "[唐] 卢纶"
+            },
+            {
+              "title": "墨梅",
+              "author": "[元] 王冕"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gradeId": "grade5",
+      "name": "五年级",
+      "semesters": [
+        {
+          "id": "upper",
+          "name": "上册",
+          "items": [
+            {
+              "title": "蝉",
+              "author": "[唐] 虞世南"
+            },
+            {
+              "title": "乞巧",
+              "author": "[唐] 林杰"
+            },
+            {
+              "title": "示儿",
+              "author": "[宋] 陆游"
+            },
+            {
+              "title": "题临安邸",
+              "author": "[宋] 林升"
+            },
+            {
+              "title": "己亥杂诗",
+              "author": "[清] 龚自珍"
+            },
+            {
+              "title": "山居秋暝",
+              "author": "[唐] 王维"
+            },
+            {
+              "title": "枫桥夜泊",
+              "author": "[唐] 张继"
+            },
+            {
+              "title": "长相思",
+              "author": "[清] 纳兰性德"
+            },
+            {
+              "title": "渔歌子",
+              "author": "[唐] 张志和"
+            },
+            {
+              "title": "观书有感·其一",
+              "author": "[宋] 朱熹"
+            },
+            {
+              "title": "观书有感·其二",
+              "author": "[宋] 朱熹"
+            }
+          ]
+        },
+        {
+          "id": "lower",
+          "name": "下册",
+          "items": [
+            {
+              "title": "四时田园杂兴（其三十一）",
+              "author": "[宋] 范成大"
+            },
+            {
+              "title": "稚子弄冰",
+              "author": "[宋] 杨万里"
+            },
+            {
+              "title": "村晚",
+              "author": "[宋] 雷震"
+            },
+            {
+              "title": "游子吟",
+              "author": "[唐] 孟郊"
+            },
+            {
+              "title": "鸟鸣涧",
+              "author": "[唐] 王维"
+            },
+            {
+              "title": "从军行",
+              "author": "[唐] 王昌龄"
+            },
+            {
+              "title": "秋夜将晓出篱门迎凉有感",
+              "author": "[宋] 陆游"
+            },
+            {
+              "title": "闻官军收河南河北",
+              "author": "[唐] 杜甫"
+            },
+            {
+              "title": "凉州词",
+              "author": "[唐] 王之涣"
+            },
+            {
+              "title": "黄鹤楼送孟浩然之广陵",
+              "author": "[唐] 李白"
+            },
+            {
+              "title": "乡村四月",
+              "author": "[宋] 翁卷"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gradeId": "grade6",
+      "name": "六年级",
+      "semesters": [
+        {
+          "id": "upper",
+          "name": "上册",
+          "items": [
+            {
+              "title": "宿建德江",
+              "author": "[唐] 孟浩然"
+            },
+            {
+              "title": "六月二十七日望湖楼醉书",
+              "author": "[宋] 苏轼"
+            },
+            {
+              "title": "西江月·夜行黄沙道中",
+              "author": "[宋] 辛弃疾"
+            },
+            {
+              "title": "过故人庄",
+              "author": "[唐] 孟浩然"
+            },
+            {
+              "title": "七律·长征",
+              "author": "毛泽东"
+            },
+            {
+              "title": "菩萨蛮·大柏地",
+              "author": "毛泽东"
+            },
+            {
+              "title": "春日",
+              "author": "[宋] 朱熹"
+            },
+            {
+              "title": "回乡偶书",
+              "author": "[唐] 贺知章"
+            },
+            {
+              "title": "浪淘沙·其一",
+              "author": "[唐] 刘禹锡"
+            },
+            {
+              "title": "江南春",
+              "author": "[唐] 杜牧"
+            },
+            {
+              "title": "书湖阴先生壁",
+              "author": "[宋] 王安石"
+            }
+          ]
+        },
+        {
+          "id": "lower",
+          "name": "下册",
+          "items": [
+            {
+              "title": "寒食",
+              "author": "[唐] 韩翃"
+            },
+            {
+              "title": "迢迢牵牛星",
+              "author": "佚名"
+            },
+            {
+              "title": "十五夜望月",
+              "author": "[唐] 王建"
+            },
+            {
+              "title": "长歌行",
+              "author": "汉乐府"
+            },
+            {
+              "title": "马诗",
+              "author": "[唐] 李贺"
+            },
+            {
+              "title": "石灰吟",
+              "author": "[明] 于谦"
+            },
+            {
+              "title": "竹石",
+              "author": "[清] 郑燮"
+            },
+            {
+              "title": "采薇",
+              "author": "佚名"
+            },
+            {
+              "title": "送元二使安西",
+              "author": "[唐] 王维"
+            },
+            {
+              "title": "春夜喜雨",
+              "author": "[唐] 杜甫"
+            },
+            {
+              "title": "早春呈水部张十八员外",
+              "author": "[唐] 韩愈"
+            },
+            {
+              "title": "江上渔者",
+              "author": "[宋] 范仲淹"
+            },
+            {
+              "title": "泊船瓜洲",
+              "author": "[宋] 王安石"
+            },
+            {
+              "title": "游园不值",
+              "author": "[宋] 叶绍翁"
+            },
+            {
+              "title": "卜算子·送鲍浩然之浙东",
+              "author": "[宋] 王观"
+            },
+            {
+              "title": "浣溪沙",
+              "author": "[宋] 苏轼"
+            },
+            {
+              "title": "清平乐",
+              "author": "[宋] 黄庭坚"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
