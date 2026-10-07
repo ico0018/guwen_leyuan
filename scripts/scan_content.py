@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
 FIELD_ALIASES = {
+    "作品id": "workId", "workid": "workId", "朝代": "dynasty",
     "标题": "title", "title": "title", "作者": "author", "author": "author",
     "出处": "source", "来源": "source", "source": "source",
     "故事": "story", "story": "story", "简介": "intro", "intro": "intro",
@@ -95,8 +96,14 @@ def _character_tokens(text: str, prefix: str) -> List[Dict[str, str]]:
     return [{"id": f"{prefix}-{index}", "text": char} for index, char in enumerate(CJK_PATTERN.findall(text))]
 
 
-def split_original_lines(original: str) -> List[str]:
+POETRY_TYPES = {"古诗", "诗", "词", "曲"}
+
+
+def split_original_lines(original: str, lesson_type: str = "") -> List[str]:
     """Turn paragraphs into short lines suitable for child-sized exercises."""
+    raw_lines = [line.strip() for line in original.splitlines() if line.strip()]
+    if lesson_type in POETRY_TYPES or len(raw_lines) > 1:
+        return raw_lines
     lines: List[str] = []
     for raw_line in original.splitlines():
         line = raw_line.strip()
@@ -117,9 +124,10 @@ def split_original_lines(original: str) -> List[str]:
     return lines
 
 
-def build_default_exercises(original: str, exercise_id: str = "default-order") -> List[Dict[str, object]]:
-    candidates = [line for line in split_original_lines(original) if CJK_PATTERN.search(line)]
-    candidates = candidates[:8]
+def build_default_exercises(original: str, exercise_id: str = "default-order", lesson_type: str = "") -> List[Dict[str, object]]:
+    candidates = [line for line in split_original_lines(original, lesson_type) if CJK_PATTERN.search(line)]
+    if lesson_type not in POETRY_TYPES:
+        candidates = candidates[:8]
     items = [{
         "id": f"default-item-{index + 1}",
         "text": line,
@@ -269,20 +277,24 @@ def parse_lesson(text: str, *, file_path: str = "") -> Tuple[Dict[str, object], 
             warnings.append(f"缺少字段：{required}")
 
     original = fields.get("original", "")
+    lesson_type = fields.get("type", "")
     line_translation_values = [line.strip() for line in fields.get("lineTranslations", "").splitlines() if line.strip()]
+    original_lines = split_original_lines(original, lesson_type)
+    if "lineTranslations" in fields and len(original_lines) != len(line_translation_values):
+        warnings.append(f"原文有 {len(original_lines)} 行，但逐句译文有 {len(line_translation_values)} 行")
     lines = [{
         "id": f"line-{index + 1}",
         "text": line,
         "translation": line_translation_values[index] if index < len(line_translation_values) else "",
         "note": "",
-    } for index, line in enumerate(split_original_lines(original))]
-    default_exercises = build_default_exercises(original)
+    } for index, line in enumerate(original_lines)]
+    default_exercises = build_default_exercises(original, lesson_type=lesson_type)
     if explicit_exercises:
         has_character_order = any(
             exercise.get("type") == "order" and exercise.get("mode") == "characters"
             for exercise in explicit_exercises
         )
-        exercises = explicit_exercises if has_character_order else explicit_exercises + build_default_exercises(original, "default-character-order")
+        exercises = explicit_exercises if has_character_order else explicit_exercises + build_default_exercises(original, "default-character-order", lesson_type)
     else:
         exercises = default_exercises
     for index, exercise in enumerate(exercises, start=1):
@@ -291,6 +303,7 @@ def parse_lesson(text: str, *, file_path: str = "") -> Tuple[Dict[str, object], 
     character_info = parse_character_info(fields.get("characterInfo", ""))
     lesson: Dict[str, object] = {
         "title": fields.get("title") or Path(file_path).stem or "未命名课文",
+        "workId": fields.get("workId", ""), "dynasty": fields.get("dynasty", ""),
         "author": fields.get("author", ""), "source": fields.get("source", ""),
         "story": fields.get("story", ""), "intro": fields.get("intro", ""), "type": fields.get("type", ""),
         "audio": fields.get("audio", ""),

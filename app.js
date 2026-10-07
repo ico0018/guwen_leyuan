@@ -15,7 +15,6 @@
     activeLessonId: "", orderBanks: {}, orderPlaced: {}, orderFeedback: {}, choiceFeedback: {}, orderItemIndexes: {}, characterAudio: null,
     activeCharacter: "", writer: null, writerQuizStarted: false, writerPracticeMode: null, writerSession: 0, modalPreviouslyFocused: null
   };
-  const HUMAN_AUDIO_BASE_URL = "https://raw.githubusercontent.com/hugolpz/audio-cmn/master/64k/hsk";
   const app = document.getElementById("app");
   const toast = document.getElementById("toast");
   const els = {
@@ -55,7 +54,7 @@
           let best = null;
           let bestScore = -1;
           source.forEach((lesson, sourceIndex) => {
-            if (normalizeCatalogText(lesson.title) !== titleKey) return;
+            if (item.workId ? lesson.workId !== item.workId : normalizeCatalogText(lesson.title) !== titleKey) return;
             if (authorKey && normalizeCatalogText(lesson.author) !== authorKey) return;
             const original = String(lesson.original || (lesson.sections && lesson.sections.original) || "");
             if (item.distinguishing && original && !original.includes(item.distinguishing)) return;
@@ -70,6 +69,8 @@
           output.push({
             ...base,
             id,
+            placementId: item.placementId || id,
+            workId: item.workId || base.workId || "",
             gradeId: gradeEntry.gradeId,
             gradeName: gradeEntry.name || gradeOf(gradeEntry.gradeId).name,
             lessonNo: gradeIndex,
@@ -143,9 +144,9 @@
   function welcomeView() {
     const first = state.lessons[0];
     const target = first ? `grade/${first.gradeId}` : "grades";
-    return `${header()}<main><section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>小小读书人的每日一课</p><h1 id="hero-title">古文古诗，<br /><em>写在心里</em></h1><p class="hero-description">选一个年级，打开一篇小课文。<br class="desktop-break" />读一读、想一想，每次发现都值得收藏。</p><div class="hero-actions"><a class="button button--primary button--large" href="#/${target}">开始今天的探索 <span class="button-arrow" aria-hidden="true">→</span></a><span class="hero-note"><span aria-hidden="true">⌁</span> 轻松读一篇</span></div></div><div class="hero-art" aria-label="一轮明月和书卷插画" role="img"><div class="moon" aria-hidden="true"></div><div class="hero-cloud hero-cloud--one" aria-hidden="true"></div><div class="hero-cloud hero-cloud--two" aria-hidden="true"></div><div class="hero-mountain hero-mountain--back" aria-hidden="true"></div><div class="hero-mountain hero-mountain--front" aria-hidden="true"></div><div class="hero-book" aria-hidden="true"><span>一</span><span>页</span><span>诗</span></div><span class="hero-star hero-star--one" aria-hidden="true">✦</span><span class="hero-star hero-star--two" aria-hidden="true">·</span><span class="hero-star hero-star--three" aria-hidden="true">✧</span></div></section><section class="section-block welcome-grades" aria-labelledby="grades-preview-title"><div class="section-heading"><div><p class="section-kicker">六个成长书架</p><h2 id="grades-preview-title">从哪个年级开始？</h2></div><a class="text-button" href="#/grades">查看全部年级 <span aria-hidden="true">→</span></a></div><div class="grade-grid">${grades.map(gradeCard).join("")}</div></section></main>`;
+    return `${header()}<main><section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>小小读书人的每日一课</p><h1 id="hero-title">古文古诗，<br /><em>写在心里</em></h1><p class="hero-description">小学 1～6 年级课内古诗。<br class="desktop-break" />读一读、想一想，每次发现都值得收藏。</p><div class="hero-actions"><a class="button button--primary button--large" href="#/${target}">开始今天的探索 <span class="button-arrow" aria-hidden="true">→</span></a><span class="hero-note"><span aria-hidden="true">⌁</span> 轻松读一篇</span></div></div><div class="hero-art" aria-label="一轮明月和书卷插画" role="img"><div class="moon" aria-hidden="true"></div><div class="hero-cloud hero-cloud--one" aria-hidden="true"></div><div class="hero-cloud hero-cloud--two" aria-hidden="true"></div><div class="hero-mountain hero-mountain--back" aria-hidden="true"></div><div class="hero-mountain hero-mountain--front" aria-hidden="true"></div><div class="hero-book" aria-hidden="true"><span>一</span><span>页</span><span>诗</span></div><span class="hero-star hero-star--one" aria-hidden="true">✦</span><span class="hero-star hero-star--two" aria-hidden="true">·</span><span class="hero-star hero-star--three" aria-hidden="true">✧</span></div></section><section class="section-block welcome-grades" aria-labelledby="grades-preview-title"><div class="section-heading"><div><p class="section-kicker">六个成长书架</p><h2 id="grades-preview-title">从哪个年级开始？</h2></div><a class="text-button" href="#/grades">查看全部年级 <span aria-hidden="true">→</span></a></div><div class="grade-grid">${grades.map(gradeCard).join("")}</div></section></main>`;
   }
-  function gradesView() { return `${header()}<main class="page-main">${breadcrumb("选择年级")}<section class="page-intro"><p class="section-kicker">准备好了吗？</p><h1>选择你的年级</h1><p>每个书架都有适合你的古文小故事，没有课文的年级也会一直等你来。</p></section><section class="grade-grid grade-grid--large" aria-label="六个年级">${grades.map(gradeCard).join("")}</section></main>`; }
+  function gradesView() { return `${header()}<main class="page-main">${breadcrumb("选择年级")}<section class="page-intro"><p class="section-kicker">准备好了吗？</p><h1>选择你的年级</h1><p>按上册、下册读古诗，逐行理解、排字、默写。</p></section><section class="grade-grid grade-grid--large" aria-label="六个年级">${grades.map(gradeCard).join("")}</section></main>`; }
   function lessonCard(lesson) {
     const preview = lesson.preview || lesson.original || "这篇课文正在整理中。";
     const label = lesson.curriculum ? `${lesson.semester} · 第 ${lesson.semesterOrder} 首` : `补充 · 第 ${lesson.lessonNo} 篇`;
@@ -161,7 +162,7 @@
     const curriculumItems = items.filter((item) => item.curriculum);
     const count = curriculumItems.length || items.length;
     const groups = ["上册", "下册", "补充"].map((name) => [name, items.filter((item) => (item.semester || "补充") === name)]).filter((entry) => entry[1].length);
-    return `${header()}<main class="page-main">${breadcrumb(grade.name)}<section class="page-intro page-intro--row"><div><p class="section-kicker">${escapeHtml(grade.name)} · 古诗书架</p><h1>${escapeHtml(grade.name)}的课内古诗</h1><p>按上册、下册整理；已经制作详细内容的篇目可以直接进入讲解、选字排序和全文默写。</p></div><span class="lesson-count">${count} 首</span></section>${groups.length ? groups.map(([name, groupItems]) => semesterSection(name, groupItems)).join("") : `<section class="empty-state"><span class="empty-icon" aria-hidden="true">☼</span><h2>这个书架还在长大</h2><p>暂时没有收录课文，先去看看其他年级吧。</p><a class="button button--soft" href="#/grades">换个年级看看 <span aria-hidden="true">→</span></a></section>`}</main>`;
+    return `${header()}<main class="page-main">${breadcrumb(grade.name)}<section class="page-intro page-intro--row"><div><p class="section-kicker">${escapeHtml(grade.name)} · 古诗书架</p><h1>${escapeHtml(grade.name)}的课内古诗</h1><p>按上册、下册整理，每首都可以听读、逐行理解、选字排序和全文默写。</p></div><span class="lesson-count">${count} 首</span></section>${groups.length ? groups.map(([name, groupItems]) => semesterSection(name, groupItems)).join("") : `<section class="empty-state"><span class="empty-icon" aria-hidden="true">☼</span><h2>这个书架还在长大</h2><p>暂时没有收录课文，先去看看其他年级吧。</p><a class="button button--soft" href="#/grades">换个年级看看 <span aria-hidden="true">→</span></a></section>`}</main>`;
   }
   function block(label, content, className) { return content ? `<section class="lesson-block ${className || ""}"><h2>${label}</h2><div class="lesson-block-body">${escapeHtml(content).replace(/\n/g, "<br />")}</div></section>` : ""; }
   function knowledgeBlock(points) {
@@ -212,7 +213,7 @@
     });
   }
   function defaultCharacterOrder(lesson, exerciseId = "default-order") {
-    const items = lessonLines(lesson).filter((line) => getCharacters(line.text).length && getCharacters(line.text).length <= 20).slice(0, 8).map((line, index) => ({ id: `default-item-${index + 1}`, text: line.text, tokens: characterTokens(line.text, `default-item-${index + 1}`) }));
+    const items = lessonLines(lesson).filter((line) => getCharacters(line.text).length).map((line, index) => ({ id: `default-item-${index + 1}`, text: line.text, tokens: characterTokens(line.text, `default-item-${index + 1}`) }));
     return items.length ? [{ id: exerciseId, type: "order", mode: "characters", title: "把短句排回去", prompt: "读一读原文，从字块中拼出完整短句。", items }] : [];
   }
   function getLessonExercises(lesson) {
@@ -250,11 +251,11 @@
     const expected = sentenceMode ? exercise.items.map((entry) => ({ id: entry.id, text: entry.text })) : item.tokens;
     const placed = getPlaced(key); const bank = bankFor(key, expected); const complete = isOrderComplete(lesson.id, exercise.id, sentenceMode ? "" : item.id, sentenceMode);
     const feedback = state.orderFeedback[key];
-    const message = complete ? "太棒了！这一题已经完成。" : feedback === "wrong" ? "顺序还差一点，点上面的内容撤回后再试试。" : (sentenceMode ? "想一想故事发生的先后顺序。" : "按原文顺序点击字块，组成完整的一句。");
+    const message = complete ? "太棒了！这一题已经完成。" : feedback === "wrong" ? "顺序还差一点，点上面的内容撤回后再试试。" : (sentenceMode ? "想一想故事发生的先后顺序。" : "按原文顺序点击字块，组成完整的一行。");
     const slots = placed.map((token, index) => `<button type="button" class="answer-slot answer-slot--${sentenceMode ? "sentence" : "char"} is-filled" data-remove-index="${index}" data-order-key="${escapeHtml(key)}" aria-label="撤回${escapeHtml(token.text)}">${escapeHtml(token.text)}</button>`).join("");
     const emptySlots = Array(Math.max(0, expected.length - placed.length)).fill(0).map((_, index) => `<span class="answer-slot" aria-label="第 ${placed.length + index + 1} 个位置，空"></span>`).join("");
     const itemsPicker = !sentenceMode && exercise.items.length > 1 ? `<div class="order-item-picker" aria-label="选择练习短句">${exercise.items.map((entry, index) => `<button type="button" class="${index === itemIndex ? "is-active" : ""} ${isOrderComplete(lesson.id, exercise.id, entry.id, false) ? "is-complete" : ""}" data-order-item="${escapeHtml(exercise.id)}" data-item-index="${index}">${index + 1}</button>`).join("")}</div>` : "";
-    return `<article class="order-exercise" data-exercise-id="${escapeHtml(exercise.id)}"><div class="exercise-card-heading"><div><p class="exercise-kicker">字块排序</p><h3>${escapeHtml(exercise.title || "把内容排回去")}</h3></div>${complete ? `<span class="exercise-done">已完成 ✦</span>` : ""}</div><p class="exercise-instruction">${escapeHtml(exercise.prompt || "想一想正确的顺序。")}</p>${itemsPicker}<div class="answer-slots" aria-label="已排列内容">${slots}${emptySlots}</div><p class="scramble-label">${sentenceMode ? "打乱的句子：" : "找到下一个字："}</p><div class="scramble-bank" aria-label="打乱的字块或句子">${bank.map((token) => `<button class="scramble-chip ${sentenceMode ? "scramble-chip--sentence" : ""}" type="button" data-order-token="${escapeHtml(token.id)}" data-order-key="${escapeHtml(key)}" ${placed.some((entry) => entry.id === token.id) || complete ? "disabled" : ""}>${escapeHtml(token.text)}</button>`).join("")}</div><div class="exercise-message ${feedback === "wrong" ? "is-wrong" : complete ? "is-success" : ""}" role="status">${message}</div><div class="exercise-actions"><button class="button button--outline" type="button" data-order-reset="${escapeHtml(key)}">重新打乱</button>${complete ? "<span class=\"exercise-complete-label\">完成本句 ✓</span>" : ""}</div></article>`;
+    return `<article class="order-exercise" data-exercise-id="${escapeHtml(exercise.id)}"><div class="exercise-card-heading"><div><p class="exercise-kicker">字块排序</p><h3>${escapeHtml(exercise.title || "把内容排回去")}</h3></div>${complete ? `<span class="exercise-done">已完成 ✦</span>` : ""}</div><p class="exercise-instruction">${escapeHtml(exercise.prompt || "想一想正确的顺序。")}</p>${itemsPicker}${!sentenceMode ? `<p class="exercise-instruction">第 ${itemIndex + 1} 行 / 共 ${exercise.items.length} 行</p>` : ""}<div class="answer-slots" aria-label="已排列内容">${slots}${emptySlots}</div><p class="scramble-label">${sentenceMode ? "打乱的句子：" : "找到下一个字："}</p><div class="scramble-bank" aria-label="打乱的字块或句子">${bank.map((token) => `<button class="scramble-chip ${sentenceMode ? "scramble-chip--sentence" : ""}" type="button" data-order-token="${escapeHtml(token.id)}" data-order-key="${escapeHtml(key)}" ${placed.some((entry) => entry.id === token.id) || complete ? "disabled" : ""}>${escapeHtml(token.text)}</button>`).join("")}</div><div class="exercise-message ${feedback === "wrong" ? "is-wrong" : complete ? "is-success" : ""}" role="status">${message}</div><div class="exercise-actions"><button class="button button--outline" type="button" data-order-reset="${escapeHtml(key)}">重新打乱</button>${complete ? "<span class=\"exercise-complete-label\">完成本行 ✓</span>" : ""}</div></article>`;
   }
   function choiceExerciseMarkup(lesson, exercise) {
     const saved = savedExercise(lesson.id, exercise.id); const feedback = state.choiceFeedback[exercise.id];
@@ -267,7 +268,7 @@
     return `<section class="lesson-exercises" id="lesson-exercises" aria-labelledby="exercise-section-title"><div class="exercises-heading"><div><p class="section-kicker">读一读，想一想</p><h2 id="exercise-section-title">课文小练习</h2></div><span class="exercise-count">${summary.completed}/${summary.total} 已完成</span></div>${complete ? `<div class="lesson-complete" role="status">本篇完成！你把古人的故事读懂了 ✦</div>` : ""}${exercises.map((exercise) => exercise.type === "choice" ? choiceExerciseMarkup(lesson, exercise) : orderExerciseMarkup(lesson, exercise)).join("")}</section>`;
   }
   function lessonView(lessonId) {
-    const lesson = state.lessons.find((item) => item.id === lessonId);
+    const lesson = state.lessons.find((item) => item.id === lessonId) || state.lessons.find((item) => item.sourceLessonId === lessonId);
     if (!lesson) return `${header()}<main class="page-main">${breadcrumb("课文未找到")}<section class="empty-state"><span class="empty-icon" aria-hidden="true">?</span><h2>这篇课文还没有找到</h2><p>回到书架，再挑一篇看看吧。</p><a class="button button--primary" href="#/grades">回到年级选择</a></section></main>`;
     state.activeLessonId = lesson.id; markRead(lesson.id);
     const gradeItems = lessonsFor(lesson.gradeId); const index = gradeItems.findIndex((item) => item.id === lesson.id); const previous = gradeItems[index - 1]; const next = gradeItems[index + 1];
@@ -280,12 +281,14 @@
     return `${header()}<main class="page-main lesson-page">${breadcrumb(`${gradeOf(lesson.gradeId).name} · ${lesson.title}`)}<article class="lesson-detail"><div class="lesson-detail-heading"><div><span class="lesson-no">${escapeHtml(lessonLabel)}</span><h1 class="lesson-title--study">${renderLineCharacters(lesson.title)}</h1><p class="lesson-author lesson-author--study">${renderLineCharacters(lesson.author || "未署名")}${lesson.source ? ` <span class="dot-divider">·</span> ${escapeHtml(lesson.source)}` : ""}</p></div>${hasOriginal ? `<button class="read-button" type="button" data-speak="${escapeHtml(`${lesson.title}。${original}`)}"><span aria-hidden="true">◖</span> 听一听</button>` : `<span class="catalog-badge">课内目录</span>`}</div>${lesson.notes ? `<p class="lesson-note">${escapeHtml(lesson.notes)}</p>` : ""}${originalMarkup}${hasOriginal ? exercisesMarkup(lesson) : ""}${hasOriginal ? knowledgeBlock(lesson.knowledgePoints) : ""}${hasOriginal && lesson.appreciation ? block("小小赏析", lesson.appreciation, "appreciation-block") : ""}</article><nav class="lesson-nav" aria-label="课文导航"><a class="button button--soft" href="#/grade/${escapeHtml(lesson.gradeId)}">← 返回列表</a><div class="lesson-nav-next">${previous ? `<a class="text-button" href="#/lesson/${escapeHtml(previous.id)}">← 上一篇</a>` : ""}${next ? `<a class="button button--primary" href="#/lesson/${escapeHtml(next.id)}">下一篇 <span aria-hidden="true">→</span></a>` : ""}</div></nav></main>`;
   }
   function render() {
+    stopAllSpeech();
+    closeCharacterModal();
     const current = route();
     if (current.name === "grades") app.innerHTML = gradesView(); else if (current.name === "grade") app.innerHTML = gradeView(current.gradeId); else if (current.name === "lesson") app.innerHTML = lessonView(current.lessonId); else app.innerHTML = welcomeView();
     bindActions(); window.scrollTo({ top: 0, behavior: "auto" });
   }
   function bindActions() {
-    app.querySelectorAll("[data-speak]").forEach((button) => button.addEventListener("click", () => readTextAloud(button.dataset.speak)));
+    app.querySelectorAll("[data-speak]").forEach((button) => button.addEventListener("click", () => state.speechActive ? stopAllSpeech() : readLessonAloud(state.lessons.find((item) => item.id === state.activeLessonId))));
     app.querySelectorAll("[data-character]").forEach((button) => button.addEventListener("click", () => openCharacterModal(button.dataset.character)));
     const lesson = state.lessons.find((item) => item.id === state.activeLessonId); if (lesson) bindExerciseActions(lesson);
     const originalCard = app.querySelector(".original-card");
@@ -307,13 +310,13 @@
     const exercise = getLessonExercises(lesson).find((item) => item.id === key || key.startsWith(`${item.id}:`)); if (!exercise) return;
     const sentenceMode = exercise.mode === "sentences"; const itemIndex = state.orderItemIndexes[exercise.id] || 0; const itemId = sentenceMode ? "" : key.split(":").slice(1).join(":"); const item = sentenceMode ? null : exercise.items.find((entry) => entry.id === itemId); const expected = sentenceMode ? exercise.items : (item ? item.tokens : []); const placed = getPlaced(key);
     if (placed.length !== expected.length) { refreshExercises(lesson); return; }
-    if (placed.every((token, index) => token.id === expected[index].id)) {
+    if (placed.every((token, index) => token.text === expected[index].text)) {
       setOrderComplete(lesson.id, exercise.id, itemId, sentenceMode); state.orderFeedback[key] = "success"; delete state.orderPlaced[key];
       if (!sentenceMode) {
         const nextIndex = exercise.items.findIndex((entry, index) => index > itemIndex && !isOrderComplete(lesson.id, exercise.id, entry.id, false));
         if (nextIndex >= 0) state.orderItemIndexes[exercise.id] = nextIndex;
       }
-      refreshExercises(lesson); celebrate(); showToast(sentenceMode ? "故事顺序排对啦 ✦" : (state.orderItemIndexes[exercise.id] > itemIndex ? "这一句完成啦，继续下一句 ✦" : "选字排序全部完成啦 ✦"));
+      refreshExercises(lesson); celebrate(); showToast(sentenceMode ? "故事顺序排对啦 ✦" : (state.orderItemIndexes[exercise.id] > itemIndex ? "这一行完成啦，继续下一行 ✦" : "选字排序全部完成啦 ✦"));
     } else { state.orderFeedback[key] = "wrong"; refreshExercises(lesson); }
   }
   function checkChoiceResult(lesson, exerciseId, answer) {
@@ -322,13 +325,17 @@
     if (String(answer).toUpperCase() === String(exercise.answer).trim().toUpperCase()) { saved.completed = true; state.choiceFeedback[exerciseId] = "success"; saveLearning(); refreshExercises(lesson); celebrate(); showToast("回答正确，真会读故事 ✦"); }
     else { state.choiceFeedback[exerciseId] = "wrong"; state.learning[lesson.id].exercises[exerciseId] = saved; saveLearning(); refreshExercises(lesson); }
   }
-  function speak(text) {
-    if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) { showToast("这台设备暂时不能朗读，跟着文字读一遍也很棒哦"); return false; }
-    const voices = typeof window.speechSynthesis.getVoices === "function" ? window.speechSynthesis.getVoices() : [];
-    const chineseVoices = voices.filter((voice) => /^(zh-CN|zh_CN|zh-Hans|zh)/i.test(voice.lang) || /Chinese|中文|普通话|Mandarin/i.test(voice.name));
-    const preferredVoice = chineseVoices.find((voice) => /Xiaoxiao|晓晓|Yunxi|云希|Yunyang|云扬|Xiaoyi|晓伊|Natural|Premium|Enhanced/i.test(`${voice.name} ${voice.voiceURI}`)) || chineseVoices[0];
-    window.speechSynthesis.cancel(); const utterance = new SpeechSynthesisUtterance(text); utterance.lang = preferredVoice?.lang || "zh-CN"; if (preferredVoice) utterance.voice = preferredVoice; utterance.rate = 0.78; window.speechSynthesis.resume(); window.speechSynthesis.speak(utterance); return true;
-  }
+  const speechController = window.GuwenSpeech.createSpeechController(window, (status) => {
+    state.speechActive = status === "speaking" || status === "recording";
+    app.querySelectorAll("[data-speak]").forEach((button) => {
+      button.textContent = state.speechActive ? "■ 停止" : "▶ 听一听";
+      button.setAttribute("aria-pressed", String(state.speechActive));
+    });
+    if (status === "unavailable") showToast("这台设备暂时无法朗读");
+    else if (status === "recording") showToast("录音朗读……");
+    else if (status === "speaking") showToast("正在朗读……");
+  });
+  function stopAllSpeech() { speechController.stop(); }
   function showToast(message) { window.clearTimeout(state.toastTimer); toast.textContent = message; toast.classList.add("is-visible"); state.toastTimer = window.setTimeout(() => toast.classList.remove("is-visible"), 2800); }
   function celebrate() { if (!els.celebration) return; els.celebration.classList.remove("is-active"); void els.celebration.offsetWidth; els.celebration.classList.add("is-active"); window.setTimeout(() => els.celebration.classList.remove("is-active"), 1000); }
   function characterInfo(lesson, character) {
@@ -344,6 +351,7 @@
     } catch (error) { return "拼音加载中"; }
   }
   function openCharacterModal(character) {
+    stopAllSpeech();
     const lesson = state.lessons.find((item) => item.id === state.activeLessonId) || {}; const info = characterInfo(lesson, character);
     state.writer?.cancelQuiz(); state.writerSession += 1;
     state.activeCharacter = character; state.writerQuizStarted = false; state.writerPracticeMode = null; state.modalPreviouslyFocused = document.activeElement;
@@ -355,58 +363,15 @@
     if (!path) return "";
     try { return new URL(path, document.baseURI).href; } catch (error) { return path; }
   }
-  function playRecordedAudio(path, character) {
-    if (!path || typeof window.Audio !== "function") return false;
-    try {
-      if (state.characterAudio) { state.characterAudio.pause(); state.characterAudio.currentTime = 0; }
-      const audio = new Audio(resolveAudioPath(path)); state.characterAudio = audio;
-      audio.addEventListener("play", () => { els.writerStatus.textContent = "正在播放真人读音……"; });
-      audio.addEventListener("ended", () => { els.writerStatus.textContent = "听完了，再跟着读一遍吧。"; });
-      audio.addEventListener("error", () => { state.characterAudio = null; if (speak(character)) showToast(`录音未加载，改用设备朗读「${character}」`); });
-      const result = audio.play();
-      if (result && typeof result.catch === "function") result.catch(() => { state.characterAudio = null; if (speak(character)) showToast(`录音未加载，改用设备朗读「${character}」`); });
-      return true;
-    } catch (error) { state.characterAudio = null; return false; }
-  }
-  function playHumanAudio(text) {
-    if (typeof window.Audio !== "function") return false;
-    try {
-      const phrase = String(text || "").replace(/\s/g, "");
-      if (!phrase) return false;
-      if (state.characterAudio) { state.characterAudio.pause(); state.characterAudio.currentTime = 0; }
-      const audio = new Audio(`${HUMAN_AUDIO_BASE_URL}/cmn-${encodeURIComponent(phrase)}.mp3`); state.characterAudio = audio;
-      let settled = false;
-      let fallbackTimer = null;
-      const useFallback = () => {
-        if (settled) return;
-        settled = true; window.clearTimeout(fallbackTimer); state.characterAudio = null;
-        if (speak(phrase)) showToast(`真人录音未加载，改用设备朗读「${phrase}」`);
-      };
-      audio.preload = "auto";
-      audio.oncanplay = () => {
-        if (settled) return;
-        audio.play().then(() => { settled = true; window.clearTimeout(fallbackTimer); }).catch(useFallback);
-      };
-      audio.onplaying = () => { els.writerStatus.textContent = "正在播放真人读音……"; };
-      audio.onerror = useFallback;
-      audio.onended = () => { if (state.characterAudio === audio) state.characterAudio = null; };
-      fallbackTimer = window.setTimeout(useFallback, 3500);
-      audio.load();
-      return true;
-    } catch (error) { state.characterAudio = null; return false; }
-  }
   function readCharacterAloud(character) {
-    const lesson = state.lessons.find((item) => item.id === state.activeLessonId) || {}; const info = characterInfo(lesson, character);
-    if (playRecordedAudio(info.audio, character)) { showToast(`正在播放真人读音「${character}」✦`); return; }
-    if (playHumanAudio(character)) { showToast(`正在尝试真人读音「${character}」✦`); return; }
-    if (speak(character)) showToast(`正在朗读「${character}」的读音 ✦`);
-  }
-  function readTextAloud(text) {
-    const phrase = String(text || "").trim();
     const lesson = state.lessons.find((item) => item.id === state.activeLessonId) || {};
-    if (playRecordedAudio(lesson.audio, phrase)) { showToast("正在播放课文真人录音 ✦"); return; }
-    if (playHumanAudio(phrase)) { showToast("正在尝试真人朗读 ✦"); return; }
-    if (speak(phrase)) showToast("正在朗读课文 ✦");
+    const info = characterInfo(lesson, character);
+    return speechController.read(character, resolveAudioPath(info.audio));
+  }
+  function readLessonAloud(lesson) {
+    if (!lesson) return;
+    const text = lesson.title + "。\n" + lessonLines(lesson).map((line) => line.text).join("\n");
+    return speechController.read(text, resolveAudioPath(lesson.audio));
   }
   function initWriter(character) {
     state.writer = null;
@@ -448,7 +413,7 @@
       }
     });
   }
-  function closeCharacterModal() { if (!els.modal) return; state.writerSession += 1; state.writer?.cancelQuiz(); state.writerQuizStarted = false; if (state.characterAudio) { state.characterAudio.pause(); state.characterAudio.currentTime = 0; state.characterAudio = null; } els.modal.classList.add("is-hidden"); document.body.style.overflow = ""; if (state.modalPreviouslyFocused && typeof state.modalPreviouslyFocused.focus === "function") state.modalPreviouslyFocused.focus(); }
+  function closeCharacterModal() { if (!els.modal) return; state.writerSession += 1; state.writer?.cancelQuiz(); state.writerQuizStarted = false; stopAllSpeech(); els.modal.classList.add("is-hidden"); document.body.style.overflow = ""; if (state.modalPreviouslyFocused && typeof state.modalPreviouslyFocused.focus === "function") state.modalPreviouslyFocused.focus(); }
   function markCharacterLearned() { if (!state.activeLessonId || !state.activeCharacter) return; const lesson = lessonRecord(state.activeLessonId); lesson.characters = lesson.characters || {}; lesson.characters[state.activeCharacter] = true; saveLearning(); }
   function renderLoadError() { app.innerHTML = `${header()}<main class="page-main"><section class="empty-state"><span class="empty-icon" aria-hidden="true">!</span><h1>小书架暂时打不开</h1><p>请确认已经运行静态服务器，并且先执行内容扫描。</p><button class="button button--primary" id="retry-button" type="button">再试一次</button></section></main>`; document.getElementById("retry-button").addEventListener("click", loadManifest); }
   async function loadManifest() {
@@ -481,5 +446,6 @@
     els.modal.addEventListener("click", (event) => { if (event.target === els.modal) closeCharacterModal(); }); document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !els.modal.classList.contains("is-hidden")) closeCharacterModal(); });
   }
   window.addEventListener("hashchange", () => { if (state.manifest) render(); });
+  window.addEventListener("pagehide", stopAllSpeech);
   bindModalActions(); loadManifest();
 })();

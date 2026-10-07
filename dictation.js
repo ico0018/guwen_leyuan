@@ -6,8 +6,10 @@
 
   function linesFor(lesson) {
     // 默写保留全文，不能使用选字排序练习的短句数量限制。
-    return String(lesson.original || "")
-      .split(/\n|(?<=[。！？；])/u)
+    if (Array.isArray(lesson.lines) && lesson.lines.length) return lesson.lines.map((line) => line.text).filter((line) => normalize(line));
+    const original = String(lesson.original || "");
+    const raw = original.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+    return (raw.length > 1 || ["古诗", "诗", "词", "曲"].includes(lesson.type) ? raw : original.split(/(?<=[。！？；])/u))
       .map((line) => line.trim())
       .filter((line) => normalize(line));
   }
@@ -121,7 +123,7 @@
         record.completedLines[record.lineIndex] = true;
         record.charIndex = 0;
         stage = "lineSuccess";
-        writerStatus = "这一句写完啦，休息一下再继续。";
+        writerStatus = "这一行写完啦，休息一下再继续。";
       }
       // Save immediately so exiting during the pause does not lose this character.
       save();
@@ -211,16 +213,16 @@
       let body = "";
       if (stage === "prepare") {
         const continueLabel = record.done ? "看看上次的成果" : record.lineIndex || record.charIndex ? "继续屏幕默写" : "开始屏幕默写";
-        body = `<p class="dictation-guide">先轻声读一遍，想象诗里的画面。开始后原文会藏起来，孩子用手指在田字格里逐字写。</p><div class="dictation-poem">${lines.map((line) => `<p>${escape(line)}</p>`).join("")}</div><p>共 ${lines.length} 句，不用键盘、不计时。写对一个字，就会自动进入下一个字。</p><div class="dictation-actions">${button("start", continueLabel, true)}${button("restart", "从第一句重新练")}</div>`;
+        body = `<p class="dictation-guide">先轻声读一遍，想象诗里的画面。开始后原文会藏起来，孩子用手指在田字格里逐字写。</p><div class="dictation-poem">${lines.map((line) => `<p>${escape(line)}</p>`).join("")}</div><p>共 ${lines.length} 行，不用键盘、不计时。写对一个字，就会自动进入下一个字。</p><div class="dictation-actions">${button("start", continueLabel, true)}${button("restart", "从第一行重新练")}</div>`;
       } else if (stage === "done") {
-        body = `<div class="dictation-award">🌟</div><h2>你完成了全文默写！</h2><p>每一句都已经用手指写过了，真认真！</p><div class="dictation-poem">${lines.map((line) => `<p>${escape(line)}<small>✓ 完成</small></p>`).join("")}</div><div class="dictation-actions">${button("restart", "再挑战一次", true)}${button("close", "完成，回到课文")}</div>`;
+        body = `<div class="dictation-award">🌟</div><h2>你完成了全文默写！</h2><p>每一行都已经用手指写过了，真认真！</p><div class="dictation-poem">${lines.map((line) => `<p>${escape(line)}<small>✓ 完成</small></p>`).join("")}</div><div class="dictation-actions">${button("restart", "再挑战一次", true)}${button("close", "完成，回到课文")}</div>`;
       } else if (stage === "lineSuccess") {
-        body = `<div class="dictation-award">✦</div><h2>这一句写完啦！</h2><p class="dictation-answer">${escape(current)}</p><p>停一下，轻轻背一遍，再往下走。</p>${button("next-line", index + 1 === lines.length ? "收集全文完成星星" : "继续下一句 →", true)}`;
+        body = `<div class="dictation-award">✦</div><h2>这一行写完啦！</h2><p class="dictation-answer">${escape(current)}</p><p>停一下，轻轻背一遍，再往下走。</p>${button("next-line", index + 1 === lines.length ? "收集全文完成星星" : "继续下一行 →", true)}`;
       } else {
         const progressValue = index + completed / Math.max(1, chars.length);
         const hintText = hintLevel >= 2 ? `本字是“${escape(character)}”，看清后再写一遍。` : hintLevel === 1 ? "先看淡淡的笔顺轮廓，再用手指写一遍。" : "想不起来也没关系，可以先看笔顺提示。";
         const slots = chars.map((char, charIndex) => charIndex < record.charIndex ? `<span class="dictation-slot is-complete" aria-label="第 ${charIndex + 1} 个字“${escape(char)}”已完成">${escape(char)}</span>` : charIndex === record.charIndex ? `<span class="dictation-slot is-current" aria-label="正在写第 ${charIndex + 1} 个字">写</span>` : `<span class="dictation-slot" aria-label="第 ${charIndex + 1} 个字，空白">□</span>`).join("");
-        body = `<p class="dictation-guide">第 ${index + 1} / ${lines.length} 句 · 正在写第 ${record.charIndex + 1} 个字，共 ${chars.length} 个字</p><progress max="${lines.length}" value="${progressValue}" aria-label="全文默写进度"></progress><div class="dictation-slots" aria-label="这句诗的默写进度">${slots}</div><div class="dictation-writer-card"><div id="dictation-writer-target" class="dictation-writer-target" aria-label="请在田字格里写字"></div></div><p class="dictation-status" id="dictation-status" role="status">${escape(writerStatus)}</p><div class="dictation-actions">${button("hint", hintLevel >= 2 ? "再演示一次笔顺" : hintLevel === 1 ? "显示这个字" : "看笔顺提示")}${button("fallback-complete", "写好了，完成本字", true)}</div><p class="dictation-hint" role="status">${hintText}</p>`;
+        body = `<p class="dictation-guide">第 ${index + 1} 行 / 共 ${lines.length} 行 · 正在写第 ${record.charIndex + 1} 个字，共 ${chars.length} 个字</p><progress max="${lines.length}" value="${progressValue}" aria-label="全文默写进度"></progress><div class="dictation-slots" aria-label="这行诗的默写进度">${slots}</div><div class="dictation-writer-card"><div id="dictation-writer-target" class="dictation-writer-target" aria-label="请在田字格里写字"></div></div><p class="dictation-status" id="dictation-status" role="status">${escape(writerStatus)}</p><div class="dictation-actions">${button("hint", hintLevel >= 2 ? "再演示一次笔顺" : hintLevel === 1 ? "显示这个字" : "看笔顺提示")}${button("fallback-complete", "写好了，完成本字", true)}</div><p class="dictation-hint" role="status">${hintText}</p>`;
       }
       dialog.innerHTML = `<div class="dictation-shell"><header><div><p class="section-kicker">小小默写家 · ${stage === "prepare" ? "读一读" : stage === "done" ? "收获星星" : "想一想，写一写"}</p><h1 id="dictation-title">${escape(lesson.title)}</h1><p>${escape(lesson.author || "")}</p></div>${button("exit", "保存并退出")}</header>${body}<p class="dictation-saving">${storageWorks ? "进度保存在这台设备，随时可以回来继续。" : "这台设备暂时不能保存进度，请尽量在本次完成。"}</p></div>`;
       action("exit", close); action("close", close); action("start", () => { stage = record.done ? "done" : record.completedLines[record.lineIndex] ? "lineSuccess" : "write"; hintLevel = currentHintLevel(); save(); draw(); }); action("restart", reset); action("next-line", finishLine);
