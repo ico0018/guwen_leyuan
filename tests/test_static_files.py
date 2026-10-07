@@ -22,12 +22,11 @@ class StaticFilesTests(unittest.TestCase):
         self.assertIn("openCharacterModal", app)
         self.assertIn("renderOriginalContent", app)
         self.assertIn("getAutomaticPinyin", app)
-        self.assertIn("playRecordedAudio", app)
-        self.assertIn("playHumanAudio", app)
-        self.assertIn("readTextAloud", app)
-        self.assertIn("HUMAN_AUDIO_BASE_URL", app)
+        self.assertIn("GuwenSpeech.createSpeechController", app)
+        self.assertIn("readLessonAloud", app)
+        self.assertIn("stopAllSpeech", app)
         self.assertIn("readCharacterAloud", app)
-        self.assertIn("readTextAloud", app)
+        self.assertIn("readLessonAloud", app)
         self.assertIn("lesson-title--study", app)
         self.assertNotIn("translation-panel", app)
         self.assertNotIn("line-translation-label", app)
@@ -62,6 +61,14 @@ class StaticFilesTests(unittest.TestCase):
         self.assertEqual(len(data["grades"]), 6)
         for lesson in data["lessons"]:
             self.assertTrue((ROOT / lesson["filePath"]).is_file(), lesson["filePath"])
+
+    def test_no_guessed_remote_recording_sources(self):
+        forbidden = ['audio' + '-cmn', 'HUMAN_AUDIO_' + 'BASE_URL', 'hugo' + 'lpz']
+        for path in ROOT.iterdir():
+            if path.suffix not in ('.js', '.html', '.md'):
+                continue
+            for token in forbidden:
+                self.assertNotIn(token, path.read_text(encoding='utf8'), path.name)
 
     def test_grade3_shanxing_keeps_single_character_xie_for_writing(self):
         data = json.loads((ROOT / "content/manifest.json").read_text(encoding="utf-8"))
