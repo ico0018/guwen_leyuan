@@ -1,3 +1,9 @@
 .xbb-cloud { margin:16px auto; padding:12px; max-width:980px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; font:14px/1.6 system-ui; color:#365245; background:#f6faf6; border:1px solid #dce8dc; border-radius:14px; }
 .xbb-cloud span { flex:1 1 200px; }
 .xbb-cloud button,.xbb-cloud select,.xbb-cloud a { color:inherit; border:1px solid #cfdfcf; background:white; border-radius:8px; padding:7px 10px; cursor:pointer; }
+
+.xbb-parent-entry { margin:8px auto; max-width:980px; padding:0 14px; text-align:right; font:13px/1.6 system-ui; }
+.xbb-parent-entry a { color:#536c59; text-decoration:none; }
+.xbb-parent-intro { max-width:980px; margin:24px auto; padding:0 14px; font-family:system-ui; color:#365245; }
+.xbb-parent-question { font-size:28px; font-weight:600; flex-basis:100%; }
+.xbb-cloud h2 { font-size:18px; flex-basis:100%; }
