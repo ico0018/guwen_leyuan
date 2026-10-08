@@ -3,9 +3,12 @@
   const tool=document.documentElement.dataset.cloudTool;
   const parentPage=document.documentElement.dataset.cloudParent==='true';
   const config=window.XBB_CONFIG||{};
+  const embedded=parentPage && window.parent!==window && new URLSearchParams(window.location.search).get('embedded')==='1';
+  const parentOrigin=new URL(config.parentBase??'https://taskhelper.xuebabangbang.cn').origin;
+  let activationPending=false, embeddedGuestReady=false, embeddedSuspended=false;
   const accepts=key=>tool==='hanzi'?/^hanzi-(practice|daily-dictation)-/.test(key):/^guwen-(leyuan-(learning-v2|read-v1)$|dictation-handwriting-v1:)/.test(key);
   const guestGateKey=`xbb:guest-parent-ready:${tool}:v1`;
-  let challenge=null, challengeLoading=false, gateError='';
+  let challenge=null, challengeLoading=false, gateError='', pendingAction=null;
   const chineseDigits=['','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
   function guest() {
     const items={};
@@ -27,13 +30,41 @@
     getItem(key) { if(!cloud.identity) return localStorage.getItem(key); return Object.hasOwn(cloud.payload||{},key)?cloud.payload[key]:null; },
     setItem(key,value) { if(!accepts(key)) throw new Error('此字段不是学习记录'); if(!cloud.identity) return localStorage.setItem(key,value); cloud.setPayload({...cloud.payload,[key]:value}); }
   };
-  const panel=document.createElement('aside');
-  panel.className=parentPage?'xbb-cloud':'xbb-parent-entry';
-  panel.setAttribute('aria-label',parentPage?'家长记录管理':'家长入口'); document.body.prepend(panel);
-  function parentReady() { return cloud.sessionUser?cloud.parentReady:sessionStorage.getItem(guestGateKey)==='true'; }
+  const panel=parentPage?document.createElement('aside'):null;
+  if(panel) { panel.className='xbb-cloud'; panel.setAttribute('aria-label','家长记录管理');document.body.prepend(panel); }
+  if(embedded) document.body.classList.add('xbb-embedded');
+  function parentReady() {
+    if(embeddedSuspended) return false;
+    return cloud.sessionUser?cloud.parentReady:embedded?embeddedGuestReady:sessionStorage.getItem(guestGateKey)==='true';
+  }
+  function reportHeight() {
+    if(!embedded) return;
+    const height=Math.min(760,Math.max(120,Math.ceil(panel?.getBoundingClientRect?.().height||document.body.scrollHeight)));
+    window.parent.postMessage({type:'xbb:parent-widget:height',height},parentOrigin);
+  }
+  if(embedded) {
+    window.addEventListener('message',event=>{
+      const data=event.data;
+      if(event.origin!==parentOrigin || event.source!==window.parent || !data || typeof data!=='object' || Array.isArray(data) || Object.keys(data).length!==1) return;
+      if(data.type==='xbb:parent-widget:activate') {
+        if(initialized && cloud.sessionUser) return;
+        activationPending=true;embeddedSuspended=false;
+        // Host activation is only a guest misclick grant. Signed access always comes from the API Session.
+        if(initialized && !cloud.sessionUser) embeddedGuestReady=true;
+        render();
+      } else if(data.type==='xbb:parent-widget:deactivate') {
+        activationPending=false;embeddedGuestReady=false;embeddedSuspended=true;pendingAction=null;render();
+      }
+    });
+    if(typeof ResizeObserver!=='undefined') new ResizeObserver(reportHeight).observe(panel);
+  }
   async function action(fn) { try { await fn(); } catch(error) { cloud.notify(error.message); } render(); }
   function button(text,fn) { const el=document.createElement('button'); el.type='button'; el.textContent=text; el.addEventListener('click',()=>action(fn)); panel.append(el); }
   function link(text,href) { const el=document.createElement('a');el.href=href;el.textContent=text;panel.append(el); }
+  function confirmRecordAction(message,label,run) {
+    if(!embedded) {if(window.confirm(message))return run();return;}
+    pendingAction={message,label,run};render();
+  }
   async function prepareChallenge() {
     if(challengeLoading||challenge) return;
     challengeLoading=true;
@@ -66,11 +97,13 @@
     challenge=null;gateError='';render();
   }
   function render() {
+    if(!panel) return;
     panel.replaceChildren();
-    if(!parentPage) { link('家长入口','parent.html');return; }
-    link('返回孩子学习',tool==='hanzi'?'welcome.html':'index.html');
+    if(!embedded) link('返回孩子学习',tool==='hanzi'?'welcome.html':'index.html');
+    if(embedded) requestAnimationFrame(reportHeight);
     if(!initialized) { const p=document.createElement('p');p.textContent='正在打开家长页面…';panel.append(p);return; }
     if(!parentReady()) {
+      if(embedded) {const p=document.createElement('p');p.textContent='请从中央家长页面进入记录管理。';panel.append(p);return;}
       const title=document.createElement('h2');title.textContent='请家长选择计算题的答案';panel.append(title);
       if(challenge) {
         const question=document.createElement('p');question.className='xbb-parent-question';question.setAttribute('aria-label','家长计算题');question.textContent=challenge.question;panel.append(question);
@@ -82,23 +115,33 @@
       }
       return;
     }
+    if(pendingAction) {
+      const p=document.createElement('p');p.className='xbb-widget-confirm';p.textContent=pendingAction.message;panel.append(p);
+      button(pendingAction.label,async()=>{const action=pendingAction;pendingAction=null;await action.run();});
+      button('取消',()=>{pendingAction=null;render();});return;
+    }
     const status=document.createElement('span');status.setAttribute('role','status');status.textContent=cloud.status;panel.append(status);
-    link(cloud.sessionUser?'账号中心':'登录 / 注册',`${config.portalBase??'https://xuebabangbang.cn'}/${cloud.sessionUser?'account':'login'}`);
+    if(!embedded) link(cloud.sessionUser?'账号中心':'登录 / 注册',`${config.portalBase??'https://xuebabangbang.cn'}/${cloud.sessionUser?'account':'login'}`);
     if(cloud.identity) {
+      if(embedded) {
+        const child=document.createElement('span');child.className='xbb-widget-child';child.setAttribute('aria-label','当前孩子');
+        child.textContent=`当前孩子：${cloud.profiles.find(profile=>profile.id===cloud.identity.activeProfileId)?.nickname||'已选择'} `;panel.append(child);
+      } else {
       const select=document.createElement('select');select.setAttribute('aria-label','当前孩子');
       for(const profile of cloud.profiles) {const option=document.createElement('option');option.value=profile.id;option.textContent=profile.nickname;option.selected=profile.id===cloud.identity.activeProfileId;select.append(option);}
       select.addEventListener('change',()=>action(()=>cloud.switchProfile(select.value)));panel.append(select);
-      button('导入本机游客记录',()=>{if(window.confirm('将当前浏览器的游客记录导入选中孩子？游客原始记录会保留；双方有数据时需另行选择。'))return cloud.migrateGuest();});
+      }
+      button('导入本机游客记录',()=>confirmRecordAction('将当前浏览器的游客记录导入选中孩子？游客原始记录会保留；双方有数据时需另行选择。','确认导入',()=>cloud.migrateGuest()));
       button('重试同步',()=>cloud.retry());
     }
     button('导出备份',()=>{
       const url=URL.createObjectURL(new Blob([cloud.exportData()],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`${tool}-备份.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
     });
     if(cloud.conflict) {
-      button('保留本机记录',()=>{if(window.confirm('用本机版本更新云端？当前两份记录会另存恢复副本，建议先导出备份。'))return cloud.resolve('local');});
-      button('恢复云端记录',()=>{if(window.confirm('恢复云端版本？本机版本会另存恢复副本，建议先导出备份。'))return cloud.resolve('remote');});
+      button('保留本机记录',()=>confirmRecordAction('用本机版本更新云端？当前两份记录会另存恢复副本，建议先导出备份。','确认保留本机',()=>cloud.resolve('local')));
+      button('恢复云端记录',()=>confirmRecordAction('恢复云端版本？本机版本会另存恢复副本，建议先导出备份。','确认恢复云端',()=>cloud.resolve('remote')));
     }
-    button('退出家长模式',async()=>{
+    if(!embedded) button('退出家长模式',async()=>{
       if(cloud.sessionUser) {await cloud.request('/api/v1/parent-lock','POST',{});cloud.parentReady=false;}
       sessionStorage.removeItem(guestGateKey);challenge=null;render();
     });
@@ -106,8 +149,11 @@
   let initialized=false;
   cloud.subscribe(render);
   window.XbbCloudReady=cloud.start().then(()=>{
-    if(cloud.sessionUser)sessionStorage.removeItem(guestGateKey);
-    initialized=true;render();
+    if(cloud.sessionUser) {sessionStorage.removeItem(guestGateKey);activationPending=false;embeddedGuestReady=false;}
+    initialized=true;
+    if(embedded && activationPending && !cloud.sessionUser) embeddedGuestReady=true;
+    render();
+    if(embedded) window.parent.postMessage({type:'xbb:parent-widget:ready'},parentOrigin);
   }).catch(error=>{cloud.notify(error.message);throw error;});
   window.addEventListener('online',()=>action(()=>cloud.retry()));
   window.addEventListener('focus',()=>action(()=>cloud.retry()));
