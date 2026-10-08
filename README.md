@@ -98,4 +98,4 @@ node --test tests/speech.test.cjs tests/curriculum.test.cjs
 
 登录不会自动迁移游客记录。需在古文原域名下选孩子并确认“导入本机游客记录”；旧游客记录不删除。本机缓存按 `xbb:state:v1:guwen:<userId>:<profileId>` 隔离，切孩子重载。离线 dirty/generation 持久保存，断网重试和回到工具时检查当前 Session。同步失败显示失败，revision 409 停写并展示本机/云端选择和包含两份候选及游客数据的导出；确认选择时另存恢复副本，不静默丢弃冲突。账号中心还可导出云端所有工具记录。
 
-运行 `node scripts/test-cloud-sync.cjs` 验证8项云同步场景；原有 `node --test tests/*.test.cjs` 和 `python -m unittest discover -s tests` 保留。静态站无 lint/typecheck/build 配置。
+运行 `node scripts/test-cloud-sync.cjs` 验证10项云同步场景；原有 `node --test tests/*.test.cjs` 和 `python -m unittest discover -s tests` 保留。静态站无 lint/typecheck/build 配置。
