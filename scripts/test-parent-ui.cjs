@@ -23,7 +23,7 @@ async function boot({parent=false,signed=false,ready=false,session=storage(),too
     subscribe(fn){this.listeners.push(fn)}
     notify(status){if(status)this.status=status;this.listeners.forEach(fn=>fn())}
     async start(){this.sessionUser=signed?{id:'parent'}:null;this.identity=signed?{user:this.sessionUser,activeProfileId:'child'}:null;this.parentReady=ready;this.profiles=signed?[{id:'child',nickname:'Nora'}]:[];this.notify()}
-    async request(url,method,body){calls.push({url,method,body});if(url.endsWith('parent-challenge'))return {challenge:'signed',question:'贰×捌=?',choices:[14,16,18]};if(url.endsWith('parent-unlock')){if(body.answer!==16)throw new Error('答案不正确');return {parentReady:true}};return {}}
+    async request(url,method,body){calls.push({url,method,body});if(url.endsWith('parent-challenge'))return {challenge:'signed',question:'贰×捌=?',choices:[14,16,18]};if(url.endsWith('parent-unlock')){if(body.answer!==16)throw Object.assign(new Error('请求失败 (400)'),{status:400});return {parentReady:true}};return {}}
     async flush(){}
     async retry(){this.notify()}
     exportData(){return '{}'}
@@ -39,7 +39,7 @@ test('student view has only parent entry, no status, backup, import, retry or co
 });
 test('parent records remain hidden until one of three Chinese arithmetic answers is correct',async()=>{
   const app=await boot({parent:true,signed:true});assert.match(app.text(),/贰×捌=\?/);assert.deepEqual(app.buttons().map(button=>button.textContent),['14','16','18']);assert.doesNotMatch(app.text(),/导出备份|重试同步|导入本机/);
-  await app.buttons().find(button=>button.textContent==='14').listeners.click();assert.match(app.text(),/答案不正确/);assert.doesNotMatch(app.text(),/导出备份/);
+  await app.buttons().find(button=>button.textContent==='14').listeners.click();assert.match(app.text(),/答案不正确或题目已过期，请换一道题/);assert.doesNotMatch(app.text(),/导出备份/);
   await app.buttons().find(button=>button.textContent==='16').listeners.click();assert.match(app.text(),/导出备份|导入本机游客记录|恢复云端记录/);
   assert.deepEqual(JSON.parse(JSON.stringify(app.calls.filter(call=>call.url.endsWith('parent-unlock')).at(-1).body)),{challenge:'signed',answer:16});
 });

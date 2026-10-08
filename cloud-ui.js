@@ -50,7 +50,13 @@
   }
   async function answerChallenge(answer) {
     if(cloud.sessionUser) {
-      const result=await cloud.request('/api/v1/parent-unlock','POST',{challenge:challenge.challenge,answer});
+      let result;
+      try { result=await cloud.request('/api/v1/parent-unlock','POST',{challenge:challenge.challenge,answer}); }
+      catch(error) {
+        if(error?.status===400) throw new Error('答案不正确或题目已过期，请换一道题。');
+        if(error?.status===429) throw new Error('操作频繁，请一分钟后重试。');
+        throw error;
+      }
       if(!result.parentReady) throw new Error('答案不正确，请再试一次。');
       cloud.parentReady=true; cloud.verified=true; await cloud.flush();
     } else {
