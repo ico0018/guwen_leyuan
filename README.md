@@ -90,3 +90,12 @@ node --test tests/speech.test.cjs tests/curriculum.test.cjs
 ```
 
 覆盖全部目录位置、作者与作品映射、TXT 原始诗行、全部逐行译文、全部排序题、节选范围、同名作品和重复作品，以及录音成功/失败、直接 TTS、异步中文声音、停止旧音频、取消迟到的回调、设备不支持等行为。原有书写和默写功能测试继续保留。
+## 统一账号与云同步（开发分支）
+
+网站仍是独立静态站，游客继续使用旧 localStorage。请一起部署 `cloud-config.js`、`cloud-sync.js`、`cloud-ui.js`、`cloud-ui.css`。公开配置 `apiBase` 默认 `https://api.xuebabangbang.cn`，`portalBase` 默认 `https://xuebabangbang.cn`；隔离腾讯预览可指向同一预览 origin，`apiBase: ''` 表示同源。地址末尾不要加 `/`。所有 API 请求带 `credentials: include`，服务端负责 Session、CORS 和 Origin 校验；前端无认证 Token。
+
+云记录以 `guwen-leyuan-learning-v2`、`guwen-leyuan-read-v1` 与 `guwen-dictation-handwriting-v1:<lessonId>` 原值组成 schemaVersion 1 的 key→JSON字符串 payload。课文、目录、录音等静态资源不进入用户数据库，原阅读、练习、默写规则保留。
+
+登录不会自动迁移游客记录。需在古文原域名下选孩子并确认“导入本机游客记录”；旧游客记录不删除。本机缓存按 `xbb:state:v1:guwen:<userId>:<profileId>` 隔离，切孩子重载。离线 dirty/generation 持久保存，断网重试和回到工具时检查当前 Session。同步失败显示失败，revision 409 停写并展示本机/云端选择和包含两份候选及游客数据的导出；确认选择时另存恢复副本，不静默丢弃冲突。账号中心还可导出云端所有工具记录。
+
+运行 `node scripts/test-cloud-sync.cjs` 验证8项云同步场景；原有 `node --test tests/*.test.cjs` 和 `python -m unittest discover -s tests` 保留。静态站无 lint/typecheck/build 配置。
