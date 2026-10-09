@@ -90,3 +90,26 @@ node --test tests/speech.test.cjs tests/curriculum.test.cjs
 ```
 
 覆盖全部目录位置、作者与作品映射、TXT 原始诗行、全部逐行译文、全部排序题、节选范围、同名作品和重复作品，以及录音成功/失败、直接 TTS、异步中文声音、停止旧音频、取消迟到的回调、设备不支持等行为。原有书写和默写功能测试继续保留。
+## 统一账号与云同步（开发分支）
+
+网站仍是独立静态站，游客继续使用旧 localStorage。请一起部署 `cloud-config.js`、`cloud-sync.js`、`cloud-ui.js`、`cloud-ui.css`。公开配置 `apiBase` 默认 `https://api.xuebabangbang.cn`，`portalBase` 默认 `https://xuebabangbang.cn`；隔离腾讯预览可指向同一预览 origin，`apiBase: ''` 表示同源。地址末尾不要加 `/`。所有 API 请求带 `credentials: include`，服务端负责 Session、CORS 和 Origin 校验；前端无认证 Token。
+
+云记录以 `guwen-leyuan-learning-v2`、`guwen-leyuan-read-v1` 与 `guwen-dictation-handwriting-v1:<lessonId>` 原值组成 schemaVersion 1 的 key→JSON字符串 payload。课文、目录、录音等静态资源不进入用户数据库，原阅读、练习、默写规则保留。
+
+登录不会自动迁移游客记录。需在古文原域名下选孩子并确认“导入本机游客记录”；旧游客记录不删除。本机缓存按 `xbb:state:v1:guwen:<userId>:<profileId>` 隔离，切孩子重载。离线 dirty/generation 持久保存，断网重试和回到工具时检查当前 Session。同步失败显示失败，revision 409 停写并展示本机/云端选择和包含两份候选及游客数据的导出；确认选择时另存恢复副本，不静默丢弃冲突。账号中心还可导出云端所有工具记录。
+
+运行 `node scripts/test-cloud-sync.cjs` 验证11项云同步场景；原有 `node --test tests/*.test.cjs` 和 `python -m unittest discover -s tests` 保留。静态站无 lint/typecheck/build 配置。
+
+
+## 家长页面与简洁学习页面
+
+`parent.html` 是本工具同origin的家长入口，包含账号中心、孩子切换、同步状态、游客记录导入、备份、冲突选择与恢复。学生页不显示家长入口或记录管理控件，后台仍自动同步，不向孩子展示存储和同步操作。
+
+家长回答一道中文数字计算题、从三个数字中选择正确结果即可进入。账号模式由服务器签发与校验题目，读取统一Session的 `parentReady`；当前登录持续有效，不再输入密码/PIN，也没有15分钟自动锁定。已在账号中心或另一工具进入家长模式后直接继承当前Session。主动“退出家长模式”调用服务端 parent-lock，或退出登录后才失效。游客仅作本机误点确认，以sessionStorage保存当前标签页状态，刷新可继续，主动退出清除；这不替代真正的账号认证。旧游客学习数据和遗留设置不会被删除。
+
+运行 `node scripts/test-parent-ui.cjs`：学生无记录控件、三选一正确/错误答案、已授权Session免重复题目、显式退出、游客刷新保持；原有云同步回归新增服务端Session授权撤销，共11项。家长页题目或请求失败时可换题重试。
+
+
+统一记录管理在任务小帮手 `/parent/` 中直接显示本工具 `parent.html?embedded=1` 的控件，面板仍在本工具自己的origin读取localStorage。嵌入模式隐藏重复标题、返回学习、切孩子与单独退出，只显示当前孩子和实际导入/备份/同步/冲突按钮；切孩子由中央页面统一重载。嵌入导入和冲突选择使用明确的内嵌确认/取消，点击前不执行数据操作。
+
+`cloud-config.js` 的公开 `parentBase` 默认 `https://taskhelper.xuebabangbang.cn`，隔离预览配置为 `http://localhost:8323`。只接受真实嵌入页面、这个精确origin且source为直接父窗口的type-only游客激活/退出消息；游客授权仅保存在当前widget内存，登录会话仍必须拥有服务器parentReady，绝不通过消息授予登录权限或导入记录。消息不传送学习内容、账号/孩子ID或URL，出站仅ready或整数高度。独立parent.html仍可直接访问。定向家长UI测试现在8项，含错误来源、额外字段、初始化竞态与内嵌确认。

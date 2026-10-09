@@ -47,7 +47,7 @@
     let record = fresh();
     let storageWorks = true;
     try {
-      const saved = JSON.parse(localStorage.getItem(key) || "null");
+      const saved = JSON.parse((root.XbbStorage || localStorage).getItem(key) || "null");
       if (
         saved?.signature === signature &&
         Number.isInteger(saved.lineIndex) && saved.lineIndex >= 0 && saved.lineIndex < lines.length &&
@@ -70,7 +70,7 @@
     document.body.style.overflow = "hidden";
 
     function save() {
-      try { localStorage.setItem(key, JSON.stringify(record)); }
+      try { (root.XbbStorage || localStorage).setItem(key, JSON.stringify(record)); }
       catch (_) { storageWorks = false; }
     }
     function close() { save(); if (dialog.open) dialog.close(); }

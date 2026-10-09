@@ -1,5 +1,6 @@
-(function () {
+(async function () {
   "use strict";
+  if (window.XbbCloudReady) await window.XbbCloudReady;
 
   const grades = [
     { id: "grade1", name: "一年级", phrase: "认识古文的第一颗小星星", color: "coral" },
@@ -112,22 +113,22 @@
   }
   function loadLearning() {
     try {
-      const saved = JSON.parse(window.localStorage.getItem(learningKey) || "{}");
+      const saved = JSON.parse((window.XbbStorage || window.localStorage).getItem(learningKey) || "{}");
       return saved && typeof saved === "object" ? saved : {};
     } catch (error) { return {}; }
   }
   function saveLearning() {
-    try { window.localStorage.setItem(learningKey, JSON.stringify(state.learning)); } catch (error) { /* storage may be unavailable */ }
+    try { (window.XbbStorage || window.localStorage).setItem(learningKey, JSON.stringify(state.learning)); } catch (error) { /* storage may be unavailable */ }
   }
   function progressTotal() {
-    try { const saved = JSON.parse(window.localStorage.getItem("guwen-leyuan-read-v1") || "[]"); return Array.isArray(saved) ? saved.length : 0; }
+    try { const saved = JSON.parse((window.XbbStorage || window.localStorage).getItem("guwen-leyuan-read-v1") || "[]"); return Array.isArray(saved) ? saved.length : 0; }
     catch (error) { return 0; }
   }
   function markRead(lessonId) {
     try {
-      const saved = JSON.parse(window.localStorage.getItem("guwen-leyuan-read-v1") || "[]");
+      const saved = JSON.parse((window.XbbStorage || window.localStorage).getItem("guwen-leyuan-read-v1") || "[]");
       const ids = Array.isArray(saved) ? saved : [];
-      if (!ids.includes(lessonId)) { ids.push(lessonId); window.localStorage.setItem("guwen-leyuan-read-v1", JSON.stringify(ids)); }
+      if (!ids.includes(lessonId)) { ids.push(lessonId); (window.XbbStorage || window.localStorage).setItem("guwen-leyuan-read-v1", JSON.stringify(ids)); }
     } catch (error) { /* localStorage may be unavailable */ }
   }
   function header() {
