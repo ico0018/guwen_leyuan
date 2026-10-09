@@ -19,7 +19,8 @@ class CompleteContentTests(unittest.TestCase):
 
     def test_all_116_placements_have_complete_canonical_content(self):
         self.assertEqual(len(self.items), 116)
-        self.assertEqual(len(self.works), 114)
+        self.assertEqual(len(self.works), 117)
+        self.assertEqual(len({i["workId"] for i in self.items}), 114)
         self.assertEqual(len({i['placementId'] for i in self.items}), 116)
         for item in self.items:
             with self.subTest(placement=item['placementId']):

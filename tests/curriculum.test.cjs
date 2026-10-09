@@ -14,7 +14,7 @@ test('browser merge resolves all ordered placements and retains supplementary le
   const placements = lessons.filter(l => l.curriculum);
   assert.equal(placements.length, 116);
   assert.equal(placements.filter(l => l.catalogOnly).length, 0);
-  assert.equal(lessons.filter(l => l.supplementary).length, 5);
+  assert.equal(lessons.filter(l => l.supplementary).length, 8);
   const expected = curriculum.grades.flatMap(g => g.semesters.flatMap(s => s.items.map(i => i.placementId)));
   assert.deepEqual(Array.from(placements, l => l.id), expected);
   for (const l of placements) {
@@ -68,4 +68,20 @@ test('identical characters are interchangeable and advance to the next original 
 test('incorrect character order stays on the current row', () => {
   const p = puzzleContext('鹅曲鹅'); p.scope.checkPuzzleResult({id:'lesson'},'order:row1');
   assert.equal(p.isCompleted(),false); assert.equal(p.state.orderFeedback['order:row1'],'wrong');
+});
+
+test('grade three daily accumulation keeps three groups and all ten recitation rows', () => {
+  const groups = lessons.filter(l => l.semester === '日积月累');
+  assert.deepEqual(Array.from(groups, l => l.id), ['grade3-lesson26', 'grade3-lesson27', 'grade3-lesson28']);
+  assert.deepEqual(Array.from(groups, l => l.lines.length), [4, 3, 3]);
+  for (const group of groups) {
+    assert.equal(group.gradeId, 'grade3');
+    assert.equal(group.curriculum, undefined);
+    assert.equal(group.supplementary, true);
+    assert.equal(group.lines.length, group.lineTranslations.length);
+    assert.deepEqual(group.exercises[0].items.map(i => i.text), group.lines.map(l => l.text));
+    assert.ok(group.lines.every(l => !/[《》]/.test(l.text)));
+  }
+  assert.equal(groups[0].lines[3].text, '与人善言，暖于布帛；伤人以言，深于矛戟。');
+  assert.equal(groups[2].lines[2].text, '锲而舍之，朽木不折；锲而不舍，金石可镂。');
 });

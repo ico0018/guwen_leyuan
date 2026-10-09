@@ -14,7 +14,7 @@
     {
       "id": "grade3",
       "name": "三年级",
-      "lessonCount": 24
+      "lessonCount": 27
     },
     {
       "id": "grade4",
@@ -12855,6 +12855,909 @@
       "gradeName": "三年级",
       "lessonNo": 25,
       "filePath": "content/grade3/lesson25.txt"
+    },
+    {
+      "title": "日积月累（一）",
+      "workId": "grade3-rijiyuelei-01",
+      "dynasty": "",
+      "author": "《论语》《墨子》《孟子》《荀子》",
+      "source": "三年级 · 日积月累 · 教材第44页",
+      "story": "",
+      "intro": "",
+      "type": "日积月累",
+      "audio": "",
+      "characterInfo": {
+        "迁": {
+          "pinyin": "qiān",
+          "meaning": "转移。"
+        },
+        "贰": {
+          "pinyin": "èr",
+          "meaning": "再一次，重复。"
+        },
+        "若": {
+          "pinyin": "ruò",
+          "meaning": "像。"
+        },
+        "仁": {
+          "pinyin": "rén",
+          "meaning": "仁爱。"
+        },
+        "帛": {
+          "pinyin": "bó",
+          "meaning": "丝织品。"
+        },
+        "矛": {
+          "pinyin": "máo",
+          "meaning": "古代兵器。"
+        },
+        "戟": {
+          "pinyin": "jǐ",
+          "meaning": "古代兵器。"
+        },
+        "荀": {
+          "pinyin": "xún",
+          "meaning": "荀子的姓。"
+        }
+      },
+      "characters": {
+        "迁": {
+          "pinyin": "qiān",
+          "meaning": "转移。"
+        },
+        "贰": {
+          "pinyin": "èr",
+          "meaning": "再一次，重复。"
+        },
+        "若": {
+          "pinyin": "ruò",
+          "meaning": "像。"
+        },
+        "仁": {
+          "pinyin": "rén",
+          "meaning": "仁爱。"
+        },
+        "帛": {
+          "pinyin": "bó",
+          "meaning": "丝织品。"
+        },
+        "矛": {
+          "pinyin": "máo",
+          "meaning": "古代兵器。"
+        },
+        "戟": {
+          "pinyin": "jǐ",
+          "meaning": "古代兵器。"
+        },
+        "荀": {
+          "pinyin": "xún",
+          "meaning": "荀子的姓。"
+        }
+      },
+      "sections": {
+        "title": "日积月累（一）",
+        "author": "《论语》《墨子》《孟子》《荀子》",
+        "source": "三年级 · 日积月累 · 教材第44页",
+        "type": "日积月累",
+        "workId": "grade3-rijiyuelei-01",
+        "original": "不迁怒，不贰过。\n爱人若爱其身。\n仁者爱人，有礼者敬人。\n与人善言，暖于布帛；伤人以言，深于矛戟。",
+        "translation": "不要把怒气转到别人身上，也不要再犯同样的错误。（《论语》）\n爱护别人，就像爱护自己一样。（《墨子》）\n有仁爱之心的人爱护别人，懂礼貌的人尊敬别人。（《孟子》）\n对别人说友善的话，比布帛更让人感到温暖；用话语伤害别人，比矛戟刺伤还严重。（《荀子》）",
+        "lineTranslations": "不要把怒气转到别人身上，也不要再犯同样的错误。（《论语》）\n爱护别人，就像爱护自己一样。（《墨子》）\n有仁爱之心的人爱护别人，懂礼貌的人尊敬别人。（《孟子》）\n对别人说友善的话，比布帛更让人感到温暖；用话语伤害别人，比矛戟刺伤还严重。（《荀子》）",
+        "knowledgePoints": "1. 迁怒：把对一件事的怒气发到别的人或事物上。贰过：重复犯同样的错误。\n2. 若：像。其身：自己。仁者：有仁爱之心的人。\n3. 布帛：布和丝织品。矛戟：古代的两种兵器。\n4. 四句话分别出自《论语》《墨子》《孟子》《荀子》，告诉我们要爱护、尊重别人，说话友善。",
+        "characterInfo": "迁：qiān｜转移。\n贰：èr｜再一次，重复。\n若：ruò｜像。\n仁：rén｜仁爱。\n帛：bó｜丝织品。\n矛：máo｜古代兵器。\n戟：jǐ｜古代兵器。\n荀：xún｜荀子的姓。"
+      },
+      "original": "不迁怒，不贰过。\n爱人若爱其身。\n仁者爱人，有礼者敬人。\n与人善言，暖于布帛；伤人以言，深于矛戟。",
+      "translation": "不要把怒气转到别人身上，也不要再犯同样的错误。（《论语》）\n爱护别人，就像爱护自己一样。（《墨子》）\n有仁爱之心的人爱护别人，懂礼貌的人尊敬别人。（《孟子》）\n对别人说友善的话，比布帛更让人感到温暖；用话语伤害别人，比矛戟刺伤还严重。（《荀子》）",
+      "lineTranslations": [
+        "不要把怒气转到别人身上，也不要再犯同样的错误。（《论语》）",
+        "爱护别人，就像爱护自己一样。（《墨子》）",
+        "有仁爱之心的人爱护别人，懂礼貌的人尊敬别人。（《孟子》）",
+        "对别人说友善的话，比布帛更让人感到温暖；用话语伤害别人，比矛戟刺伤还严重。（《荀子》）"
+      ],
+      "knowledgePoints": [
+        "迁怒：把对一件事的怒气发到别的人或事物上。贰过：重复犯同样的错误。",
+        "若：像。其身：自己。仁者：有仁爱之心的人。",
+        "布帛：布和丝织品。矛戟：古代的两种兵器。",
+        "四句话分别出自《论语》《墨子》《孟子》《荀子》，告诉我们要爱护、尊重别人，说话友善。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "不迁怒，不贰过。",
+          "translation": "不要把怒气转到别人身上，也不要再犯同样的错误。（《论语》）",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "爱人若爱其身。",
+          "translation": "爱护别人，就像爱护自己一样。（《墨子》）",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "仁者爱人，有礼者敬人。",
+          "translation": "有仁爱之心的人爱护别人，懂礼貌的人尊敬别人。（《孟子》）",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "与人善言，暖于布帛；伤人以言，深于矛戟。",
+          "translation": "对别人说友善的话，比布帛更让人感到温暖；用话语伤害别人，比矛戟刺伤还严重。（《荀子》）",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "不迁怒，不贰过。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "迁"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "怒"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "贰"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "过"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "爱人若爱其身。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "若"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "其"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "身"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "仁者爱人，有礼者敬人。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "礼"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "敬"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "与人善言，暖于布帛；伤人以言，深于矛戟。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "与"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "善"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "暖"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "布"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "帛"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "伤"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-4-12",
+                  "text": "深"
+                },
+                {
+                  "id": "default-item-4-13",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-14",
+                  "text": "矛"
+                },
+                {
+                  "id": "default-item-4-15",
+                  "text": "戟"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "不迁怒，不贰过。",
+      "parseWarnings": [],
+      "id": "grade3-lesson26",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 26,
+      "filePath": "content/grade3/lesson26.txt"
+    },
+    {
+      "title": "日积月累（二）",
+      "workId": "grade3-rijiyuelei-02",
+      "dynasty": "",
+      "author": "谚语、名句",
+      "source": "三年级 · 日积月累 · 教材第56页",
+      "story": "",
+      "intro": "",
+      "type": "日积月累",
+      "audio": "",
+      "characterInfo": {
+        "齐": {
+          "pinyin": "qí",
+          "meaning": "一致。"
+        },
+        "泰": {
+          "pinyin": "tài",
+          "meaning": "泰山的泰。"
+        },
+        "利": {
+          "pinyin": "lì",
+          "meaning": "锋利。"
+        },
+        "匠": {
+          "pinyin": "jiàng",
+          "meaning": "工匠。"
+        },
+        "诸": {
+          "pinyin": "zhū",
+          "meaning": "诸葛亮姓氏中的字。"
+        },
+        "葛": {
+          "pinyin": "gě",
+          "meaning": "诸葛亮姓氏中的字。"
+        }
+      },
+      "characters": {
+        "齐": {
+          "pinyin": "qí",
+          "meaning": "一致。"
+        },
+        "泰": {
+          "pinyin": "tài",
+          "meaning": "泰山的泰。"
+        },
+        "利": {
+          "pinyin": "lì",
+          "meaning": "锋利。"
+        },
+        "匠": {
+          "pinyin": "jiàng",
+          "meaning": "工匠。"
+        },
+        "诸": {
+          "pinyin": "zhū",
+          "meaning": "诸葛亮姓氏中的字。"
+        },
+        "葛": {
+          "pinyin": "gě",
+          "meaning": "诸葛亮姓氏中的字。"
+        }
+      },
+      "sections": {
+        "title": "日积月累（二）",
+        "author": "谚语、名句",
+        "source": "三年级 · 日积月累 · 教材第56页",
+        "type": "日积月累",
+        "workId": "grade3-rijiyuelei-02",
+        "original": "人心齐，泰山移。\n二人同心，其利断金。\n三个臭皮匠，顶个诸葛亮。",
+        "translation": "大家齐心协力，就连泰山也能搬动，说明团结的力量很大。\n两个人心意一致，力量就像锋利的刀一样，能斩断金属。\n几个普通人一起商量，也能想出像诸葛亮那样聪明的办法。",
+        "lineTranslations": "大家齐心协力，就连泰山也能搬动，说明团结的力量很大。\n两个人心意一致，力量就像锋利的刀一样，能斩断金属。\n几个普通人一起商量，也能想出像诸葛亮那样聪明的办法。",
+        "knowledgePoints": "1. 泰山：一座著名的大山。这里用搬动泰山来说明团结的力量很大。\n2. 同心：心意一致。利：锋利。金：金属。\n3. 皮匠：做皮革制品的工匠。顶个：抵得上。诸葛亮：三国时期以智慧著称的人物。\n4. 这三句话告诉我们：团结合作、集思广益，可以把事情做得更好。",
+        "characterInfo": "齐：qí｜一致。\n泰：tài｜泰山的泰。\n利：lì｜锋利。\n匠：jiàng｜工匠。\n诸：zhū｜诸葛亮姓氏中的字。\n葛：gě｜诸葛亮姓氏中的字。"
+      },
+      "original": "人心齐，泰山移。\n二人同心，其利断金。\n三个臭皮匠，顶个诸葛亮。",
+      "translation": "大家齐心协力，就连泰山也能搬动，说明团结的力量很大。\n两个人心意一致，力量就像锋利的刀一样，能斩断金属。\n几个普通人一起商量，也能想出像诸葛亮那样聪明的办法。",
+      "lineTranslations": [
+        "大家齐心协力，就连泰山也能搬动，说明团结的力量很大。",
+        "两个人心意一致，力量就像锋利的刀一样，能斩断金属。",
+        "几个普通人一起商量，也能想出像诸葛亮那样聪明的办法。"
+      ],
+      "knowledgePoints": [
+        "泰山：一座著名的大山。这里用搬动泰山来说明团结的力量很大。",
+        "同心：心意一致。利：锋利。金：金属。",
+        "皮匠：做皮革制品的工匠。顶个：抵得上。诸葛亮：三国时期以智慧著称的人物。",
+        "这三句话告诉我们：团结合作、集思广益，可以把事情做得更好。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "人心齐，泰山移。",
+          "translation": "大家齐心协力，就连泰山也能搬动，说明团结的力量很大。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "二人同心，其利断金。",
+          "translation": "两个人心意一致，力量就像锋利的刀一样，能斩断金属。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "三个臭皮匠，顶个诸葛亮。",
+          "translation": "几个普通人一起商量，也能想出像诸葛亮那样聪明的办法。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "人心齐，泰山移。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "心"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "齐"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "泰"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "移"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "二人同心，其利断金。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "二"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "同"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "心"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "其"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "利"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "断"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "金"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "三个臭皮匠，顶个诸葛亮。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "三"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "个"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "臭"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "皮"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "匠"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "顶"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "个"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "诸"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "葛"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "亮"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "人心齐，泰山移。",
+      "parseWarnings": [],
+      "id": "grade3-lesson27",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 27,
+      "filePath": "content/grade3/lesson27.txt"
+    },
+    {
+      "title": "日积月累（三）",
+      "workId": "grade3-rijiyuelei-03",
+      "dynasty": "",
+      "author": "《论语》《墨子》《荀子》",
+      "source": "三年级 · 日积月累 · 教材第108页",
+      "story": "",
+      "intro": "",
+      "type": "日积月累",
+      "audio": "",
+      "characterInfo": {
+        "弘": {
+          "pinyin": "hóng",
+          "meaning": "宽广。"
+        },
+        "毅": {
+          "pinyin": "yì",
+          "meaning": "坚定。"
+        },
+        "任": {
+          "pinyin": "rèn",
+          "meaning": "责任。"
+        },
+        "智": {
+          "pinyin": "zhì",
+          "meaning": "智慧。"
+        },
+        "锲": {
+          "pinyin": "qiè",
+          "meaning": "刻。"
+        },
+        "舍": {
+          "pinyin": "shě",
+          "meaning": "放弃。"
+        },
+        "朽": {
+          "pinyin": "xiǔ",
+          "meaning": "腐朽。"
+        },
+        "镂": {
+          "pinyin": "lòu",
+          "meaning": "雕刻。"
+        },
+        "荀": {
+          "pinyin": "xún",
+          "meaning": "荀子的姓。"
+        }
+      },
+      "characters": {
+        "弘": {
+          "pinyin": "hóng",
+          "meaning": "宽广。"
+        },
+        "毅": {
+          "pinyin": "yì",
+          "meaning": "坚定。"
+        },
+        "任": {
+          "pinyin": "rèn",
+          "meaning": "责任。"
+        },
+        "智": {
+          "pinyin": "zhì",
+          "meaning": "智慧。"
+        },
+        "锲": {
+          "pinyin": "qiè",
+          "meaning": "刻。"
+        },
+        "舍": {
+          "pinyin": "shě",
+          "meaning": "放弃。"
+        },
+        "朽": {
+          "pinyin": "xiǔ",
+          "meaning": "腐朽。"
+        },
+        "镂": {
+          "pinyin": "lòu",
+          "meaning": "雕刻。"
+        },
+        "荀": {
+          "pinyin": "xún",
+          "meaning": "荀子的姓。"
+        }
+      },
+      "sections": {
+        "title": "日积月累（三）",
+        "author": "《论语》《墨子》《荀子》",
+        "source": "三年级 · 日积月累 · 教材第108页",
+        "type": "日积月累",
+        "workId": "grade3-rijiyuelei-03",
+        "original": "士不可以不弘毅，任重而道远。\n志不强者智不达，言不信者行不果。\n锲而舍之，朽木不折；锲而不舍，金石可镂。",
+        "translation": "有志向的人必须胸怀宽广、意志坚定，因为承担的责任重大，要走的路还很长。（《论语》）\n意志不坚定的人，智慧就难以充分发挥；说话不守信用的人，做事就难以取得成果。（《墨子》）\n刻几下就放弃，腐朽的木头也不能刻断；坚持刻下去，即使是金属和石头，也能雕刻成功。（《荀子》）",
+        "lineTranslations": "有志向的人必须胸怀宽广、意志坚定，因为承担的责任重大，要走的路还很长。（《论语》）\n意志不坚定的人，智慧就难以充分发挥；说话不守信用的人，做事就难以取得成果。（《墨子》）\n刻几下就放弃，腐朽的木头也不能刻断；坚持刻下去，即使是金属和石头，也能雕刻成功。（《荀子》）",
+        "knowledgePoints": "1. 士：有志向的人。弘毅：胸怀宽广、意志坚定。任：责任。\n2. 达：通达、充分发挥。信：守信用。果：取得成果。\n3. 锲：刻。舍：放弃。朽木：腐朽的木头。镂：雕刻。\n4. 三句话分别出自《论语》《墨子》《荀子》，鼓励我们立志、守信、坚持不懈。",
+        "characterInfo": "弘：hóng｜宽广。\n毅：yì｜坚定。\n任：rèn｜责任。\n智：zhì｜智慧。\n锲：qiè｜刻。\n舍：shě｜放弃。\n朽：xiǔ｜腐朽。\n镂：lòu｜雕刻。\n荀：xún｜荀子的姓。"
+      },
+      "original": "士不可以不弘毅，任重而道远。\n志不强者智不达，言不信者行不果。\n锲而舍之，朽木不折；锲而不舍，金石可镂。",
+      "translation": "有志向的人必须胸怀宽广、意志坚定，因为承担的责任重大，要走的路还很长。（《论语》）\n意志不坚定的人，智慧就难以充分发挥；说话不守信用的人，做事就难以取得成果。（《墨子》）\n刻几下就放弃，腐朽的木头也不能刻断；坚持刻下去，即使是金属和石头，也能雕刻成功。（《荀子》）",
+      "lineTranslations": [
+        "有志向的人必须胸怀宽广、意志坚定，因为承担的责任重大，要走的路还很长。（《论语》）",
+        "意志不坚定的人，智慧就难以充分发挥；说话不守信用的人，做事就难以取得成果。（《墨子》）",
+        "刻几下就放弃，腐朽的木头也不能刻断；坚持刻下去，即使是金属和石头，也能雕刻成功。（《荀子》）"
+      ],
+      "knowledgePoints": [
+        "士：有志向的人。弘毅：胸怀宽广、意志坚定。任：责任。",
+        "达：通达、充分发挥。信：守信用。果：取得成果。",
+        "锲：刻。舍：放弃。朽木：腐朽的木头。镂：雕刻。",
+        "三句话分别出自《论语》《墨子》《荀子》，鼓励我们立志、守信、坚持不懈。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "士不可以不弘毅，任重而道远。",
+          "translation": "有志向的人必须胸怀宽广、意志坚定，因为承担的责任重大，要走的路还很长。（《论语》）",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "志不强者智不达，言不信者行不果。",
+          "translation": "意志不坚定的人，智慧就难以充分发挥；说话不守信用的人，做事就难以取得成果。（《墨子》）",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "锲而舍之，朽木不折；锲而不舍，金石可镂。",
+          "translation": "刻几下就放弃，腐朽的木头也不能刻断；坚持刻下去，即使是金属和石头，也能雕刻成功。（《荀子》）",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "士不可以不弘毅，任重而道远。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "士"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "可"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "弘"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "毅"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "任"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "重"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "道"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "远"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "志不强者智不达，言不信者行不果。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "志"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "强"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "智"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "达"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "信"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-2-12",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-13",
+                  "text": "果"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "锲而舍之，朽木不折；锲而不舍，金石可镂。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "锲"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "舍"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "朽"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "木"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "折"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "锲"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "舍"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "金"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "石"
+                },
+                {
+                  "id": "default-item-3-14",
+                  "text": "可"
+                },
+                {
+                  "id": "default-item-3-15",
+                  "text": "镂"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "士不可以不弘毅，任重而道远。",
+      "parseWarnings": [],
+      "id": "grade3-lesson28",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 28,
+      "filePath": "content/grade3/lesson28.txt"
     },
     {
       "title": "浪淘沙·其七",

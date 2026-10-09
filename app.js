@@ -93,8 +93,8 @@
       if (usedForExtra.has(index)) return;
       output.push({
         ...lesson,
-        semester: "补充",
-        semesterId: "extra",
+        semester: lesson.type === "日积月累" ? "日积月累" : "补充",
+        semesterId: lesson.type === "日积月累" ? "accumulation" : "extra",
         semesterOrder: Number(lesson.lessonNo) || index + 1,
         curriculumIndex: 9000 + (Number(lesson.lessonNo) || index + 1),
         supplementary: true
@@ -149,19 +149,19 @@
   function gradesView() { return `${header()}<main class="page-main">${breadcrumb("选择年级")}<section class="page-intro"><p class="section-kicker">准备好了吗？</p><h1>选择你的年级</h1><p>按上册、下册读古诗，逐行理解、排字、默写。</p></section><section class="grade-grid grade-grid--large" aria-label="六个年级">${grades.map(gradeCard).join("")}</section></main>`; }
   function lessonCard(lesson) {
     const preview = lesson.preview || lesson.original || "这篇课文正在整理中。";
-    const label = lesson.curriculum ? `${lesson.semester} · 第 ${lesson.semesterOrder} 首` : `补充 · 第 ${lesson.lessonNo} 篇`;
+    const label = lesson.type === "日积月累" ? "日积月累 · 必背" : lesson.curriculum ? `${lesson.semester} · 第 ${lesson.semesterOrder} 首` : `补充 · 第 ${lesson.lessonNo} 篇`;
     return `<a class="lesson-card ${lesson.catalogOnly ? "lesson-card--catalog" : ""}" href="#/lesson/${escapeHtml(lesson.id)}"><div class="lesson-card-top"><span class="lesson-no">${escapeHtml(label)}</span><span class="card-arrow" aria-hidden="true">→</span></div><h2>${escapeHtml(lesson.title)}</h2><p class="lesson-author">${escapeHtml(lesson.author || "未署名")}</p><p class="lesson-preview">${escapeHtml(preview)}</p><span class="lesson-link">${lesson.catalogOnly ? "查看目录信息" : "打开课文"} <span aria-hidden="true">✦</span></span></a>`;
   }
   function semesterSection(name, items) {
     if (!items.length) return "";
-    const label = name === "补充" ? "已有的补充古文内容" : `${name}课内古诗`;
-    return `<section class="semester-section" aria-labelledby="semester-${escapeHtml(name)}"><div class="semester-heading"><div><p class="section-kicker">${name === "补充" ? "继续保留" : "按课本册次整理"}</p><h2 id="semester-${escapeHtml(name)}">${escapeHtml(label)}</h2></div><span class="semester-count">${items.length} 篇</span></div><div class="lesson-grid">${items.map(lessonCard).join("")}</div></section>`;
+    const label = name === "日积月累" ? "日积月累 · 背诵积累" : name === "补充" ? "已有的补充古文内容" : `${name}课内古诗`;
+    return `<section class="semester-section" aria-labelledby="semester-${escapeHtml(name)}"><div class="semester-heading"><div><p class="section-kicker">${name === "日积月累" ? "按教材分组背诵" : name === "补充" ? "继续保留" : "按课本册次整理"}</p><h2 id="semester-${escapeHtml(name)}">${escapeHtml(label)}</h2></div><span class="semester-count">${items.length} 篇</span></div><div class="lesson-grid">${items.map(lessonCard).join("")}</div></section>`;
   }
   function gradeView(gradeId) {
     const grade = gradeOf(gradeId); const items = lessonsFor(grade.id);
     const curriculumItems = items.filter((item) => item.curriculum);
     const count = curriculumItems.length || items.length;
-    const groups = ["上册", "下册", "补充"].map((name) => [name, items.filter((item) => (item.semester || "补充") === name)]).filter((entry) => entry[1].length);
+    const groups = ["上册", "下册", "日积月累", "补充"].map((name) => [name, items.filter((item) => (item.semester || "补充") === name)]).filter((entry) => entry[1].length);
     return `${header()}<main class="page-main">${breadcrumb(grade.name)}<section class="page-intro page-intro--row"><div><p class="section-kicker">${escapeHtml(grade.name)} · 古诗书架</p><h1>${escapeHtml(grade.name)}的课内古诗</h1><p>按上册、下册整理，每首都可以听读、逐行理解、选字排序和全文默写。</p></div><span class="lesson-count">${count} 首</span></section>${groups.length ? groups.map(([name, groupItems]) => semesterSection(name, groupItems)).join("") : `<section class="empty-state"><span class="empty-icon" aria-hidden="true">☼</span><h2>这个书架还在长大</h2><p>暂时没有收录课文，先去看看其他年级吧。</p><a class="button button--soft" href="#/grades">换个年级看看 <span aria-hidden="true">→</span></a></section>`}</main>`;
   }
   function block(label, content, className) { return content ? `<section class="lesson-block ${className || ""}"><h2>${label}</h2><div class="lesson-block-body">${escapeHtml(content).replace(/\n/g, "<br />")}</div></section>` : ""; }
@@ -274,7 +274,7 @@
     const gradeItems = lessonsFor(lesson.gradeId); const index = gradeItems.findIndex((item) => item.id === lesson.id); const previous = gradeItems[index - 1]; const next = gradeItems[index + 1];
     const original = lesson.original || (lesson.sections && lesson.sections.original) || "";
     const hasOriginal = Boolean(String(original).trim());
-    const lessonLabel = lesson.curriculum ? `${gradeOf(lesson.gradeId).name} · ${lesson.semester} · 第 ${lesson.semesterOrder} 首` : `${gradeOf(lesson.gradeId).name} · 补充内容`;
+    const lessonLabel = lesson.type === "日积月累" ? `${gradeOf(lesson.gradeId).name} · 日积月累 · 必背` : lesson.curriculum ? `${gradeOf(lesson.gradeId).name} · ${lesson.semester} · 第 ${lesson.semesterOrder} 首` : `${gradeOf(lesson.gradeId).name} · 补充内容`;
     const originalMarkup = hasOriginal
       ? `<div class="original-card"><div class="original-label"><span aria-hidden="true">⌁</span> 原文</div><div class="original-text">${renderOriginalContent(lesson, original)}</div><button class="inline-speak" type="button" data-speak="${escapeHtml(original)}">朗读原文 <span aria-hidden="true">◖</span></button></div>`
       : `<section class="catalog-pending"><p class="section-kicker">目录已收录</p><h2>原文与讲解正在整理</h2><p>这首诗已经放到正确的年级和册次中。后续补充对应 TXT 内容后，逐句讲解、选字排序和全文默写会自动启用。</p>${lesson.distinguishing ? `<p class="catalog-hint">识别句：${escapeHtml(lesson.distinguishing)}</p>` : ""}</section>`;
