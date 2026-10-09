@@ -99,6 +99,7 @@ class CompleteContentTests(unittest.TestCase):
         self.assertIn('原文有 2 行，但逐句译文有 1 行', warnings)
         self.assertEqual(lesson['lines'][1]['text'], '乙。')
 
-    def test_all_original_supplementary_files_remain(self):
+    def test_retained_supplementary_files_and_removed_lessons(self):
         ids = {l['id'] for l in self.manifest['lessons']}
-        self.assertTrue({'grade3-lesson3', 'grade3-lesson5', 'grade3-lesson7', 'grade3-lesson8', 'grade3-lesson15'} <= ids)
+        self.assertTrue({'grade3-lesson3', 'grade3-lesson5', 'grade3-lesson8'} <= ids)
+        self.assertTrue({'grade3-lesson7', 'grade3-lesson15'}.isdisjoint(ids))

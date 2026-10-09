@@ -103,7 +103,7 @@ audio/story.mp3
         encoded = json.dumps(manifest, ensure_ascii=False)
         self.assertIn("危险", json.dumps(parse_lesson("标题：\n危险\n")[0], ensure_ascii=False))
         self.assertIsInstance(encoded, str)
-        self.assertEqual(len([item for item in manifest["lessons"] if item["gradeId"] == "grade3"]), 27)
+        self.assertEqual(len([item for item in manifest["lessons"] if item["gradeId"] == "grade3"]), 25)
         self.assertNotIn("grade3-lesson13", {item["id"] for item in manifest["lessons"]})
 
 
