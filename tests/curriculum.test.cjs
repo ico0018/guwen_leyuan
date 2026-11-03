@@ -14,7 +14,8 @@ test('browser merge resolves all ordered placements and retains supplementary le
   const placements = lessons.filter(l => l.curriculum);
   assert.equal(placements.length, 116);
   assert.equal(placements.filter(l => l.catalogOnly).length, 0);
-  assert.equal(lessons.filter(l => l.supplementary).length, 5);
+  assert.equal(lessons.filter(l => l.supplementary).length, 29);
+  for (const id of ['grade3-lesson3','grade3-lesson5','grade3-lesson7','grade3-lesson8','grade3-lesson15']) assert.ok(lessons.some(l => l.id === id && l.supplementary));
   const expected = curriculum.grades.flatMap(g => g.semesters.flatMap(s => s.items.map(i => i.placementId)));
   assert.deepEqual(Array.from(placements, l => l.id), expected);
   for (const l of placements) {

@@ -1,0 +1,629 @@
+{
+  "version": 1,
+  "academicYear": 2026,
+  "reviewedAt": "2026-11-03",
+  "scope": "语文园地日积月累中的古诗词、古典名句和传统蒙学节选；不收普通成语词表、现代名言和气象歌谣。",
+  "books": [
+    {
+      "id": "1-upper",
+      "gradeId": "grade1",
+      "gradeName": "一年级",
+      "semester": "上册",
+      "edition": "2026现用修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://r2-ndr.ykt.cbern.com.cn/edu_product/esp/assets/1c73b348-e8b6-47d6-84b0-6dbacbe28268.pkg/%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E6%95%99%E7%A7%91%E4%B9%A6%20%E8%AF%AD%E6%96%87%20%E4%B8%80%E5%B9%B4%E7%BA%A7%20%E4%B8%8A%E5%86%8C_1725097498841.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-1-upper-01",
+          "unit": 1,
+          "page": 16,
+          "title": "咏鹅",
+          "workId": "work-05704823a855"
+        },
+        {
+          "id": "daily-1-upper-02",
+          "unit": 2,
+          "page": 29,
+          "title": "画",
+          "workId": "work-1c589b401504",
+          "author": "未署名（教材未标作者）"
+        },
+        {
+          "id": "daily-1-upper-03",
+          "unit": 4,
+          "page": 58,
+          "title": "悯农（其二）",
+          "workId": "work-1b0880819b35"
+        },
+        {
+          "id": "daily-1-upper-04",
+          "unit": 5,
+          "page": 69,
+          "title": "惜时名句",
+          "workId": "daily-2026-1-upper-5"
+        },
+        {
+          "id": "daily-1-upper-05",
+          "unit": 6,
+          "page": 82,
+          "title": "古朗月行（节选）",
+          "workId": "work-701609a88708"
+        },
+        {
+          "id": "daily-1-upper-06",
+          "unit": 7,
+          "page": 91,
+          "title": "积累与进步",
+          "workId": "daily-2026-1-upper-7"
+        },
+        {
+          "id": "daily-1-upper-07",
+          "unit": 8,
+          "page": 102,
+          "title": "风",
+          "workId": "work-e2f15bb0f735"
+        }
+      ]
+    },
+    {
+      "id": "1-lower",
+      "gradeId": "grade1",
+      "gradeName": "一年级",
+      "semester": "下册",
+      "edition": "2026现用修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://static.lejiaoku.com/uploads/resources/1767902581463.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-1-lower-01",
+          "unit": 1,
+          "page": 12,
+          "title": "春晓",
+          "workId": "work-32054167d5db"
+        },
+        {
+          "id": "daily-1-lower-02",
+          "unit": 2,
+          "page": 23,
+          "title": "寻隐者不遇",
+          "workId": "work-14acc9575532"
+        },
+        {
+          "id": "daily-1-lower-03",
+          "unit": 3,
+          "page": 35,
+          "title": "赠汪伦",
+          "workId": "work-7ec830f6c6e0"
+        },
+        {
+          "id": "daily-1-lower-04",
+          "unit": 7,
+          "page": 94,
+          "title": "读书与求知",
+          "workId": "daily-2026-1-lower-7"
+        },
+        {
+          "id": "daily-1-lower-05",
+          "unit": 8,
+          "page": 110,
+          "title": "画鸡",
+          "workId": "work-d89235ca5591"
+        }
+      ]
+    },
+    {
+      "id": "2-upper",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "semester": "上册",
+      "edition": "2026现用修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://static.lejiaoku.com/uploads/resources/1767901584602.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-2-upper-01",
+          "unit": 1,
+          "page": 12,
+          "title": "梅花",
+          "workId": "work-18903fbcab70"
+        },
+        {
+          "id": "daily-2-upper-02",
+          "unit": 3,
+          "page": 37,
+          "title": "小儿垂钓",
+          "workId": "work-16c52829dc17"
+        },
+        {
+          "id": "daily-2-upper-03",
+          "unit": 4,
+          "page": 51,
+          "title": "山水对联",
+          "workId": "daily-2026-2-upper-4"
+        },
+        {
+          "id": "daily-2-upper-04",
+          "unit": 5,
+          "page": 65,
+          "title": "勤学格言",
+          "workId": "daily-2026-2-upper-5"
+        },
+        {
+          "id": "daily-2-upper-05",
+          "unit": 6,
+          "page": 79,
+          "title": "立志名句",
+          "workId": "daily-2026-2-upper-6"
+        },
+        {
+          "id": "daily-2-upper-06",
+          "unit": 7,
+          "page": 93,
+          "title": "夜宿山寺",
+          "workId": "work-5b1450deb00c"
+        },
+        {
+          "id": "daily-2-upper-07",
+          "unit": 8,
+          "page": 105,
+          "title": "待人与守规矩",
+          "workId": "daily-2026-2-upper-8"
+        }
+      ]
+    },
+    {
+      "id": "2-lower",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "semester": "下册",
+      "edition": "2026现用修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://static.lejiaoku.com/uploads/resources/1767901680338.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-2-lower-01",
+          "unit": 1,
+          "page": 12,
+          "title": "赋得古原草送别（节选）",
+          "workId": "work-87ca0f2e9b76"
+        },
+        {
+          "id": "daily-2-lower-02",
+          "unit": 4,
+          "page": 52,
+          "title": "诚信名句",
+          "workId": "daily-2026-2-lower-4"
+        },
+        {
+          "id": "daily-2-lower-03",
+          "unit": 5,
+          "page": 67,
+          "title": "弟子规（节选）",
+          "workId": "daily-2026-2-lower-5"
+        },
+        {
+          "id": "daily-2-lower-04",
+          "unit": 7,
+          "page": 98,
+          "title": "悯农（其一）",
+          "workId": "work-8961fa0de076"
+        },
+        {
+          "id": "daily-2-lower-05",
+          "unit": 8,
+          "page": 111,
+          "title": "江上渔者",
+          "workId": "work-21d5970aefc3"
+        }
+      ]
+    },
+    {
+      "id": "3-upper",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "semester": "上册",
+      "edition": "2026现用修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://static.lejiaoku.com/uploads/resources/1767902191946.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-3-upper-01",
+          "unit": 1,
+          "page": 12,
+          "title": "所见",
+          "workId": "work-e787bfabd7a1"
+        },
+        {
+          "id": "daily-3-upper-02",
+          "unit": 2,
+          "page": 26,
+          "title": "舟夜书所见",
+          "workId": "work-c4f5dd5d8d4f"
+        },
+        {
+          "id": "daily-3-upper-03",
+          "unit": 3,
+          "page": 44,
+          "title": "仁爱与善言",
+          "workId": "daily-2026-3-upper-3"
+        },
+        {
+          "id": "daily-3-upper-04",
+          "unit": 4,
+          "page": 56,
+          "title": "同心合作",
+          "workId": "daily-2026-3-upper-4"
+        },
+        {
+          "id": "daily-3-upper-05",
+          "unit": 6,
+          "page": 82,
+          "title": "早发白帝城",
+          "workId": "work-50245f7ec102"
+        },
+        {
+          "id": "daily-3-upper-06",
+          "unit": 7,
+          "page": 94,
+          "title": "采莲曲",
+          "workId": "work-6429c0770528"
+        },
+        {
+          "id": "daily-3-upper-07",
+          "unit": 8,
+          "page": 108,
+          "title": "立志与坚持",
+          "workId": "daily-2026-3-upper-8"
+        }
+      ]
+    },
+    {
+      "id": "3-lower",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "semester": "下册",
+      "edition": "2026现用修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://static.lejiaoku.com/uploads/resources/1767902236152.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-3-lower-01",
+          "unit": 1,
+          "page": 14,
+          "title": "忆江南",
+          "workId": "work-8040277d7748"
+        },
+        {
+          "id": "daily-3-lower-02",
+          "unit": 3,
+          "page": 42,
+          "title": "滁州西涧",
+          "workId": "work-b1fe1d6ebc69"
+        },
+        {
+          "id": "daily-3-lower-03",
+          "unit": 6,
+          "page": 82,
+          "title": "知错与改过",
+          "workId": "daily-2026-3-lower-6"
+        },
+        {
+          "id": "daily-3-lower-04",
+          "unit": 7,
+          "page": 94,
+          "title": "大林寺桃花",
+          "workId": "work-61c1e37caa6c"
+        },
+        {
+          "id": "daily-3-lower-05",
+          "unit": 8,
+          "page": 110,
+          "title": "处事与环境",
+          "workId": "daily-2026-3-lower-8"
+        }
+      ]
+    },
+    {
+      "id": "4-upper",
+      "gradeId": "grade4",
+      "gradeName": "四年级",
+      "semester": "上册",
+      "edition": "2026秋修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://p.20190723.xyz/file/r2:r2_1789021641059_gl7p36.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-4-upper-01",
+          "unit": 1,
+          "page": 12,
+          "title": "赠刘景文",
+          "sourceLessonId": "grade3-lesson3"
+        },
+        {
+          "id": "daily-4-upper-02",
+          "unit": 2,
+          "page": 32,
+          "title": "求学与善疑",
+          "workId": "daily-2026-4-upper-2"
+        },
+        {
+          "id": "daily-4-upper-03",
+          "unit": 4,
+          "page": 58,
+          "title": "嫦娥",
+          "workId": "work-5049ef459010"
+        },
+        {
+          "id": "daily-4-upper-04",
+          "unit": 6,
+          "page": 86,
+          "title": "黄鹤楼送孟浩然之广陵",
+          "workId": "work-2982cc2b914a"
+        },
+        {
+          "id": "daily-4-upper-05",
+          "unit": 7,
+          "page": 106,
+          "title": "处世格言六则",
+          "workId": "daily-2026-4-upper-7"
+        },
+        {
+          "id": "daily-4-upper-06",
+          "unit": 8,
+          "page": 121,
+          "title": "别董大",
+          "workId": "work-10ce5c05a3cf"
+        }
+      ]
+    },
+    {
+      "id": "4-lower",
+      "gradeId": "grade4",
+      "gradeName": "四年级",
+      "semester": "下册",
+      "edition": "2026现用版（原版下册）",
+      "note": "本册按2026年现用下册整理。",
+      "sourceUrl": "https://p.20190723.xyz/file/r2:r2_1789021677598_zbuhif.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-4-lower-01",
+          "unit": 1,
+          "page": 14,
+          "title": "卜算子·咏梅",
+          "workId": "work-19d099da6f44"
+        },
+        {
+          "id": "daily-4-lower-02",
+          "unit": 2,
+          "page": 32,
+          "title": "江畔独步寻花",
+          "workId": "work-e5db45c5442c"
+        },
+        {
+          "id": "daily-4-lower-03",
+          "unit": 4,
+          "page": 62,
+          "title": "蜂",
+          "workId": "work-cb0a502ae6dd"
+        },
+        {
+          "id": "daily-4-lower-04",
+          "unit": 6,
+          "page": 100,
+          "title": "独坐敬亭山",
+          "workId": "work-34a5e5ddd426"
+        },
+        {
+          "id": "daily-4-lower-05",
+          "unit": 7,
+          "page": 120,
+          "title": "自强与修身",
+          "workId": "daily-2026-4-lower-7"
+        },
+        {
+          "id": "daily-4-lower-06",
+          "unit": 8,
+          "page": 136,
+          "title": "勤学格言四则",
+          "workId": "daily-2026-4-lower-8"
+        }
+      ]
+    },
+    {
+      "id": "5-upper",
+      "gradeId": "grade5",
+      "gradeName": "五年级",
+      "semester": "上册",
+      "edition": "2026秋修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://p.20190723.xyz/file/r2:r2_1789023067188_xczf8z.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-5-upper-01",
+          "unit": 2,
+          "page": 32,
+          "title": "惜时诗句（古典部分）",
+          "workId": "daily-2026-5-upper-2"
+        },
+        {
+          "id": "daily-5-upper-02",
+          "unit": 3,
+          "page": 48,
+          "title": "乞巧",
+          "workId": "work-83aa1ca7f6b9"
+        },
+        {
+          "id": "daily-5-upper-03",
+          "unit": 6,
+          "page": 90,
+          "title": "游子吟",
+          "workId": "work-1ef59900b82f"
+        },
+        {
+          "id": "daily-5-upper-04",
+          "unit": 7,
+          "page": 100,
+          "title": "渔歌子",
+          "workId": "work-dde56a152520"
+        },
+        {
+          "id": "daily-5-upper-05",
+          "unit": 8,
+          "page": 114,
+          "title": "观书有感·其一",
+          "workId": "work-8ac59bbe614e"
+        }
+      ]
+    },
+    {
+      "id": "5-lower",
+      "gradeId": "grade5",
+      "gradeName": "五年级",
+      "semester": "下册",
+      "edition": "2026现用版（原版下册）",
+      "note": "本册按2026年现用下册整理。",
+      "sourceUrl": "https://static.lejiaoku.com/uploads/resources/1767902455167.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-5-lower-01",
+          "unit": 1,
+          "page": 16,
+          "title": "游子吟",
+          "workId": "work-1ef59900b82f"
+        },
+        {
+          "id": "daily-5-lower-02",
+          "unit": 2,
+          "page": 38,
+          "title": "鸟鸣涧",
+          "workId": "work-31f8f006b119"
+        },
+        {
+          "id": "daily-5-lower-03",
+          "unit": 4,
+          "page": 68,
+          "title": "凉州词",
+          "workId": "liangzhouci-wangzhihuan"
+        },
+        {
+          "id": "daily-5-lower-04",
+          "unit": 4,
+          "page": 68,
+          "title": "黄鹤楼送孟浩然之广陵",
+          "workId": "work-2982cc2b914a"
+        },
+        {
+          "id": "daily-5-lower-05",
+          "unit": 7,
+          "page": 106,
+          "title": "乡村四月",
+          "workId": "work-fd9399aeac12"
+        },
+        {
+          "id": "daily-5-lower-06",
+          "unit": 8,
+          "page": 118,
+          "title": "君子修身名句",
+          "workId": "daily-2026-5-lower-8"
+        }
+      ]
+    },
+    {
+      "id": "6-upper",
+      "gradeId": "grade6",
+      "gradeName": "六年级",
+      "semester": "上册",
+      "edition": "2026秋修订版",
+      "note": "按课本园地顺序，读古诗词、积累古典名句。",
+      "sourceUrl": "https://p.20190723.xyz/file/r2:r2_1789023736616_eo78ql.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-6-upper-01",
+          "unit": 1,
+          "page": 12,
+          "title": "江畔独步寻花",
+          "workId": "work-e5db45c5442c"
+        },
+        {
+          "id": "daily-6-upper-02",
+          "unit": 2,
+          "page": 30,
+          "title": "仁义与家国",
+          "workId": "daily-2026-6-upper-2"
+        },
+        {
+          "id": "daily-6-upper-03",
+          "unit": 3,
+          "page": 48,
+          "title": "观书有感·其二",
+          "workId": "work-413141d3cb83"
+        },
+        {
+          "id": "daily-6-upper-04",
+          "unit": 4,
+          "page": 66,
+          "title": "送元二使安西",
+          "workId": "work-a9284ff53668"
+        },
+        {
+          "id": "daily-6-upper-05",
+          "unit": 6,
+          "page": 96,
+          "title": "过故人庄",
+          "workId": "work-ff5014bbbfc6"
+        }
+      ]
+    },
+    {
+      "id": "6-lower",
+      "gradeId": "grade6",
+      "gradeName": "六年级",
+      "semester": "下册",
+      "edition": "2026现用版（原版下册）",
+      "note": "本册按2026年现用下册整理。",
+      "sourceUrl": "https://static.lejiaoku.com/uploads/resources/1767902028422.pdf",
+      "publisher": "人民教育出版社",
+      "items": [
+        {
+          "id": "daily-6-lower-01",
+          "unit": 1,
+          "page": 18,
+          "title": "长歌行",
+          "workId": "work-4f9520a415e7"
+        },
+        {
+          "id": "daily-6-lower-02",
+          "unit": 2,
+          "page": 40,
+          "title": "《增广贤文》读书处世",
+          "workId": "daily-2026-6-lower-2"
+        },
+        {
+          "id": "daily-6-lower-03",
+          "unit": 4,
+          "page": 78,
+          "title": "惜时与劝诫名句",
+          "workId": "daily-2026-6-lower-4"
+        },
+        {
+          "id": "daily-6-lower-04",
+          "unit": 5,
+          "page": 96,
+          "title": "革新与实践",
+          "workId": "daily-2026-6-lower-5"
+        }
+      ]
+    }
+  ]
+}
