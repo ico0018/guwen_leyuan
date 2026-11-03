@@ -4,32 +4,32 @@
     {
       "id": "grade1",
       "name": "一年级",
-      "lessonCount": 12
+      "lessonCount": 15
     },
     {
       "id": "grade2",
       "name": "二年级",
-      "lessonCount": 15
+      "lessonCount": 21
     },
     {
       "id": "grade3",
       "name": "三年级",
-      "lessonCount": 24
+      "lessonCount": 29
     },
     {
       "id": "grade4",
       "name": "四年级",
-      "lessonCount": 19
+      "lessonCount": 23
     },
     {
       "id": "grade5",
       "name": "五年级",
-      "lessonCount": 22
+      "lessonCount": 24
     },
     {
       "id": "grade6",
       "name": "六年级",
-      "lessonCount": 27
+      "lessonCount": 31
     }
   ],
   "lessons": [
@@ -2876,6 +2876,705 @@
       "gradeName": "一年级",
       "lessonNo": 12,
       "filePath": "content/grade1/lesson12.txt"
+    },
+    {
+      "title": "惜时名句",
+      "workId": "daily-2026-1-upper-5",
+      "dynasty": "古典选句",
+      "author": "传统格言",
+      "source": "一年级上册 · 语文园地5 · 日积月累 · 第69页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "计": {
+          "pinyin": "jì",
+          "meaning": "计划、安排。"
+        },
+        "晨": {
+          "pinyin": "chén",
+          "meaning": "清早。"
+        },
+        "阴": {
+          "pinyin": "yīn",
+          "meaning": "光阴，时间。"
+        }
+      },
+      "characters": {
+        "计": {
+          "pinyin": "jì",
+          "meaning": "计划、安排。"
+        },
+        "晨": {
+          "pinyin": "chén",
+          "meaning": "清早。"
+        },
+        "阴": {
+          "pinyin": "yīn",
+          "meaning": "光阴，时间。"
+        }
+      },
+      "sections": {
+        "title": "惜时名句",
+        "author": "传统格言",
+        "type": "古文",
+        "workId": "daily-2026-1-upper-5",
+        "dynasty": "古典选句",
+        "source": "一年级上册 · 语文园地5 · 日积月累 · 第69页",
+        "original": "一年之计在于春，一日之计在于晨。\n一寸光阴一寸金，寸金难买寸光阴。",
+        "translation": "安排一年的事情要重视春天，安排一天的事情要重视清晨。\n时间像金子一样珍贵，但金子买不回已经过去的时间。",
+        "lineTranslations": "安排一年的事情要重视春天，安排一天的事情要重视清晨。\n时间像金子一样珍贵，但金子买不回已经过去的时间。",
+        "knowledgePoints": "1. 之：这里相当于‘的’。\n2. 珍惜时间，要从认真安排眼前的一天做起。",
+        "characterInfo": "计：jì｜计划、安排。\n晨：chén｜清早。\n阴：yīn｜光阴，时间。"
+      },
+      "original": "一年之计在于春，一日之计在于晨。\n一寸光阴一寸金，寸金难买寸光阴。",
+      "translation": "安排一年的事情要重视春天，安排一天的事情要重视清晨。\n时间像金子一样珍贵，但金子买不回已经过去的时间。",
+      "lineTranslations": [
+        "安排一年的事情要重视春天，安排一天的事情要重视清晨。",
+        "时间像金子一样珍贵，但金子买不回已经过去的时间。"
+      ],
+      "knowledgePoints": [
+        "之：这里相当于‘的’。",
+        "珍惜时间，要从认真安排眼前的一天做起。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "一年之计在于春，一日之计在于晨。",
+          "translation": "安排一年的事情要重视春天，安排一天的事情要重视清晨。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "一寸光阴一寸金，寸金难买寸光阴。",
+          "translation": "时间像金子一样珍贵，但金子买不回已经过去的时间。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "一年之计在于春，一日之计在于晨。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "年"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "计"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "在"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "春"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "计"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "在"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "晨"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "一寸光阴一寸金，寸金难买寸光阴。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "寸"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "光"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "阴"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "寸"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "金"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "寸"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "金"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "难"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "买"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "寸"
+                },
+                {
+                  "id": "default-item-2-12",
+                  "text": "光"
+                },
+                {
+                  "id": "default-item-2-13",
+                  "text": "阴"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "一年之计在于春，一日之计在于晨。",
+      "parseWarnings": [],
+      "id": "grade1-lesson13",
+      "gradeId": "grade1",
+      "gradeName": "一年级",
+      "lessonNo": 13,
+      "filePath": "content/grade1/lesson13.txt"
+    },
+    {
+      "title": "积累与进步",
+      "workId": "daily-2026-1-upper-7",
+      "dynasty": "古典选句",
+      "author": "传统格言与《老子》名句",
+      "source": "一年级上册 · 语文园地7 · 日积月累 · 第91页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "栽": {
+          "pinyin": "zāi",
+          "meaning": "种植。"
+        },
+        "始": {
+          "pinyin": "shǐ",
+          "meaning": "开始。"
+        },
+        "竿": {
+          "pinyin": "gān",
+          "meaning": "竹竿。"
+        }
+      },
+      "characters": {
+        "栽": {
+          "pinyin": "zāi",
+          "meaning": "种植。"
+        },
+        "始": {
+          "pinyin": "shǐ",
+          "meaning": "开始。"
+        },
+        "竿": {
+          "pinyin": "gān",
+          "meaning": "竹竿。"
+        }
+      },
+      "sections": {
+        "title": "积累与进步",
+        "author": "传统格言与《老子》名句",
+        "type": "古文",
+        "workId": "daily-2026-1-upper-7",
+        "dynasty": "古典选句",
+        "source": "一年级上册 · 语文园地7 · 日积月累 · 第91页",
+        "original": "前人栽树，后人乘凉。\n种瓜得瓜，种豆得豆。\n千里之行，始于足下。\n百尺竿头，更进一步。",
+        "translation": "前面的人种下树，后面的人才能享受树荫，提醒我们感念前人的付出。\n种下什么就会收获什么，做事情也要想到自己的行为带来的结果。\n再远的路，也要从脚下的第一步走起。\n已经取得好成绩，也要继续努力进步。",
+        "lineTranslations": "前面的人种下树，后面的人才能享受树荫，提醒我们感念前人的付出。\n种下什么就会收获什么，做事情也要想到自己的行为带来的结果。\n再远的路，也要从脚下的第一步走起。\n已经取得好成绩，也要继续努力进步。",
+        "knowledgePoints": "1. ‘千里之行，始于足下’出自《老子》。\n2. 这些句子分别提醒我们感恩、认真行动、踏实起步和继续进步。",
+        "characterInfo": "栽：zāi｜种植。\n始：shǐ｜开始。\n竿：gān｜竹竿。"
+      },
+      "original": "前人栽树，后人乘凉。\n种瓜得瓜，种豆得豆。\n千里之行，始于足下。\n百尺竿头，更进一步。",
+      "translation": "前面的人种下树，后面的人才能享受树荫，提醒我们感念前人的付出。\n种下什么就会收获什么，做事情也要想到自己的行为带来的结果。\n再远的路，也要从脚下的第一步走起。\n已经取得好成绩，也要继续努力进步。",
+      "lineTranslations": [
+        "前面的人种下树，后面的人才能享受树荫，提醒我们感念前人的付出。",
+        "种下什么就会收获什么，做事情也要想到自己的行为带来的结果。",
+        "再远的路，也要从脚下的第一步走起。",
+        "已经取得好成绩，也要继续努力进步。"
+      ],
+      "knowledgePoints": [
+        "‘千里之行，始于足下’出自《老子》。",
+        "这些句子分别提醒我们感恩、认真行动、踏实起步和继续进步。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "前人栽树，后人乘凉。",
+          "translation": "前面的人种下树，后面的人才能享受树荫，提醒我们感念前人的付出。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "种瓜得瓜，种豆得豆。",
+          "translation": "种下什么就会收获什么，做事情也要想到自己的行为带来的结果。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "千里之行，始于足下。",
+          "translation": "再远的路，也要从脚下的第一步走起。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "百尺竿头，更进一步。",
+          "translation": "已经取得好成绩，也要继续努力进步。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "前人栽树，后人乘凉。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "前"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "栽"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "树"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "后"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "乘"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "凉"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "种瓜得瓜，种豆得豆。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "种"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "瓜"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "得"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "瓜"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "种"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "豆"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "得"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "豆"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "千里之行，始于足下。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "千"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "里"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "始"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "足"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "下"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "百尺竿头，更进一步。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "百"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "尺"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "竿"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "头"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "更"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "进"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "步"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "前人栽树，后人乘凉。",
+      "parseWarnings": [],
+      "id": "grade1-lesson14",
+      "gradeId": "grade1",
+      "gradeName": "一年级",
+      "lessonNo": 14,
+      "filePath": "content/grade1/lesson14.txt"
+    },
+    {
+      "title": "读书与求知",
+      "workId": "daily-2026-1-lower-7",
+      "dynasty": "古典选句",
+      "author": "《荀子》、陈寿、董其昌",
+      "source": "一年级下册 · 语文园地7 · 日积月累 · 第94页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "则": {
+          "pinyin": "zé",
+          "meaning": "就。"
+        },
+        "芜": {
+          "pinyin": "wú",
+          "meaning": "荒芜，这里比喻学问和做事生疏。"
+        },
+        "卷": {
+          "pinyin": "juàn",
+          "meaning": "书卷，这里指书。"
+        }
+      },
+      "characters": {
+        "则": {
+          "pinyin": "zé",
+          "meaning": "就。"
+        },
+        "芜": {
+          "pinyin": "wú",
+          "meaning": "荒芜，这里比喻学问和做事生疏。"
+        },
+        "卷": {
+          "pinyin": "juàn",
+          "meaning": "书卷，这里指书。"
+        }
+      },
+      "sections": {
+        "title": "读书与求知",
+        "author": "《荀子》、陈寿、董其昌",
+        "type": "古文",
+        "workId": "daily-2026-1-lower-7",
+        "dynasty": "古典选句",
+        "source": "一年级下册 · 语文园地7 · 日积月累 · 第94页",
+        "original": "不知则问，不能则学。\n一日无书，百事荒芜。\n读万卷书，行万里路。",
+        "translation": "不知道就去请教，不会做就去学习。\n一天不读书，许多事情都会因缺少知识而变得生疏。\n既要广泛读书，也要在亲身经历中增长见识。",
+        "lineTranslations": "不知道就去请教，不会做就去学习。\n一天不读书，许多事情都会因缺少知识而变得生疏。\n既要广泛读书，也要在亲身经历中增长见识。",
+        "knowledgePoints": "1. 第一句选自《荀子》，第二句署名陈寿，第三句署名董其昌，按教材标注。\n2. 读书、请教和亲身体验可以互相帮助。",
+        "characterInfo": "则：zé｜就。\n芜：wú｜荒芜，这里比喻学问和做事生疏。\n卷：juàn｜书卷，这里指书。"
+      },
+      "original": "不知则问，不能则学。\n一日无书，百事荒芜。\n读万卷书，行万里路。",
+      "translation": "不知道就去请教，不会做就去学习。\n一天不读书，许多事情都会因缺少知识而变得生疏。\n既要广泛读书，也要在亲身经历中增长见识。",
+      "lineTranslations": [
+        "不知道就去请教，不会做就去学习。",
+        "一天不读书，许多事情都会因缺少知识而变得生疏。",
+        "既要广泛读书，也要在亲身经历中增长见识。"
+      ],
+      "knowledgePoints": [
+        "第一句选自《荀子》，第二句署名陈寿，第三句署名董其昌，按教材标注。",
+        "读书、请教和亲身体验可以互相帮助。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "不知则问，不能则学。",
+          "translation": "不知道就去请教，不会做就去学习。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "一日无书，百事荒芜。",
+          "translation": "一天不读书，许多事情都会因缺少知识而变得生疏。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "读万卷书，行万里路。",
+          "translation": "既要广泛读书，也要在亲身经历中增长见识。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "不知则问，不能则学。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "问"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "能"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "学"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "一日无书，百事荒芜。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "百"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "事"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "荒"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "芜"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "读万卷书，行万里路。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "万"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "卷"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "万"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "里"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "路"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "不知则问，不能则学。",
+      "parseWarnings": [],
+      "id": "grade1-lesson15",
+      "gradeId": "grade1",
+      "gradeName": "一年级",
+      "lessonNo": 15,
+      "filePath": "content/grade1/lesson15.txt"
     },
     {
       "title": "《画》",
@@ -6408,6 +7107,1578 @@
       "gradeName": "二年级",
       "lessonNo": 15,
       "filePath": "content/grade2/lesson15.txt"
+    },
+    {
+      "title": "山水对联",
+      "workId": "daily-2026-2-upper-4",
+      "dynasty": "古典选句",
+      "author": "古典名联",
+      "source": "二年级上册 · 语文园地4 · 日积月累 · 第51页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "皆": {
+          "pinyin": "jiē",
+          "meaning": "都。"
+        },
+        "塞": {
+          "pinyin": "sài",
+          "meaning": "边塞。"
+        },
+        "锁": {
+          "pinyin": "suǒ",
+          "meaning": "这里指笼罩、围绕。"
+        }
+      },
+      "characters": {
+        "皆": {
+          "pinyin": "jiē",
+          "meaning": "都。"
+        },
+        "塞": {
+          "pinyin": "sài",
+          "meaning": "边塞。"
+        },
+        "锁": {
+          "pinyin": "suǒ",
+          "meaning": "这里指笼罩、围绕。"
+        }
+      },
+      "sections": {
+        "title": "山水对联",
+        "author": "古典名联",
+        "type": "古文",
+        "workId": "daily-2026-2-upper-4",
+        "dynasty": "古典选句",
+        "source": "二年级上册 · 语文园地4 · 日积月累 · 第51页",
+        "original": "有山皆图画，无水不文章。\n白马西风塞上，杏花烟雨江南。\n清风明月本无价，近水远山皆有情。\n雾锁山头山锁雾，天连水尾水连天。",
+        "translation": "山水处处都像美丽的图画、优美的文章。\n塞外西风中有白马，江南烟雨里有杏花，两种景色各有韵味。\n清风明月不用花钱，近处的水、远处的山也好像饱含情意。\n雾围绕山头，山也围着雾；天水相接，仿佛连成一片。",
+        "lineTranslations": "山水处处都像美丽的图画、优美的文章。\n塞外西风中有白马，江南烟雨里有杏花，两种景色各有韵味。\n清风明月不用花钱，近处的水、远处的山也好像饱含情意。\n雾围绕山头，山也围着雾；天水相接，仿佛连成一片。",
+        "knowledgePoints": "1. 对联上下句字数相等，意思互相照应。\n2. ‘雾锁山头山锁雾’前后回环，写出雾与山相互环绕的景象。",
+        "characterInfo": "皆：jiē｜都。\n塞：sài｜边塞。\n锁：suǒ｜这里指笼罩、围绕。"
+      },
+      "original": "有山皆图画，无水不文章。\n白马西风塞上，杏花烟雨江南。\n清风明月本无价，近水远山皆有情。\n雾锁山头山锁雾，天连水尾水连天。",
+      "translation": "山水处处都像美丽的图画、优美的文章。\n塞外西风中有白马，江南烟雨里有杏花，两种景色各有韵味。\n清风明月不用花钱，近处的水、远处的山也好像饱含情意。\n雾围绕山头，山也围着雾；天水相接，仿佛连成一片。",
+      "lineTranslations": [
+        "山水处处都像美丽的图画、优美的文章。",
+        "塞外西风中有白马，江南烟雨里有杏花，两种景色各有韵味。",
+        "清风明月不用花钱，近处的水、远处的山也好像饱含情意。",
+        "雾围绕山头，山也围着雾；天水相接，仿佛连成一片。"
+      ],
+      "knowledgePoints": [
+        "对联上下句字数相等，意思互相照应。",
+        "‘雾锁山头山锁雾’前后回环，写出雾与山相互环绕的景象。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "有山皆图画，无水不文章。",
+          "translation": "山水处处都像美丽的图画、优美的文章。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "白马西风塞上，杏花烟雨江南。",
+          "translation": "塞外西风中有白马，江南烟雨里有杏花，两种景色各有韵味。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "清风明月本无价，近水远山皆有情。",
+          "translation": "清风明月不用花钱，近处的水、远处的山也好像饱含情意。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "雾锁山头山锁雾，天连水尾水连天。",
+          "translation": "雾围绕山头，山也围着雾；天水相接，仿佛连成一片。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "有山皆图画，无水不文章。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "皆"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "图"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "画"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "文"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "章"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "白马西风塞上，杏花烟雨江南。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "白"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "马"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "西"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "风"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "塞"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "上"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "杏"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "花"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "烟"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "雨"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "江"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "南"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "清风明月本无价，近水远山皆有情。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "清"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "风"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "明"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "月"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "本"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "价"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "近"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "远"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "皆"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "情"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "雾锁山头山锁雾，天连水尾水连天。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "雾"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "锁"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "头"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "锁"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "雾"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "连"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "尾"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-4-12",
+                  "text": "连"
+                },
+                {
+                  "id": "default-item-4-13",
+                  "text": "天"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "有山皆图画，无水不文章。",
+      "parseWarnings": [],
+      "id": "grade2-lesson16",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "lessonNo": 16,
+      "filePath": "content/grade2/lesson16.txt"
+    },
+    {
+      "title": "勤学格言",
+      "workId": "daily-2026-2-upper-5",
+      "dynasty": "古典选句",
+      "author": "传统劝学格言",
+      "source": "二年级上册 · 语文园地5 · 日积月累 · 第65页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "勤": {
+          "pinyin": "qín",
+          "meaning": "勤奋。"
+        },
+        "径": {
+          "pinyin": "jìng",
+          "meaning": "小路。"
+        },
+        "涯": {
+          "pinyin": "yá",
+          "meaning": "边际。"
+        }
+      },
+      "characters": {
+        "勤": {
+          "pinyin": "qín",
+          "meaning": "勤奋。"
+        },
+        "径": {
+          "pinyin": "jìng",
+          "meaning": "小路。"
+        },
+        "涯": {
+          "pinyin": "yá",
+          "meaning": "边际。"
+        }
+      },
+      "sections": {
+        "title": "勤学格言",
+        "author": "传统劝学格言",
+        "type": "古文",
+        "workId": "daily-2026-2-upper-5",
+        "dynasty": "古典选句",
+        "source": "二年级上册 · 语文园地5 · 日积月累 · 第65页",
+        "original": "少年不知勤学苦，老来方知读书迟。\n一日读书一日功，一日不读十日空。\n书山有路勤为径，学海无涯苦作舟。",
+        "translation": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。\n天天读书就会天天有收获，学习不能时断时续。\n在知识的高山上，勤奋是前行的小路；在无边的学问海洋中，刻苦是渡海的小船。",
+        "lineTranslations": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。\n天天读书就会天天有收获，学习不能时断时续。\n在知识的高山上，勤奋是前行的小路；在无边的学问海洋中，刻苦是渡海的小船。",
+        "knowledgePoints": "1. ‘方’在第一句中是‘才’的意思。\n2. 后两句用夸张和比喻劝人坚持学习，不是精确计算学习天数。",
+        "characterInfo": "勤：qín｜勤奋。\n径：jìng｜小路。\n涯：yá｜边际。"
+      },
+      "original": "少年不知勤学苦，老来方知读书迟。\n一日读书一日功，一日不读十日空。\n书山有路勤为径，学海无涯苦作舟。",
+      "translation": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。\n天天读书就会天天有收获，学习不能时断时续。\n在知识的高山上，勤奋是前行的小路；在无边的学问海洋中，刻苦是渡海的小船。",
+      "lineTranslations": [
+        "年少时不肯刻苦学习，到年老时才明白读书已经晚了。",
+        "天天读书就会天天有收获，学习不能时断时续。",
+        "在知识的高山上，勤奋是前行的小路；在无边的学问海洋中，刻苦是渡海的小船。"
+      ],
+      "knowledgePoints": [
+        "‘方’在第一句中是‘才’的意思。",
+        "后两句用夸张和比喻劝人坚持学习，不是精确计算学习天数。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "少年不知勤学苦，老来方知读书迟。",
+          "translation": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "一日读书一日功，一日不读十日空。",
+          "translation": "天天读书就会天天有收获，学习不能时断时续。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "书山有路勤为径，学海无涯苦作舟。",
+          "translation": "在知识的高山上，勤奋是前行的小路；在无边的学问海洋中，刻苦是渡海的小船。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "少年不知勤学苦，老来方知读书迟。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "少"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "年"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "勤"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "苦"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "老"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "来"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "方"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "迟"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "一日读书一日功，一日不读十日空。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "功"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "十"
+                },
+                {
+                  "id": "default-item-2-12",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-13",
+                  "text": "空"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "书山有路勤为径，学海无涯苦作舟。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "路"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "勤"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "为"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "径"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "海"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "涯"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "苦"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "作"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "舟"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "少年不知勤学苦，老来方知读书迟。",
+      "parseWarnings": [],
+      "id": "grade2-lesson17",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "lessonNo": 17,
+      "filePath": "content/grade2/lesson17.txt"
+    },
+    {
+      "title": "立志名句",
+      "workId": "daily-2026-2-upper-6",
+      "dynasty": "古典选句",
+      "author": "《后汉书》、诸葛亮、王勃",
+      "source": "二年级上册 · 语文园地6 · 日积月累 · 第79页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "竟": {
+          "pinyin": "jìng",
+          "meaning": "最终。"
+        },
+        "益": {
+          "pinyin": "yì",
+          "meaning": "更加。"
+        },
+        "坠": {
+          "pinyin": "zhuì",
+          "meaning": "落下，这里指放弃。"
+        }
+      },
+      "characters": {
+        "竟": {
+          "pinyin": "jìng",
+          "meaning": "最终。"
+        },
+        "益": {
+          "pinyin": "yì",
+          "meaning": "更加。"
+        },
+        "坠": {
+          "pinyin": "zhuì",
+          "meaning": "落下，这里指放弃。"
+        }
+      },
+      "sections": {
+        "title": "立志名句",
+        "author": "《后汉书》、诸葛亮、王勃",
+        "type": "古文",
+        "workId": "daily-2026-2-upper-6",
+        "dynasty": "古典选句",
+        "source": "二年级上册 · 语文园地6 · 日积月累 · 第79页",
+        "original": "有志者事竟成。\n志当存高远。\n穷且益坚，不坠青云之志。",
+        "translation": "有志向并坚持努力的人，事情最终能够做成。\n一个人应当树立高远的志向。\n处境困难时更要坚强，不放弃远大的志向。",
+        "lineTranslations": "有志向并坚持努力的人，事情最终能够做成。\n一个人应当树立高远的志向。\n处境困难时更要坚强，不放弃远大的志向。",
+        "knowledgePoints": "1. ‘穷’在这里指处境困难，不只是钱少。\n2. ‘青云之志’比喻高远的志向。",
+        "characterInfo": "竟：jìng｜最终。\n益：yì｜更加。\n坠：zhuì｜落下，这里指放弃。"
+      },
+      "original": "有志者事竟成。\n志当存高远。\n穷且益坚，不坠青云之志。",
+      "translation": "有志向并坚持努力的人，事情最终能够做成。\n一个人应当树立高远的志向。\n处境困难时更要坚强，不放弃远大的志向。",
+      "lineTranslations": [
+        "有志向并坚持努力的人，事情最终能够做成。",
+        "一个人应当树立高远的志向。",
+        "处境困难时更要坚强，不放弃远大的志向。"
+      ],
+      "knowledgePoints": [
+        "‘穷’在这里指处境困难，不只是钱少。",
+        "‘青云之志’比喻高远的志向。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "有志者事竟成。",
+          "translation": "有志向并坚持努力的人，事情最终能够做成。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "志当存高远。",
+          "translation": "一个人应当树立高远的志向。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "穷且益坚，不坠青云之志。",
+          "translation": "处境困难时更要坚强，不放弃远大的志向。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "有志者事竟成。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "志"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "事"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "竟"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "成"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "志当存高远。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "志"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "当"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "存"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "高"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "远"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "穷且益坚，不坠青云之志。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "穷"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "且"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "益"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "坚"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "坠"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "青"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "云"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "志"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "有志者事竟成。",
+      "parseWarnings": [],
+      "id": "grade2-lesson18",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "lessonNo": 18,
+      "filePath": "content/grade2/lesson18.txt"
+    },
+    {
+      "title": "待人与守规矩",
+      "workId": "daily-2026-2-upper-8",
+      "dynasty": "古典选句",
+      "author": "《论语》《孟子》",
+      "source": "二年级上册 · 语文园地8 · 日积月累 · 第105页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "欲": {
+          "pinyin": "yù",
+          "meaning": "想要。"
+        },
+        "施": {
+          "pinyin": "shī",
+          "meaning": "施加。"
+        },
+        "矩": {
+          "pinyin": "jǔ",
+          "meaning": "古代用来画直角、方形的工具。"
+        }
+      },
+      "characters": {
+        "欲": {
+          "pinyin": "yù",
+          "meaning": "想要。"
+        },
+        "施": {
+          "pinyin": "shī",
+          "meaning": "施加。"
+        },
+        "矩": {
+          "pinyin": "jǔ",
+          "meaning": "古代用来画直角、方形的工具。"
+        }
+      },
+      "sections": {
+        "title": "待人与守规矩",
+        "author": "《论语》《孟子》",
+        "type": "古文",
+        "workId": "daily-2026-2-upper-8",
+        "dynasty": "古典选句",
+        "source": "二年级上册 · 语文园地8 · 日积月累 · 第105页",
+        "original": "己所不欲，勿施于人。\n与朋友交，言而有信。\n不以规矩，不能成方圆。",
+        "translation": "自己不愿意承受的事情，也不要强加给别人。\n和朋友交往，说话要讲信用。\n不用规和矩就画不好圆和方，比喻做事要遵守规则。",
+        "lineTranslations": "自己不愿意承受的事情，也不要强加给别人。\n和朋友交往，说话要讲信用。\n不用规和矩就画不好圆和方，比喻做事要遵守规则。",
+        "knowledgePoints": "1. 前两句选自《论语》，第三句选自《孟子》。\n2. 懂得替别人着想、守信用、守规则，是与人相处的重要办法。",
+        "characterInfo": "欲：yù｜想要。\n施：shī｜施加。\n矩：jǔ｜古代用来画直角、方形的工具。"
+      },
+      "original": "己所不欲，勿施于人。\n与朋友交，言而有信。\n不以规矩，不能成方圆。",
+      "translation": "自己不愿意承受的事情，也不要强加给别人。\n和朋友交往，说话要讲信用。\n不用规和矩就画不好圆和方，比喻做事要遵守规则。",
+      "lineTranslations": [
+        "自己不愿意承受的事情，也不要强加给别人。",
+        "和朋友交往，说话要讲信用。",
+        "不用规和矩就画不好圆和方，比喻做事要遵守规则。"
+      ],
+      "knowledgePoints": [
+        "前两句选自《论语》，第三句选自《孟子》。",
+        "懂得替别人着想、守信用、守规则，是与人相处的重要办法。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "己所不欲，勿施于人。",
+          "translation": "自己不愿意承受的事情，也不要强加给别人。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "与朋友交，言而有信。",
+          "translation": "和朋友交往，说话要讲信用。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "不以规矩，不能成方圆。",
+          "translation": "不用规和矩就画不好圆和方，比喻做事要遵守规则。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "己所不欲，勿施于人。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "己"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "所"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "欲"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "勿"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "施"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "与朋友交，言而有信。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "与"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "朋"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "友"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "交"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "信"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "不以规矩，不能成方圆。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "规"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "矩"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "能"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "成"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "方"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "圆"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "己所不欲，勿施于人。",
+      "parseWarnings": [],
+      "id": "grade2-lesson19",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "lessonNo": 19,
+      "filePath": "content/grade2/lesson19.txt"
+    },
+    {
+      "title": "诚信名句",
+      "workId": "daily-2026-2-lower-4",
+      "dynasty": "古典选句",
+      "author": "《左传》《管子》《韩非子》",
+      "source": "二年级下册 · 语文园地4 · 日积月累 · 第52页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "信": {
+          "pinyin": "xìn",
+          "meaning": "信用。"
+        },
+        "立": {
+          "pinyin": "lì",
+          "meaning": "立足、建立。"
+        },
+        "结": {
+          "pinyin": "jié",
+          "meaning": "联系、纽带。"
+        }
+      },
+      "characters": {
+        "信": {
+          "pinyin": "xìn",
+          "meaning": "信用。"
+        },
+        "立": {
+          "pinyin": "lì",
+          "meaning": "立足、建立。"
+        },
+        "结": {
+          "pinyin": "jié",
+          "meaning": "联系、纽带。"
+        }
+      },
+      "sections": {
+        "title": "诚信名句",
+        "author": "《左传》《管子》《韩非子》",
+        "type": "古文",
+        "workId": "daily-2026-2-lower-4",
+        "dynasty": "古典选句",
+        "source": "二年级下册 · 语文园地4 · 日积月累 · 第52页",
+        "original": "失信不立。\n诚信者，天下之结也。\n小信成则大信立。",
+        "translation": "不守信用，就难以在社会上立足。\n诚实守信，是连接天下人与人的纽带。\n小事上能守信用，才能建立起大的信用。",
+        "lineTranslations": "不守信用，就难以在社会上立足。\n诚实守信，是连接天下人与人的纽带。\n小事上能守信用，才能建立起大的信用。",
+        "knowledgePoints": "1. 三句分别选自《左传》《管子》《韩非子》，按教材署名。\n2. 信用要靠一件件小事积累。",
+        "characterInfo": "信：xìn｜信用。\n立：lì｜立足、建立。\n结：jié｜联系、纽带。"
+      },
+      "original": "失信不立。\n诚信者，天下之结也。\n小信成则大信立。",
+      "translation": "不守信用，就难以在社会上立足。\n诚实守信，是连接天下人与人的纽带。\n小事上能守信用，才能建立起大的信用。",
+      "lineTranslations": [
+        "不守信用，就难以在社会上立足。",
+        "诚实守信，是连接天下人与人的纽带。",
+        "小事上能守信用，才能建立起大的信用。"
+      ],
+      "knowledgePoints": [
+        "三句分别选自《左传》《管子》《韩非子》，按教材署名。",
+        "信用要靠一件件小事积累。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "失信不立。",
+          "translation": "不守信用，就难以在社会上立足。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "诚信者，天下之结也。",
+          "translation": "诚实守信，是连接天下人与人的纽带。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "小信成则大信立。",
+          "translation": "小事上能守信用，才能建立起大的信用。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "失信不立。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "失"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "信"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "立"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "诚信者，天下之结也。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "诚"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "信"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "下"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "结"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "也"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "小信成则大信立。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "小"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "信"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "成"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "大"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "信"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "立"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "失信不立。",
+      "parseWarnings": [],
+      "id": "grade2-lesson20",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "lessonNo": 20,
+      "filePath": "content/grade2/lesson20.txt"
+    },
+    {
+      "title": "弟子规（节选）",
+      "workId": "daily-2026-2-lower-5",
+      "dynasty": "清",
+      "author": "[清] 李毓秀",
+      "source": "二年级下册 · 语文园地5 · 日积月累 · 第67页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "履": {
+          "pinyin": "lǚ",
+          "meaning": "鞋子。"
+        },
+        "砺": {
+          "pinyin": "lì",
+          "meaning": "磨炼、勉励。"
+        },
+        "戚": {
+          "pinyin": "qī",
+          "meaning": "忧愁。"
+        }
+      },
+      "characters": {
+        "履": {
+          "pinyin": "lǚ",
+          "meaning": "鞋子。"
+        },
+        "砺": {
+          "pinyin": "lì",
+          "meaning": "磨炼、勉励。"
+        },
+        "戚": {
+          "pinyin": "qī",
+          "meaning": "忧愁。"
+        }
+      },
+      "sections": {
+        "title": "弟子规（节选）",
+        "author": "[清] 李毓秀",
+        "type": "古文",
+        "workId": "daily-2026-2-lower-5",
+        "dynasty": "清",
+        "source": "二年级下册 · 语文园地5 · 日积月累 · 第67页",
+        "original": "冠必正，纽必结，袜与履，俱紧切。\n置冠服，有定位，勿乱顿，致污秽。\n唯德学，唯才艺，不如人，当自砺。\n若衣服，若饮食，不如人，勿生戚。",
+        "translation": "帽子要戴正，衣扣要扣好，袜子和鞋子都要穿得合脚整齐。\n放置帽子和衣服要有固定位置，不要乱扔，以免弄脏。\n品德学问和才能技艺不如别人时，应当勉励自己努力提高。\n穿着和饮食不如别人时，不必因此忧愁。",
+        "lineTranslations": "帽子要戴正，衣扣要扣好，袜子和鞋子都要穿得合脚整齐。\n放置帽子和衣服要有固定位置，不要乱扔，以免弄脏。\n品德学问和才能技艺不如别人时，应当勉励自己努力提高。\n穿着和饮食不如别人时，不必因此忧愁。",
+        "knowledgePoints": "1. 冠：帽子；俱：都；顿：放置。\n2. 节选强调生活整洁与自我勉励，不攀比吃穿。",
+        "characterInfo": "履：lǚ｜鞋子。\n砺：lì｜磨炼、勉励。\n戚：qī｜忧愁。"
+      },
+      "original": "冠必正，纽必结，袜与履，俱紧切。\n置冠服，有定位，勿乱顿，致污秽。\n唯德学，唯才艺，不如人，当自砺。\n若衣服，若饮食，不如人，勿生戚。",
+      "translation": "帽子要戴正，衣扣要扣好，袜子和鞋子都要穿得合脚整齐。\n放置帽子和衣服要有固定位置，不要乱扔，以免弄脏。\n品德学问和才能技艺不如别人时，应当勉励自己努力提高。\n穿着和饮食不如别人时，不必因此忧愁。",
+      "lineTranslations": [
+        "帽子要戴正，衣扣要扣好，袜子和鞋子都要穿得合脚整齐。",
+        "放置帽子和衣服要有固定位置，不要乱扔，以免弄脏。",
+        "品德学问和才能技艺不如别人时，应当勉励自己努力提高。",
+        "穿着和饮食不如别人时，不必因此忧愁。"
+      ],
+      "knowledgePoints": [
+        "冠：帽子；俱：都；顿：放置。",
+        "节选强调生活整洁与自我勉励，不攀比吃穿。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "冠必正，纽必结，袜与履，俱紧切。",
+          "translation": "帽子要戴正，衣扣要扣好，袜子和鞋子都要穿得合脚整齐。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "置冠服，有定位，勿乱顿，致污秽。",
+          "translation": "放置帽子和衣服要有固定位置，不要乱扔，以免弄脏。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "唯德学，唯才艺，不如人，当自砺。",
+          "translation": "品德学问和才能技艺不如别人时，应当勉励自己努力提高。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "若衣服，若饮食，不如人，勿生戚。",
+          "translation": "穿着和饮食不如别人时，不必因此忧愁。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "冠必正，纽必结，袜与履，俱紧切。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "冠"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "必"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "正"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "纽"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "必"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "结"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "袜"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "与"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "履"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "俱"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "紧"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "切"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "置冠服，有定位，勿乱顿，致污秽。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "置"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "冠"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "服"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "定"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "位"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "勿"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "乱"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "顿"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "致"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "污"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "秽"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "唯德学，唯才艺，不如人，当自砺。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "唯"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "德"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "唯"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "才"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "艺"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "如"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "当"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "自"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "砺"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "若衣服，若饮食，不如人，勿生戚。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "若"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "衣"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "服"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "若"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "饮"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "食"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "如"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "勿"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "生"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "戚"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "冠必正，纽必结，袜与履，俱紧切。",
+      "parseWarnings": [],
+      "id": "grade2-lesson21",
+      "gradeId": "grade2",
+      "gradeName": "二年级",
+      "lessonNo": 21,
+      "filePath": "content/grade2/lesson21.txt"
     },
     {
       "title": "所见",
@@ -12857,6 +15128,1289 @@
       "filePath": "content/grade3/lesson25.txt"
     },
     {
+      "title": "仁爱与善言",
+      "workId": "daily-2026-3-upper-3",
+      "dynasty": "古典选句",
+      "author": "《论语》《墨子》《孟子》《荀子》",
+      "source": "三年级上册 · 语文园地3 · 日积月累 · 第44页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "贰": {
+          "pinyin": "èr",
+          "meaning": "重复。"
+        },
+        "帛": {
+          "pinyin": "bó",
+          "meaning": "丝织品。"
+        },
+        "戟": {
+          "pinyin": "jǐ",
+          "meaning": "古代的一种兵器。"
+        }
+      },
+      "characters": {
+        "贰": {
+          "pinyin": "èr",
+          "meaning": "重复。"
+        },
+        "帛": {
+          "pinyin": "bó",
+          "meaning": "丝织品。"
+        },
+        "戟": {
+          "pinyin": "jǐ",
+          "meaning": "古代的一种兵器。"
+        }
+      },
+      "sections": {
+        "title": "仁爱与善言",
+        "author": "《论语》《墨子》《孟子》《荀子》",
+        "type": "古文",
+        "workId": "daily-2026-3-upper-3",
+        "dynasty": "古典选句",
+        "source": "三年级上册 · 语文园地3 · 日积月累 · 第44页",
+        "original": "不迁怒，不贰过。\n爱人若爱其身。\n仁者爱人，有礼者敬人。\n与人善言，暖于布帛；伤人以言，深于矛戟。",
+        "translation": "不把怒气发泄到无关的人身上，不重复犯同样的错误。\n爱护别人，要像爱护自己一样。\n有仁爱之心的人爱护别人，有礼貌的人尊重别人。\n友善的话比布和丝织品更使人温暖，伤人的话比矛戟刺人还深。",
+        "lineTranslations": "不把怒气发泄到无关的人身上，不重复犯同样的错误。\n爱护别人，要像爱护自己一样。\n有仁爱之心的人爱护别人，有礼貌的人尊重别人。\n友善的话比布和丝织品更使人温暖，伤人的话比矛戟刺人还深。",
+        "knowledgePoints": "1. 迁怒：把自己的怒气发泄到不相关的人身上。\n2. 四句话从改正自己、爱护别人和友善说话等方面说明仁爱。",
+        "characterInfo": "贰：èr｜重复。\n帛：bó｜丝织品。\n戟：jǐ｜古代的一种兵器。"
+      },
+      "original": "不迁怒，不贰过。\n爱人若爱其身。\n仁者爱人，有礼者敬人。\n与人善言，暖于布帛；伤人以言，深于矛戟。",
+      "translation": "不把怒气发泄到无关的人身上，不重复犯同样的错误。\n爱护别人，要像爱护自己一样。\n有仁爱之心的人爱护别人，有礼貌的人尊重别人。\n友善的话比布和丝织品更使人温暖，伤人的话比矛戟刺人还深。",
+      "lineTranslations": [
+        "不把怒气发泄到无关的人身上，不重复犯同样的错误。",
+        "爱护别人，要像爱护自己一样。",
+        "有仁爱之心的人爱护别人，有礼貌的人尊重别人。",
+        "友善的话比布和丝织品更使人温暖，伤人的话比矛戟刺人还深。"
+      ],
+      "knowledgePoints": [
+        "迁怒：把自己的怒气发泄到不相关的人身上。",
+        "四句话从改正自己、爱护别人和友善说话等方面说明仁爱。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "不迁怒，不贰过。",
+          "translation": "不把怒气发泄到无关的人身上，不重复犯同样的错误。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "爱人若爱其身。",
+          "translation": "爱护别人，要像爱护自己一样。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "仁者爱人，有礼者敬人。",
+          "translation": "有仁爱之心的人爱护别人，有礼貌的人尊重别人。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "与人善言，暖于布帛；伤人以言，深于矛戟。",
+          "translation": "友善的话比布和丝织品更使人温暖，伤人的话比矛戟刺人还深。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "不迁怒，不贰过。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "迁"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "怒"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "贰"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "过"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "爱人若爱其身。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "若"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "其"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "身"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "仁者爱人，有礼者敬人。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "爱"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "礼"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "敬"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "与人善言，暖于布帛；伤人以言，深于矛戟。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "与"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "善"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "暖"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "布"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "帛"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "伤"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-4-12",
+                  "text": "深"
+                },
+                {
+                  "id": "default-item-4-13",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-14",
+                  "text": "矛"
+                },
+                {
+                  "id": "default-item-4-15",
+                  "text": "戟"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "不迁怒，不贰过。",
+      "parseWarnings": [],
+      "id": "grade3-lesson26",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 26,
+      "filePath": "content/grade3/lesson26.txt"
+    },
+    {
+      "title": "同心合作",
+      "workId": "daily-2026-3-upper-4",
+      "dynasty": "古典选句",
+      "author": "传统谚语与《周易》名句",
+      "source": "三年级上册 · 语文园地4 · 日积月累 · 第56页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "齐": {
+          "pinyin": "qí",
+          "meaning": "齐心，一心一意地合作。"
+        },
+        "利": {
+          "pinyin": "lì",
+          "meaning": "锋利。"
+        },
+        "匠": {
+          "pinyin": "jiàng",
+          "meaning": "有手艺的人。"
+        }
+      },
+      "characters": {
+        "齐": {
+          "pinyin": "qí",
+          "meaning": "齐心，一心一意地合作。"
+        },
+        "利": {
+          "pinyin": "lì",
+          "meaning": "锋利。"
+        },
+        "匠": {
+          "pinyin": "jiàng",
+          "meaning": "有手艺的人。"
+        }
+      },
+      "sections": {
+        "title": "同心合作",
+        "author": "传统谚语与《周易》名句",
+        "type": "古文",
+        "workId": "daily-2026-3-upper-4",
+        "dynasty": "古典选句",
+        "source": "三年级上册 · 语文园地4 · 日积月累 · 第56页",
+        "original": "人心齐，泰山移。\n二人同心，其利断金。\n三个臭皮匠，顶个诸葛亮。",
+        "translation": "大家齐心协力，就能克服很大的困难。\n两个人心意相通，合作的力量就像锋利的工具，能斩断金属。\n几个人共同商量，可以想出一个人想不到的好办法。",
+        "lineTranslations": "大家齐心协力，就能克服很大的困难。\n两个人心意相通，合作的力量就像锋利的工具，能斩断金属。\n几个人共同商量，可以想出一个人想不到的好办法。",
+        "knowledgePoints": "1. ‘二人同心，其利断金’出自《周易》。\n2. ‘泰山移’和‘断金’是夸张说法，用来强调合作的力量。",
+        "characterInfo": "齐：qí｜齐心，一心一意地合作。\n利：lì｜锋利。\n匠：jiàng｜有手艺的人。"
+      },
+      "original": "人心齐，泰山移。\n二人同心，其利断金。\n三个臭皮匠，顶个诸葛亮。",
+      "translation": "大家齐心协力，就能克服很大的困难。\n两个人心意相通，合作的力量就像锋利的工具，能斩断金属。\n几个人共同商量，可以想出一个人想不到的好办法。",
+      "lineTranslations": [
+        "大家齐心协力，就能克服很大的困难。",
+        "两个人心意相通，合作的力量就像锋利的工具，能斩断金属。",
+        "几个人共同商量，可以想出一个人想不到的好办法。"
+      ],
+      "knowledgePoints": [
+        "‘二人同心，其利断金’出自《周易》。",
+        "‘泰山移’和‘断金’是夸张说法，用来强调合作的力量。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "人心齐，泰山移。",
+          "translation": "大家齐心协力，就能克服很大的困难。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "二人同心，其利断金。",
+          "translation": "两个人心意相通，合作的力量就像锋利的工具，能斩断金属。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "三个臭皮匠，顶个诸葛亮。",
+          "translation": "几个人共同商量，可以想出一个人想不到的好办法。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "人心齐，泰山移。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "心"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "齐"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "泰"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "移"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "二人同心，其利断金。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "二"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "同"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "心"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "其"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "利"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "断"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "金"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "三个臭皮匠，顶个诸葛亮。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "三"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "个"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "臭"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "皮"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "匠"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "顶"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "个"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "诸"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "葛"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "亮"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "人心齐，泰山移。",
+      "parseWarnings": [],
+      "id": "grade3-lesson27",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 27,
+      "filePath": "content/grade3/lesson27.txt"
+    },
+    {
+      "title": "立志与坚持",
+      "workId": "daily-2026-3-upper-8",
+      "dynasty": "古典选句",
+      "author": "《论语》《墨子》《荀子》",
+      "source": "三年级上册 · 语文园地8 · 日积月累 · 第108页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "毅": {
+          "pinyin": "yì",
+          "meaning": "意志坚定。"
+        },
+        "锲": {
+          "pinyin": "qiè",
+          "meaning": "刻。"
+        },
+        "镂": {
+          "pinyin": "lòu",
+          "meaning": "雕刻。"
+        }
+      },
+      "characters": {
+        "毅": {
+          "pinyin": "yì",
+          "meaning": "意志坚定。"
+        },
+        "锲": {
+          "pinyin": "qiè",
+          "meaning": "刻。"
+        },
+        "镂": {
+          "pinyin": "lòu",
+          "meaning": "雕刻。"
+        }
+      },
+      "sections": {
+        "title": "立志与坚持",
+        "author": "《论语》《墨子》《荀子》",
+        "type": "古文",
+        "workId": "daily-2026-3-upper-8",
+        "dynasty": "古典选句",
+        "source": "三年级上册 · 语文园地8 · 日积月累 · 第108页",
+        "original": "士不可以不弘毅，任重而道远。\n志不强者智不达，言不信者行不果。\n锲而舍之，朽木不折；锲而不舍，金石可镂。",
+        "translation": "有志向的人要胸怀宽广、意志坚定，因为肩负的责任重大，道路长远。\n意志不坚定的人，才智难以充分发展；说话不守信用的人，做事难以取得成果。\n刻几下就停止，腐朽的木头也刻不断；坚持不停地刻，金石也能刻出花纹。",
+        "lineTranslations": "有志向的人要胸怀宽广、意志坚定，因为肩负的责任重大，道路长远。\n意志不坚定的人，才智难以充分发展；说话不守信用的人，做事难以取得成果。\n刻几下就停止，腐朽的木头也刻不断；坚持不停地刻，金石也能刻出花纹。",
+        "knowledgePoints": "1. 弘：宽广；任：责任。\n2. 三句话提醒我们立志、守信，并把努力坚持下去。",
+        "characterInfo": "毅：yì｜意志坚定。\n锲：qiè｜刻。\n镂：lòu｜雕刻。"
+      },
+      "original": "士不可以不弘毅，任重而道远。\n志不强者智不达，言不信者行不果。\n锲而舍之，朽木不折；锲而不舍，金石可镂。",
+      "translation": "有志向的人要胸怀宽广、意志坚定，因为肩负的责任重大，道路长远。\n意志不坚定的人，才智难以充分发展；说话不守信用的人，做事难以取得成果。\n刻几下就停止，腐朽的木头也刻不断；坚持不停地刻，金石也能刻出花纹。",
+      "lineTranslations": [
+        "有志向的人要胸怀宽广、意志坚定，因为肩负的责任重大，道路长远。",
+        "意志不坚定的人，才智难以充分发展；说话不守信用的人，做事难以取得成果。",
+        "刻几下就停止，腐朽的木头也刻不断；坚持不停地刻，金石也能刻出花纹。"
+      ],
+      "knowledgePoints": [
+        "弘：宽广；任：责任。",
+        "三句话提醒我们立志、守信，并把努力坚持下去。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "士不可以不弘毅，任重而道远。",
+          "translation": "有志向的人要胸怀宽广、意志坚定，因为肩负的责任重大，道路长远。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "志不强者智不达，言不信者行不果。",
+          "translation": "意志不坚定的人，才智难以充分发展；说话不守信用的人，做事难以取得成果。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "锲而舍之，朽木不折；锲而不舍，金石可镂。",
+          "translation": "刻几下就停止，腐朽的木头也刻不断；坚持不停地刻，金石也能刻出花纹。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "士不可以不弘毅，任重而道远。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "士"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "可"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "弘"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "毅"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "任"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "重"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "道"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "远"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "志不强者智不达，言不信者行不果。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "志"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "强"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "智"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "达"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "信"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-2-12",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-13",
+                  "text": "果"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "锲而舍之，朽木不折；锲而不舍，金石可镂。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "锲"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "舍"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "朽"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "木"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "折"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "锲"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "舍"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "金"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "石"
+                },
+                {
+                  "id": "default-item-3-14",
+                  "text": "可"
+                },
+                {
+                  "id": "default-item-3-15",
+                  "text": "镂"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "士不可以不弘毅，任重而道远。",
+      "parseWarnings": [],
+      "id": "grade3-lesson28",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 28,
+      "filePath": "content/grade3/lesson28.txt"
+    },
+    {
+      "title": "知错与改过",
+      "workId": "daily-2026-3-lower-6",
+      "dynasty": "古典选句",
+      "author": "《周易》《论语》《左传》",
+      "source": "三年级下册 · 语文园地6 · 日积月累 · 第82页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "迁": {
+          "pinyin": "qiān",
+          "meaning": "转向好的方面。"
+        },
+        "谓": {
+          "pinyin": "wèi",
+          "meaning": "称为。"
+        },
+        "焉": {
+          "pinyin": "yān",
+          "meaning": "用于句末的语气词。"
+        }
+      },
+      "characters": {
+        "迁": {
+          "pinyin": "qiān",
+          "meaning": "转向好的方面。"
+        },
+        "谓": {
+          "pinyin": "wèi",
+          "meaning": "称为。"
+        },
+        "焉": {
+          "pinyin": "yān",
+          "meaning": "用于句末的语气词。"
+        }
+      },
+      "sections": {
+        "title": "知错与改过",
+        "author": "《周易》《论语》《左传》",
+        "type": "古文",
+        "workId": "daily-2026-3-lower-6",
+        "dynasty": "古典选句",
+        "source": "三年级下册 · 语文园地6 · 日积月累 · 第82页",
+        "original": "见善则迁，有过则改。\n过而不改，是谓过矣。\n人谁无过？过而能改，善莫大焉。",
+        "translation": "看见好的行为就学习，发现自己的过错就改正。\n有了过错却不改正，这才是真正的过错。\n谁能没有过错呢？有错能够改正，没有比这更好的事了。",
+        "lineTranslations": "看见好的行为就学习，发现自己的过错就改正。\n有了过错却不改正，这才是真正的过错。\n谁能没有过错呢？有错能够改正，没有比这更好的事了。",
+        "knowledgePoints": "1. 前两句的‘过’都指过错。\n2. 学习古人的话，也要在生活中练习承认错误、认真改正。",
+        "characterInfo": "迁：qiān｜转向好的方面。\n谓：wèi｜称为。\n焉：yān｜用于句末的语气词。"
+      },
+      "original": "见善则迁，有过则改。\n过而不改，是谓过矣。\n人谁无过？过而能改，善莫大焉。",
+      "translation": "看见好的行为就学习，发现自己的过错就改正。\n有了过错却不改正，这才是真正的过错。\n谁能没有过错呢？有错能够改正，没有比这更好的事了。",
+      "lineTranslations": [
+        "看见好的行为就学习，发现自己的过错就改正。",
+        "有了过错却不改正，这才是真正的过错。",
+        "谁能没有过错呢？有错能够改正，没有比这更好的事了。"
+      ],
+      "knowledgePoints": [
+        "前两句的‘过’都指过错。",
+        "学习古人的话，也要在生活中练习承认错误、认真改正。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "见善则迁，有过则改。",
+          "translation": "看见好的行为就学习，发现自己的过错就改正。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "过而不改，是谓过矣。",
+          "translation": "有了过错却不改正，这才是真正的过错。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "人谁无过？过而能改，善莫大焉。",
+          "translation": "谁能没有过错呢？有错能够改正，没有比这更好的事了。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "见善则迁，有过则改。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "见"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "善"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "迁"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "过"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "改"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "过而不改，是谓过矣。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "过"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "改"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "是"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "谓"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "过"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "矣"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "人谁无过？过而能改，善莫大焉。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "谁"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "过"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "过"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "能"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "改"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "善"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "莫"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "大"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "焉"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "见善则迁，有过则改。",
+      "parseWarnings": [],
+      "id": "grade3-lesson29",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 29,
+      "filePath": "content/grade3/lesson29.txt"
+    },
+    {
+      "title": "处事与环境",
+      "workId": "daily-2026-3-lower-8",
+      "dynasty": "古典选句",
+      "author": "传统格言与古籍名句",
+      "source": "三年级下册 · 语文园地8 · 日积月累 · 第110页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "掩": {
+          "pinyin": "yǎn",
+          "meaning": "挡住。"
+        },
+        "穴": {
+          "pinyin": "xué",
+          "meaning": "洞穴。"
+        },
+        "朱": {
+          "pinyin": "zhū",
+          "meaning": "朱砂，红色颜料。"
+        }
+      },
+      "characters": {
+        "掩": {
+          "pinyin": "yǎn",
+          "meaning": "挡住。"
+        },
+        "穴": {
+          "pinyin": "xué",
+          "meaning": "洞穴。"
+        },
+        "朱": {
+          "pinyin": "zhū",
+          "meaning": "朱砂，红色颜料。"
+        }
+      },
+      "sections": {
+        "title": "处事与环境",
+        "author": "传统格言与古籍名句",
+        "type": "古文",
+        "workId": "daily-2026-3-lower-8",
+        "dynasty": "古典选句",
+        "source": "三年级下册 · 语文园地8 · 日积月累 · 第110页",
+        "original": "兵来将挡，水来土掩。\n不入虎穴，焉得虎子。\n眼见为实，耳听为虚。\n近朱者赤，近墨者黑。",
+        "translation": "遇到不同的困难，就想相应的办法来应对。\n不进入老虎的洞穴，怎么能得到小老虎？比喻要取得成果，需要付出努力、勇于实践。\n亲眼见到的通常更可靠，听来的消息需要核实。\n接近朱砂容易染红，接近墨容易染黑，比喻环境和身边的人会影响自己。",
+        "lineTranslations": "遇到不同的困难，就想相应的办法来应对。\n不进入老虎的洞穴，怎么能得到小老虎？比喻要取得成果，需要付出努力、勇于实践。\n亲眼见到的通常更可靠，听来的消息需要核实。\n接近朱砂容易染红，接近墨容易染黑，比喻环境和身边的人会影响自己。",
+        "knowledgePoints": "1. 焉：怎么；得：得到。\n2. 名句用比喻谈处事和环境；听到消息仍要认真核实，遇到危险要量力而行。",
+        "characterInfo": "掩：yǎn｜挡住。\n穴：xué｜洞穴。\n朱：zhū｜朱砂，红色颜料。"
+      },
+      "original": "兵来将挡，水来土掩。\n不入虎穴，焉得虎子。\n眼见为实，耳听为虚。\n近朱者赤，近墨者黑。",
+      "translation": "遇到不同的困难，就想相应的办法来应对。\n不进入老虎的洞穴，怎么能得到小老虎？比喻要取得成果，需要付出努力、勇于实践。\n亲眼见到的通常更可靠，听来的消息需要核实。\n接近朱砂容易染红，接近墨容易染黑，比喻环境和身边的人会影响自己。",
+      "lineTranslations": [
+        "遇到不同的困难，就想相应的办法来应对。",
+        "不进入老虎的洞穴，怎么能得到小老虎？比喻要取得成果，需要付出努力、勇于实践。",
+        "亲眼见到的通常更可靠，听来的消息需要核实。",
+        "接近朱砂容易染红，接近墨容易染黑，比喻环境和身边的人会影响自己。"
+      ],
+      "knowledgePoints": [
+        "焉：怎么；得：得到。",
+        "名句用比喻谈处事和环境；听到消息仍要认真核实，遇到危险要量力而行。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "兵来将挡，水来土掩。",
+          "translation": "遇到不同的困难，就想相应的办法来应对。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "不入虎穴，焉得虎子。",
+          "translation": "不进入老虎的洞穴，怎么能得到小老虎？比喻要取得成果，需要付出努力、勇于实践。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "眼见为实，耳听为虚。",
+          "translation": "亲眼见到的通常更可靠，听来的消息需要核实。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "近朱者赤，近墨者黑。",
+          "translation": "接近朱砂容易染红，接近墨容易染黑，比喻环境和身边的人会影响自己。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "兵来将挡，水来土掩。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "兵"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "来"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "将"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "挡"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "来"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "土"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "掩"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "不入虎穴，焉得虎子。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "入"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "虎"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "穴"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "焉"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "得"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "虎"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "子"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "眼见为实，耳听为虚。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "眼"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "见"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "为"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "实"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "耳"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "听"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "为"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "虚"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "近朱者赤，近墨者黑。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "近"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "朱"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "赤"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "近"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "墨"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "黑"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "兵来将挡，水来土掩。",
+      "parseWarnings": [],
+      "id": "grade3-lesson30",
+      "gradeId": "grade3",
+      "gradeName": "三年级",
+      "lessonNo": 30,
+      "filePath": "content/grade3/lesson30.txt"
+    },
+    {
       "title": "浪淘沙·其七",
       "workId": "work-d821c8e298ad",
       "dynasty": "唐",
@@ -17643,6 +21197,1336 @@
       "gradeName": "四年级",
       "lessonNo": 19,
       "filePath": "content/grade4/lesson19.txt"
+    },
+    {
+      "title": "求学与善疑",
+      "workId": "daily-2026-4-upper-2",
+      "dynasty": "古典选句",
+      "author": "《中庸》、王充、韩愈、方以智",
+      "source": "四年级上册 · 语文园地2 · 日积月累 · 第32页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "审": {
+          "pinyin": "shěn",
+          "meaning": "详细、周密。"
+        },
+        "笃": {
+          "pinyin": "dǔ",
+          "meaning": "踏实、切实。"
+        },
+        "孰": {
+          "pinyin": "shú",
+          "meaning": "谁。"
+        }
+      },
+      "characters": {
+        "审": {
+          "pinyin": "shěn",
+          "meaning": "详细、周密。"
+        },
+        "笃": {
+          "pinyin": "dǔ",
+          "meaning": "踏实、切实。"
+        },
+        "孰": {
+          "pinyin": "shú",
+          "meaning": "谁。"
+        }
+      },
+      "sections": {
+        "title": "求学与善疑",
+        "author": "《中庸》、王充、韩愈、方以智",
+        "type": "古文",
+        "workId": "daily-2026-4-upper-2",
+        "dynasty": "古典选句",
+        "source": "四年级上册 · 语文园地2 · 日积月累 · 第32页",
+        "original": "博学之，审问之，慎思之，明辨之，笃行之。\n智能之士，不学不成，不问不知。\n人非生而知之者，孰能无惑？\n善疑者，不疑人之所疑，而疑人之所不疑。",
+        "translation": "广泛学习，详细请教，认真思考，清楚辨别，踏实实践。\n有才智的人，不学习也不能有所成就，不请教也不能获得知识。\n人并不是生来就懂得知识的，谁能没有疑惑呢？\n善于提问的人，还能在别人没有疑问的地方发现值得思考的问题。",
+        "lineTranslations": "广泛学习，详细请教，认真思考，清楚辨别，踏实实践。\n有才智的人，不学习也不能有所成就，不请教也不能获得知识。\n人并不是生来就懂得知识的，谁能没有疑惑呢？\n善于提问的人，还能在别人没有疑问的地方发现值得思考的问题。",
+        "knowledgePoints": "1. 之：这里代指所学的知识；惑：疑惑。\n2. 学习既要广泛积累，也要善于提问、认真思考和实践。",
+        "characterInfo": "审：shěn｜详细、周密。\n笃：dǔ｜踏实、切实。\n孰：shú｜谁。"
+      },
+      "original": "博学之，审问之，慎思之，明辨之，笃行之。\n智能之士，不学不成，不问不知。\n人非生而知之者，孰能无惑？\n善疑者，不疑人之所疑，而疑人之所不疑。",
+      "translation": "广泛学习，详细请教，认真思考，清楚辨别，踏实实践。\n有才智的人，不学习也不能有所成就，不请教也不能获得知识。\n人并不是生来就懂得知识的，谁能没有疑惑呢？\n善于提问的人，还能在别人没有疑问的地方发现值得思考的问题。",
+      "lineTranslations": [
+        "广泛学习，详细请教，认真思考，清楚辨别，踏实实践。",
+        "有才智的人，不学习也不能有所成就，不请教也不能获得知识。",
+        "人并不是生来就懂得知识的，谁能没有疑惑呢？",
+        "善于提问的人，还能在别人没有疑问的地方发现值得思考的问题。"
+      ],
+      "knowledgePoints": [
+        "之：这里代指所学的知识；惑：疑惑。",
+        "学习既要广泛积累，也要善于提问、认真思考和实践。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "博学之，审问之，慎思之，明辨之，笃行之。",
+          "translation": "广泛学习，详细请教，认真思考，清楚辨别，踏实实践。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "智能之士，不学不成，不问不知。",
+          "translation": "有才智的人，不学习也不能有所成就，不请教也不能获得知识。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "人非生而知之者，孰能无惑？",
+          "translation": "人并不是生来就懂得知识的，谁能没有疑惑呢？",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "善疑者，不疑人之所疑，而疑人之所不疑。",
+          "translation": "善于提问的人，还能在别人没有疑问的地方发现值得思考的问题。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "博学之，审问之，慎思之，明辨之，笃行之。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "博"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "审"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "问"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "慎"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "思"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "明"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "辨"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "笃"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-1-14",
+                  "text": "之"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "智能之士，不学不成，不问不知。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "智"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "能"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "士"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "成"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "问"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "知"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "人非生而知之者，孰能无惑？",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "非"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "生"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "孰"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "能"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "惑"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "善疑者，不疑人之所疑，而疑人之所不疑。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "善"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "疑"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "疑"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "所"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "疑"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "疑"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-12",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-4-13",
+                  "text": "所"
+                },
+                {
+                  "id": "default-item-4-14",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-4-15",
+                  "text": "疑"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "博学之，审问之，慎思之，明辨之，笃行之。",
+      "parseWarnings": [],
+      "id": "grade4-lesson20",
+      "gradeId": "grade4",
+      "gradeName": "四年级",
+      "lessonNo": 20,
+      "filePath": "content/grade4/lesson20.txt"
+    },
+    {
+      "title": "处世格言六则",
+      "workId": "daily-2026-4-upper-7",
+      "dynasty": "古典选句",
+      "author": "古典格言选句",
+      "source": "四年级上册 · 语文园地7 · 日积月累 · 第106页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "驷": {
+          "pinyin": "sì",
+          "meaning": "四匹马驾的车。"
+        },
+        "厘": {
+          "pinyin": "lí",
+          "meaning": "很小的计量单位。"
+        },
+        "谬": {
+          "pinyin": "miù",
+          "meaning": "差错。"
+        }
+      },
+      "characters": {
+        "驷": {
+          "pinyin": "sì",
+          "meaning": "四匹马驾的车。"
+        },
+        "厘": {
+          "pinyin": "lí",
+          "meaning": "很小的计量单位。"
+        },
+        "谬": {
+          "pinyin": "miù",
+          "meaning": "差错。"
+        }
+      },
+      "sections": {
+        "title": "处世格言六则",
+        "author": "古典格言选句",
+        "type": "古文",
+        "workId": "daily-2026-4-upper-7",
+        "dynasty": "古典选句",
+        "source": "四年级上册 · 语文园地7 · 日积月累 · 第106页",
+        "original": "尺有所短，寸有所长。\n机不可失，时不再来。\n一言既出，驷马难追。\n仁者见仁，智者见智。\n差之毫厘，谬以千里。\n知无不言，言无不尽。",
+        "translation": "长的尺也有不足之处，短的寸也有用处，比喻各人都有长处和短处。\n机会不能错过，有些时机一旦过去就不会再来。\n话一旦说出，四匹马拉的车也追不回来，提醒人说话要负责。\n不同的人从不同的角度看同一件事，会有各自的认识。\n开始时只有很小的差错，最后可能造成很大的偏差。\n知道的事情就坦诚说出来，要说就说明白、说充分。",
+        "lineTranslations": "长的尺也有不足之处，短的寸也有用处，比喻各人都有长处和短处。\n机会不能错过，有些时机一旦过去就不会再来。\n话一旦说出，四匹马拉的车也追不回来，提醒人说话要负责。\n不同的人从不同的角度看同一件事，会有各自的认识。\n开始时只有很小的差错，最后可能造成很大的偏差。\n知道的事情就坦诚说出来，要说就说明白、说充分。",
+        "knowledgePoints": "1. 六则格言分别谈长短处、时机、信用、不同见解、细心和坦诚。\n2. 学习时可联系承诺、做事细心和理解不同意见等生活经验。",
+        "characterInfo": "驷：sì｜四匹马驾的车。\n厘：lí｜很小的计量单位。\n谬：miù｜差错。"
+      },
+      "original": "尺有所短，寸有所长。\n机不可失，时不再来。\n一言既出，驷马难追。\n仁者见仁，智者见智。\n差之毫厘，谬以千里。\n知无不言，言无不尽。",
+      "translation": "长的尺也有不足之处，短的寸也有用处，比喻各人都有长处和短处。\n机会不能错过，有些时机一旦过去就不会再来。\n话一旦说出，四匹马拉的车也追不回来，提醒人说话要负责。\n不同的人从不同的角度看同一件事，会有各自的认识。\n开始时只有很小的差错，最后可能造成很大的偏差。\n知道的事情就坦诚说出来，要说就说明白、说充分。",
+      "lineTranslations": [
+        "长的尺也有不足之处，短的寸也有用处，比喻各人都有长处和短处。",
+        "机会不能错过，有些时机一旦过去就不会再来。",
+        "话一旦说出，四匹马拉的车也追不回来，提醒人说话要负责。",
+        "不同的人从不同的角度看同一件事，会有各自的认识。",
+        "开始时只有很小的差错，最后可能造成很大的偏差。",
+        "知道的事情就坦诚说出来，要说就说明白、说充分。"
+      ],
+      "knowledgePoints": [
+        "六则格言分别谈长短处、时机、信用、不同见解、细心和坦诚。",
+        "学习时可联系承诺、做事细心和理解不同意见等生活经验。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "尺有所短，寸有所长。",
+          "translation": "长的尺也有不足之处，短的寸也有用处，比喻各人都有长处和短处。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "机不可失，时不再来。",
+          "translation": "机会不能错过，有些时机一旦过去就不会再来。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "一言既出，驷马难追。",
+          "translation": "话一旦说出，四匹马拉的车也追不回来，提醒人说话要负责。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "仁者见仁，智者见智。",
+          "translation": "不同的人从不同的角度看同一件事，会有各自的认识。",
+          "note": ""
+        },
+        {
+          "id": "line-5",
+          "text": "差之毫厘，谬以千里。",
+          "translation": "开始时只有很小的差错，最后可能造成很大的偏差。",
+          "note": ""
+        },
+        {
+          "id": "line-6",
+          "text": "知无不言，言无不尽。",
+          "translation": "知道的事情就坦诚说出来，要说就说明白、说充分。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "尺有所短，寸有所长。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "尺"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "所"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "短"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "寸"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "所"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "长"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "机不可失，时不再来。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "机"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "可"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "失"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "时"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "再"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "来"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "一言既出，驷马难追。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "既"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "出"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "驷"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "马"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "难"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "追"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "仁者见仁，智者见智。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "见"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "智"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "见"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "智"
+                }
+              ]
+            },
+            {
+              "id": "default-item-5",
+              "text": "差之毫厘，谬以千里。",
+              "tokens": [
+                {
+                  "id": "default-item-5-0",
+                  "text": "差"
+                },
+                {
+                  "id": "default-item-5-1",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-5-2",
+                  "text": "毫"
+                },
+                {
+                  "id": "default-item-5-3",
+                  "text": "厘"
+                },
+                {
+                  "id": "default-item-5-4",
+                  "text": "谬"
+                },
+                {
+                  "id": "default-item-5-5",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-5-6",
+                  "text": "千"
+                },
+                {
+                  "id": "default-item-5-7",
+                  "text": "里"
+                }
+              ]
+            },
+            {
+              "id": "default-item-6",
+              "text": "知无不言，言无不尽。",
+              "tokens": [
+                {
+                  "id": "default-item-6-0",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-6-1",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-6-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-6-3",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-6-4",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-6-5",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-6-6",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-6-7",
+                  "text": "尽"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "尺有所短，寸有所长。",
+      "parseWarnings": [],
+      "id": "grade4-lesson21",
+      "gradeId": "grade4",
+      "gradeName": "四年级",
+      "lessonNo": 21,
+      "filePath": "content/grade4/lesson21.txt"
+    },
+    {
+      "title": "自强与修身",
+      "workId": "daily-2026-4-lower-7",
+      "dynasty": "古典选句",
+      "author": "《周易》《老子》《论语》《孟子》",
+      "source": "四年级下册 · 语文园地7 · 日积月累 · 第120页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "健": {
+          "pinyin": "jiàn",
+          "meaning": "刚健、有力量。"
+        },
+        "尤": {
+          "pinyin": "yóu",
+          "meaning": "责怪。"
+        },
+        "患": {
+          "pinyin": "huàn",
+          "meaning": "忧患、困难。"
+        }
+      },
+      "characters": {
+        "健": {
+          "pinyin": "jiàn",
+          "meaning": "刚健、有力量。"
+        },
+        "尤": {
+          "pinyin": "yóu",
+          "meaning": "责怪。"
+        },
+        "患": {
+          "pinyin": "huàn",
+          "meaning": "忧患、困难。"
+        }
+      },
+      "sections": {
+        "title": "自强与修身",
+        "author": "《周易》《老子》《论语》《孟子》",
+        "type": "古文",
+        "workId": "daily-2026-4-lower-7",
+        "dynasty": "古典选句",
+        "source": "四年级下册 · 语文园地7 · 日积月累 · 第120页",
+        "original": "天行健，君子以自强不息。\n胜人者有力，自胜者强。\n不怨天，不尤人。\n生于忧患而死于安乐。",
+        "translation": "天的运行刚健不止，君子应学习这种精神，不断努力使自己进步。\n能战胜别人是有力量，能克服自己弱点的人才是真正的强者。\n不埋怨上天，也不责怪别人。\n忧患能使人奋发求生，过于安逸享乐可能使人衰败。",
+        "lineTranslations": "天的运行刚健不止，君子应学习这种精神，不断努力使自己进步。\n能战胜别人是有力量，能克服自己弱点的人才是真正的强者。\n不埋怨上天，也不责怪别人。\n忧患能使人奋发求生，过于安逸享乐可能使人衰败。",
+        "knowledgePoints": "1. 以：用来、据此；息：停止。\n2. 名句强调自我磨炼和承担责任，不是要求拒绝休息或隐瞒困难。",
+        "characterInfo": "健：jiàn｜刚健、有力量。\n尤：yóu｜责怪。\n患：huàn｜忧患、困难。"
+      },
+      "original": "天行健，君子以自强不息。\n胜人者有力，自胜者强。\n不怨天，不尤人。\n生于忧患而死于安乐。",
+      "translation": "天的运行刚健不止，君子应学习这种精神，不断努力使自己进步。\n能战胜别人是有力量，能克服自己弱点的人才是真正的强者。\n不埋怨上天，也不责怪别人。\n忧患能使人奋发求生，过于安逸享乐可能使人衰败。",
+      "lineTranslations": [
+        "天的运行刚健不止，君子应学习这种精神，不断努力使自己进步。",
+        "能战胜别人是有力量，能克服自己弱点的人才是真正的强者。",
+        "不埋怨上天，也不责怪别人。",
+        "忧患能使人奋发求生，过于安逸享乐可能使人衰败。"
+      ],
+      "knowledgePoints": [
+        "以：用来、据此；息：停止。",
+        "名句强调自我磨炼和承担责任，不是要求拒绝休息或隐瞒困难。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "天行健，君子以自强不息。",
+          "translation": "天的运行刚健不止，君子应学习这种精神，不断努力使自己进步。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "胜人者有力，自胜者强。",
+          "translation": "能战胜别人是有力量，能克服自己弱点的人才是真正的强者。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "不怨天，不尤人。",
+          "translation": "不埋怨上天，也不责怪别人。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "生于忧患而死于安乐。",
+          "translation": "忧患能使人奋发求生，过于安逸享乐可能使人衰败。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "天行健，君子以自强不息。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "健"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "君"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "子"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "自"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "强"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "息"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "胜人者有力，自胜者强。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "胜"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "力"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "自"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "胜"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "者"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "强"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "不怨天，不尤人。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "怨"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "天"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "尤"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "生于忧患而死于安乐。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "生"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "忧"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "患"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "死"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "安"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "乐"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "天行健，君子以自强不息。",
+      "parseWarnings": [],
+      "id": "grade4-lesson22",
+      "gradeId": "grade4",
+      "gradeName": "四年级",
+      "lessonNo": 22,
+      "filePath": "content/grade4/lesson22.txt"
+    },
+    {
+      "title": "勤学格言四则",
+      "workId": "daily-2026-4-lower-8",
+      "dynasty": "古典选句",
+      "author": "传统劝学格言",
+      "source": "四年级下册 · 语文园地8 · 日积月累 · 第136页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "径": {
+          "pinyin": "jìng",
+          "meaning": "小路。"
+        },
+        "涯": {
+          "pinyin": "yá",
+          "meaning": "边际。"
+        },
+        "迈": {
+          "pinyin": "mài",
+          "meaning": "跨步、前行。"
+        }
+      },
+      "characters": {
+        "径": {
+          "pinyin": "jìng",
+          "meaning": "小路。"
+        },
+        "涯": {
+          "pinyin": "yá",
+          "meaning": "边际。"
+        },
+        "迈": {
+          "pinyin": "mài",
+          "meaning": "跨步、前行。"
+        }
+      },
+      "sections": {
+        "title": "勤学格言四则",
+        "author": "传统劝学格言",
+        "type": "古文",
+        "workId": "daily-2026-4-lower-8",
+        "dynasty": "古典选句",
+        "source": "四年级下册 · 语文园地8 · 日积月累 · 第136页",
+        "original": "少年不知勤学苦，老来方知读书迟。\n一日读书一日功，一日不读十日空。\n学习不怕根底浅，只要迈步总不迟。\n书山有路勤为径，学海无涯苦作舟。",
+        "translation": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。\n天天读书就会天天有收获，学习不能时断时续。\n即使基础薄弱也不用害怕，只要开始努力，就还来得及。\n在知识的高山上，勤奋是小路；在无边的学问海洋中，刻苦是渡海的小船。",
+        "lineTranslations": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。\n天天读书就会天天有收获，学习不能时断时续。\n即使基础薄弱也不用害怕，只要开始努力，就还来得及。\n在知识的高山上，勤奋是小路；在无边的学问海洋中，刻苦是渡海的小船。",
+        "knowledgePoints": "1. 方：才；功：收获、成效。\n2. ‘十日空’带有夸张意味，强调坚持；基础薄弱也可以从今天开始。",
+        "characterInfo": "径：jìng｜小路。\n涯：yá｜边际。\n迈：mài｜跨步、前行。"
+      },
+      "original": "少年不知勤学苦，老来方知读书迟。\n一日读书一日功，一日不读十日空。\n学习不怕根底浅，只要迈步总不迟。\n书山有路勤为径，学海无涯苦作舟。",
+      "translation": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。\n天天读书就会天天有收获，学习不能时断时续。\n即使基础薄弱也不用害怕，只要开始努力，就还来得及。\n在知识的高山上，勤奋是小路；在无边的学问海洋中，刻苦是渡海的小船。",
+      "lineTranslations": [
+        "年少时不肯刻苦学习，到年老时才明白读书已经晚了。",
+        "天天读书就会天天有收获，学习不能时断时续。",
+        "即使基础薄弱也不用害怕，只要开始努力，就还来得及。",
+        "在知识的高山上，勤奋是小路；在无边的学问海洋中，刻苦是渡海的小船。"
+      ],
+      "knowledgePoints": [
+        "方：才；功：收获、成效。",
+        "‘十日空’带有夸张意味，强调坚持；基础薄弱也可以从今天开始。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "少年不知勤学苦，老来方知读书迟。",
+          "translation": "年少时不肯刻苦学习，到年老时才明白读书已经晚了。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "一日读书一日功，一日不读十日空。",
+          "translation": "天天读书就会天天有收获，学习不能时断时续。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "学习不怕根底浅，只要迈步总不迟。",
+          "translation": "即使基础薄弱也不用害怕，只要开始努力，就还来得及。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "书山有路勤为径，学海无涯苦作舟。",
+          "translation": "在知识的高山上，勤奋是小路；在无边的学问海洋中，刻苦是渡海的小船。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "少年不知勤学苦，老来方知读书迟。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "少"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "年"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "勤"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "苦"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "老"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "来"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "方"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "迟"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "一日读书一日功，一日不读十日空。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "功"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "十"
+                },
+                {
+                  "id": "default-item-2-12",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-13",
+                  "text": "空"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "学习不怕根底浅，只要迈步总不迟。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "习"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "怕"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "根"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "底"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "浅"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "只"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "要"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "迈"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "步"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "总"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "迟"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "书山有路勤为径，学海无涯苦作舟。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "路"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "勤"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "为"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "径"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "学"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "海"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "涯"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "苦"
+                },
+                {
+                  "id": "default-item-4-12",
+                  "text": "作"
+                },
+                {
+                  "id": "default-item-4-13",
+                  "text": "舟"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "少年不知勤学苦，老来方知读书迟。",
+      "parseWarnings": [],
+      "id": "grade4-lesson23",
+      "gradeId": "grade4",
+      "gradeName": "四年级",
+      "lessonNo": 23,
+      "filePath": "content/grade4/lesson23.txt"
     },
     {
       "title": "蝉",
@@ -23326,6 +28210,569 @@
       "gradeName": "五年级",
       "lessonNo": 22,
       "filePath": "content/grade5/lesson22.txt"
+    },
+    {
+      "title": "君子修身名句",
+      "workId": "daily-2026-5-lower-8",
+      "dynasty": "古典选句",
+      "author": "《论语》《孟子》《左传》《朱子语类》",
+      "source": "五年级下册 · 语文园地8 · 日积月累 · 第118页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "喻": {
+          "pinyin": "yù",
+          "meaning": "明白、了解。"
+        },
+        "戚": {
+          "pinyin": "qī",
+          "meaning": "忧愁。"
+        },
+        "恻": {
+          "pinyin": "cè",
+          "meaning": "恻隐，同情、怜悯。"
+        },
+        "毙": {
+          "pinyin": "bì",
+          "meaning": "倒下，这里指自取失败。"
+        }
+      },
+      "characters": {
+        "喻": {
+          "pinyin": "yù",
+          "meaning": "明白、了解。"
+        },
+        "戚": {
+          "pinyin": "qī",
+          "meaning": "忧愁。"
+        },
+        "恻": {
+          "pinyin": "cè",
+          "meaning": "恻隐，同情、怜悯。"
+        },
+        "毙": {
+          "pinyin": "bì",
+          "meaning": "倒下，这里指自取失败。"
+        }
+      },
+      "sections": {
+        "title": "君子修身名句",
+        "author": "《论语》《孟子》《左传》《朱子语类》",
+        "type": "古文",
+        "workId": "daily-2026-5-lower-8",
+        "dynasty": "古典选句",
+        "source": "五年级下册 · 语文园地8 · 日积月累 · 第118页",
+        "original": "君子喻于义，小人喻于利。\n君子坦荡荡，小人长戚戚。\n恻隐之心，仁之端也。\n多行不义，必自毙。\n人有耻，则能有所不为。",
+        "translation": "君子明白并看重道义，小人只明白并看重利益。\n君子心胸坦然宽广，小人常常忧愁不安。\n同情别人不幸的心，是仁爱的开端。\n坏事做多了，最终一定会使自己陷入失败。\n懂得羞耻，就能约束自己，不去做不该做的事。",
+        "lineTranslations": "君子明白并看重道义，小人只明白并看重利益。\n君子心胸坦然宽广，小人常常忧愁不安。\n同情别人不幸的心，是仁爱的开端。\n坏事做多了，最终一定会使自己陷入失败。\n懂得羞耻，就能约束自己，不去做不该做的事。",
+        "knowledgePoints": "1. 端：开端；长：常常。\n2. 这些名句从道义、心胸、仁爱和自律等方面谈修养。",
+        "characterInfo": "喻：yù｜明白、了解。\n戚：qī｜忧愁。\n恻：cè｜恻隐，同情、怜悯。\n毙：bì｜倒下，这里指自取失败。"
+      },
+      "original": "君子喻于义，小人喻于利。\n君子坦荡荡，小人长戚戚。\n恻隐之心，仁之端也。\n多行不义，必自毙。\n人有耻，则能有所不为。",
+      "translation": "君子明白并看重道义，小人只明白并看重利益。\n君子心胸坦然宽广，小人常常忧愁不安。\n同情别人不幸的心，是仁爱的开端。\n坏事做多了，最终一定会使自己陷入失败。\n懂得羞耻，就能约束自己，不去做不该做的事。",
+      "lineTranslations": [
+        "君子明白并看重道义，小人只明白并看重利益。",
+        "君子心胸坦然宽广，小人常常忧愁不安。",
+        "同情别人不幸的心，是仁爱的开端。",
+        "坏事做多了，最终一定会使自己陷入失败。",
+        "懂得羞耻，就能约束自己，不去做不该做的事。"
+      ],
+      "knowledgePoints": [
+        "端：开端；长：常常。",
+        "这些名句从道义、心胸、仁爱和自律等方面谈修养。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "君子喻于义，小人喻于利。",
+          "translation": "君子明白并看重道义，小人只明白并看重利益。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "君子坦荡荡，小人长戚戚。",
+          "translation": "君子心胸坦然宽广，小人常常忧愁不安。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "恻隐之心，仁之端也。",
+          "translation": "同情别人不幸的心，是仁爱的开端。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "多行不义，必自毙。",
+          "translation": "坏事做多了，最终一定会使自己陷入失败。",
+          "note": ""
+        },
+        {
+          "id": "line-5",
+          "text": "人有耻，则能有所不为。",
+          "translation": "懂得羞耻，就能约束自己，不去做不该做的事。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "君子喻于义，小人喻于利。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "君"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "子"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "喻"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "义"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "小"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "喻"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "利"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "君子坦荡荡，小人长戚戚。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "君"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "子"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "坦"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "荡"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "荡"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "小"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "长"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "戚"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "戚"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "恻隐之心，仁之端也。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "恻"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "隐"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "心"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "端"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "也"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "多行不义，必自毙。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "多"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "义"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "必"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "自"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "毙"
+                }
+              ]
+            },
+            {
+              "id": "default-item-5",
+              "text": "人有耻，则能有所不为。",
+              "tokens": [
+                {
+                  "id": "default-item-5-0",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-5-1",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-5-2",
+                  "text": "耻"
+                },
+                {
+                  "id": "default-item-5-3",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-5-4",
+                  "text": "能"
+                },
+                {
+                  "id": "default-item-5-5",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-5-6",
+                  "text": "所"
+                },
+                {
+                  "id": "default-item-5-7",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-5-8",
+                  "text": "为"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "君子喻于义，小人喻于利。",
+      "parseWarnings": [],
+      "id": "grade5-lesson23",
+      "gradeId": "grade5",
+      "gradeName": "五年级",
+      "lessonNo": 23,
+      "filePath": "content/grade5/lesson23.txt"
+    },
+    {
+      "title": "惜时诗句（古典部分）",
+      "workId": "daily-2026-5-upper-2",
+      "dynasty": "古典选句",
+      "author": "陶渊明、岳飞",
+      "source": "五年级上册 · 语文园地2 · 日积月累 · 第32页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "重": {
+          "pinyin": "chóng",
+          "meaning": "再次。"
+        },
+        "勉": {
+          "pinyin": "miǎn",
+          "meaning": "勉励、努力。"
+        },
+        "闲": {
+          "pinyin": "xián",
+          "meaning": "等闲，随意、轻易。"
+        }
+      },
+      "characters": {
+        "重": {
+          "pinyin": "chóng",
+          "meaning": "再次。"
+        },
+        "勉": {
+          "pinyin": "miǎn",
+          "meaning": "勉励、努力。"
+        },
+        "闲": {
+          "pinyin": "xián",
+          "meaning": "等闲，随意、轻易。"
+        }
+      },
+      "sections": {
+        "title": "惜时诗句（古典部分）",
+        "author": "陶渊明、岳飞",
+        "type": "古文",
+        "workId": "daily-2026-5-upper-2",
+        "dynasty": "古典选句",
+        "source": "五年级上册 · 语文园地2 · 日积月累 · 第32页",
+        "original": "盛年不重来，一日难再晨。及时当勉励，岁月不待人。\n莫等闲，白了少年头，空悲切。",
+        "translation": "青春年华不会重来，一天中不会再有第二个清晨。应当抓紧时间勉励自己，岁月不会停下等人。\n不要轻易虚度光阴，等到青春已逝、头发变白时，只剩下徒然的悲伤。",
+        "lineTranslations": "青春年华不会重来，一天中不会再有第二个清晨。应当抓紧时间勉励自己，岁月不会停下等人。\n不要轻易虚度光阴，等到青春已逝、头发变白时，只剩下徒然的悲伤。",
+        "knowledgePoints": "1. 第一则选自陶渊明《杂诗》，第二则选自署名岳飞的《满江红》。\n2. 等闲：随意、轻易；空：徒然。两则名句都劝人珍惜年华。",
+        "characterInfo": "重：chóng｜再次。\n勉：miǎn｜勉励、努力。\n闲：xián｜等闲，随意、轻易。"
+      },
+      "original": "盛年不重来，一日难再晨。及时当勉励，岁月不待人。\n莫等闲，白了少年头，空悲切。",
+      "translation": "青春年华不会重来，一天中不会再有第二个清晨。应当抓紧时间勉励自己，岁月不会停下等人。\n不要轻易虚度光阴，等到青春已逝、头发变白时，只剩下徒然的悲伤。",
+      "lineTranslations": [
+        "青春年华不会重来，一天中不会再有第二个清晨。应当抓紧时间勉励自己，岁月不会停下等人。",
+        "不要轻易虚度光阴，等到青春已逝、头发变白时，只剩下徒然的悲伤。"
+      ],
+      "knowledgePoints": [
+        "第一则选自陶渊明《杂诗》，第二则选自署名岳飞的《满江红》。",
+        "等闲：随意、轻易；空：徒然。两则名句都劝人珍惜年华。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "盛年不重来，一日难再晨。及时当勉励，岁月不待人。",
+          "translation": "青春年华不会重来，一天中不会再有第二个清晨。应当抓紧时间勉励自己，岁月不会停下等人。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "莫等闲，白了少年头，空悲切。",
+          "translation": "不要轻易虚度光阴，等到青春已逝、头发变白时，只剩下徒然的悲伤。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "盛年不重来，一日难再晨。及时当勉励，岁月不待人。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "盛"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "年"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "重"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "来"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "难"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "再"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "晨"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "及"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "时"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "当"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "勉"
+                },
+                {
+                  "id": "default-item-1-14",
+                  "text": "励"
+                },
+                {
+                  "id": "default-item-1-15",
+                  "text": "岁"
+                },
+                {
+                  "id": "default-item-1-16",
+                  "text": "月"
+                },
+                {
+                  "id": "default-item-1-17",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-18",
+                  "text": "待"
+                },
+                {
+                  "id": "default-item-1-19",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "莫等闲，白了少年头，空悲切。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "莫"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "等"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "闲"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "白"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "了"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "少"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "年"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "头"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "空"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "悲"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "切"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "盛年不重来，一日难再晨。及时当勉励，岁月不待人。",
+      "parseWarnings": [],
+      "id": "grade5-lesson24",
+      "gradeId": "grade5",
+      "gradeName": "五年级",
+      "lessonNo": 24,
+      "filePath": "content/grade5/lesson24.txt"
     },
     {
       "title": "宿建德江",
@@ -31249,6 +36696,1412 @@
       "gradeName": "六年级",
       "lessonNo": 27,
       "filePath": "content/grade6/lesson27.txt"
+    },
+    {
+      "title": "《增广贤文》读书处世",
+      "workId": "daily-2026-6-lower-2",
+      "dynasty": "古典选句",
+      "author": "《增广贤文》选句",
+      "source": "六年级下册 · 语文园地2 · 日积月累 · 第40页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "须": {
+          "pinyin": "xū",
+          "meaning": "必须。"
+        },
+        "席": {
+          "pinyin": "xí",
+          "meaning": "一席话，一番话。"
+        },
+        "遥": {
+          "pinyin": "yáo",
+          "meaning": "远。"
+        }
+      },
+      "characters": {
+        "须": {
+          "pinyin": "xū",
+          "meaning": "必须。"
+        },
+        "席": {
+          "pinyin": "xí",
+          "meaning": "一席话，一番话。"
+        },
+        "遥": {
+          "pinyin": "yáo",
+          "meaning": "远。"
+        }
+      },
+      "sections": {
+        "title": "《增广贤文》读书处世",
+        "author": "《增广贤文》选句",
+        "type": "古文",
+        "workId": "daily-2026-6-lower-2",
+        "dynasty": "古典选句",
+        "source": "六年级下册 · 语文园地2 · 日积月累 · 第40页",
+        "original": "读书须用意，一字值千金。\n莫道君行早，更有早行人。\n听君一席话，胜读十年书。\n路遥知马力，日久见人心。\n近水知鱼性，近山识鸟音。",
+        "translation": "读书必须用心领会，书中的一个字也可能十分珍贵。\n不要说自己出发得早，还有比自己更早的人，提醒人不要自满。\n听到一番有见地的话，可能比自己长时间摸索更有收获。\n路途遥远才能看出马的力气，相处长久才能了解一个人的内心。\n经常接近水才了解鱼的习性，经常接近山才熟悉鸟的叫声。",
+        "lineTranslations": "读书必须用心领会，书中的一个字也可能十分珍贵。\n不要说自己出发得早，还有比自己更早的人，提醒人不要自满。\n听到一番有见地的话，可能比自己长时间摸索更有收获。\n路途遥远才能看出马的力气，相处长久才能了解一个人的内心。\n经常接近水才了解鱼的习性，经常接近山才熟悉鸟的叫声。",
+        "knowledgePoints": "1. 这些格言从用心读书、虚心请教和观察生活等方面传授经验。\n2. ‘千金’‘十年’带有夸张意味，强调知识和经验的价值。",
+        "characterInfo": "须：xū｜必须。\n席：xí｜一席话，一番话。\n遥：yáo｜远。"
+      },
+      "original": "读书须用意，一字值千金。\n莫道君行早，更有早行人。\n听君一席话，胜读十年书。\n路遥知马力，日久见人心。\n近水知鱼性，近山识鸟音。",
+      "translation": "读书必须用心领会，书中的一个字也可能十分珍贵。\n不要说自己出发得早，还有比自己更早的人，提醒人不要自满。\n听到一番有见地的话，可能比自己长时间摸索更有收获。\n路途遥远才能看出马的力气，相处长久才能了解一个人的内心。\n经常接近水才了解鱼的习性，经常接近山才熟悉鸟的叫声。",
+      "lineTranslations": [
+        "读书必须用心领会，书中的一个字也可能十分珍贵。",
+        "不要说自己出发得早，还有比自己更早的人，提醒人不要自满。",
+        "听到一番有见地的话，可能比自己长时间摸索更有收获。",
+        "路途遥远才能看出马的力气，相处长久才能了解一个人的内心。",
+        "经常接近水才了解鱼的习性，经常接近山才熟悉鸟的叫声。"
+      ],
+      "knowledgePoints": [
+        "这些格言从用心读书、虚心请教和观察生活等方面传授经验。",
+        "‘千金’‘十年’带有夸张意味，强调知识和经验的价值。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "读书须用意，一字值千金。",
+          "translation": "读书必须用心领会，书中的一个字也可能十分珍贵。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "莫道君行早，更有早行人。",
+          "translation": "不要说自己出发得早，还有比自己更早的人，提醒人不要自满。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "听君一席话，胜读十年书。",
+          "translation": "听到一番有见地的话，可能比自己长时间摸索更有收获。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "路遥知马力，日久见人心。",
+          "translation": "路途遥远才能看出马的力气，相处长久才能了解一个人的内心。",
+          "note": ""
+        },
+        {
+          "id": "line-5",
+          "text": "近水知鱼性，近山识鸟音。",
+          "translation": "经常接近水才了解鱼的习性，经常接近山才熟悉鸟的叫声。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "读书须用意，一字值千金。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "须"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "用"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "意"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "字"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "值"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "千"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "金"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "莫道君行早，更有早行人。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "莫"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "道"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "君"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "早"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "更"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "早"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "行"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "听君一席话，胜读十年书。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "听"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "君"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "一"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "席"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "话"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "胜"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "读"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "十"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "年"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "书"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "路遥知马力，日久见人心。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "路"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "遥"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "马"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "力"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "久"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "见"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "心"
+                }
+              ]
+            },
+            {
+              "id": "default-item-5",
+              "text": "近水知鱼性，近山识鸟音。",
+              "tokens": [
+                {
+                  "id": "default-item-5-0",
+                  "text": "近"
+                },
+                {
+                  "id": "default-item-5-1",
+                  "text": "水"
+                },
+                {
+                  "id": "default-item-5-2",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-5-3",
+                  "text": "鱼"
+                },
+                {
+                  "id": "default-item-5-4",
+                  "text": "性"
+                },
+                {
+                  "id": "default-item-5-5",
+                  "text": "近"
+                },
+                {
+                  "id": "default-item-5-6",
+                  "text": "山"
+                },
+                {
+                  "id": "default-item-5-7",
+                  "text": "识"
+                },
+                {
+                  "id": "default-item-5-8",
+                  "text": "鸟"
+                },
+                {
+                  "id": "default-item-5-9",
+                  "text": "音"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "读书须用意，一字值千金。",
+      "parseWarnings": [],
+      "id": "grade6-lesson28",
+      "gradeId": "grade6",
+      "gradeName": "六年级",
+      "lessonNo": 28,
+      "filePath": "content/grade6/lesson28.txt"
+    },
+    {
+      "title": "惜时与劝诫名句",
+      "workId": "daily-2026-6-lower-4",
+      "dynasty": "古典选句",
+      "author": "古典格言选句",
+      "source": "六年级下册 · 语文园地4 · 日积月累 · 第78页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "荫": {
+          "pinyin": "yīn",
+          "meaning": "树荫。"
+        },
+        "逆": {
+          "pinyin": "nì",
+          "meaning": "不顺；逆耳指听起来不顺耳。"
+        },
+        "恨": {
+          "pinyin": "hèn",
+          "meaning": "这里指遗憾。"
+        }
+      },
+      "characters": {
+        "荫": {
+          "pinyin": "yīn",
+          "meaning": "树荫。"
+        },
+        "逆": {
+          "pinyin": "nì",
+          "meaning": "不顺；逆耳指听起来不顺耳。"
+        },
+        "恨": {
+          "pinyin": "hèn",
+          "meaning": "这里指遗憾。"
+        }
+      },
+      "sections": {
+        "title": "惜时与劝诫名句",
+        "author": "古典格言选句",
+        "type": "古文",
+        "workId": "daily-2026-6-lower-4",
+        "dynasty": "古典选句",
+        "source": "六年级下册 · 语文园地4 · 日积月累 · 第78页",
+        "original": "有意栽花花不发，无心插柳柳成荫。\n良药苦口利于病，忠言逆耳利于行。\n树欲静而风不止，子欲养而亲不待。\n常将有日思无日，莫把无时当有时。\n书到用时方恨少，事非经过不知难。",
+        "translation": "有时用心做的事没有成功，顺手做的事反而带来了收获。\n好药虽然苦却有利于治病，诚恳的劝告虽然不好听却有利于改正行为。\n树想静下来，风却不停；子女想奉养父母时，父母却可能已经不在了。\n生活充足时要想到可能困难的时候，缺少时更不能像富足时那样挥霍。\n真正需要用知识时，才遗憾学得太少；事情没有亲自做过，就不知道它有多难。",
+        "lineTranslations": "有时用心做的事没有成功，顺手做的事反而带来了收获。\n好药虽然苦却有利于治病，诚恳的劝告虽然不好听却有利于改正行为。\n树想静下来，风却不停；子女想奉养父母时，父母却可能已经不在了。\n生活充足时要想到可能困难的时候，缺少时更不能像富足时那样挥霍。\n真正需要用知识时，才遗憾学得太少；事情没有亲自做过，就不知道它有多难。",
+        "knowledgePoints": "1. 这些格言涉及惜时、劝诫、亲情和生活经验。\n2. 要珍惜亲情，虚心听劝，平时积累知识和生活经验。",
+        "characterInfo": "荫：yīn｜树荫。\n逆：nì｜不顺；逆耳指听起来不顺耳。\n恨：hèn｜这里指遗憾。"
+      },
+      "original": "有意栽花花不发，无心插柳柳成荫。\n良药苦口利于病，忠言逆耳利于行。\n树欲静而风不止，子欲养而亲不待。\n常将有日思无日，莫把无时当有时。\n书到用时方恨少，事非经过不知难。",
+      "translation": "有时用心做的事没有成功，顺手做的事反而带来了收获。\n好药虽然苦却有利于治病，诚恳的劝告虽然不好听却有利于改正行为。\n树想静下来，风却不停；子女想奉养父母时，父母却可能已经不在了。\n生活充足时要想到可能困难的时候，缺少时更不能像富足时那样挥霍。\n真正需要用知识时，才遗憾学得太少；事情没有亲自做过，就不知道它有多难。",
+      "lineTranslations": [
+        "有时用心做的事没有成功，顺手做的事反而带来了收获。",
+        "好药虽然苦却有利于治病，诚恳的劝告虽然不好听却有利于改正行为。",
+        "树想静下来，风却不停；子女想奉养父母时，父母却可能已经不在了。",
+        "生活充足时要想到可能困难的时候，缺少时更不能像富足时那样挥霍。",
+        "真正需要用知识时，才遗憾学得太少；事情没有亲自做过，就不知道它有多难。"
+      ],
+      "knowledgePoints": [
+        "这些格言涉及惜时、劝诫、亲情和生活经验。",
+        "要珍惜亲情，虚心听劝，平时积累知识和生活经验。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "有意栽花花不发，无心插柳柳成荫。",
+          "translation": "有时用心做的事没有成功，顺手做的事反而带来了收获。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "良药苦口利于病，忠言逆耳利于行。",
+          "translation": "好药虽然苦却有利于治病，诚恳的劝告虽然不好听却有利于改正行为。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "树欲静而风不止，子欲养而亲不待。",
+          "translation": "树想静下来，风却不停；子女想奉养父母时，父母却可能已经不在了。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "常将有日思无日，莫把无时当有时。",
+          "translation": "生活充足时要想到可能困难的时候，缺少时更不能像富足时那样挥霍。",
+          "note": ""
+        },
+        {
+          "id": "line-5",
+          "text": "书到用时方恨少，事非经过不知难。",
+          "translation": "真正需要用知识时，才遗憾学得太少；事情没有亲自做过，就不知道它有多难。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "有意栽花花不发，无心插柳柳成荫。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "意"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "栽"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "花"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "花"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "发"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "心"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "插"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "柳"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "柳"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "成"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "荫"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "良药苦口利于病，忠言逆耳利于行。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "良"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "药"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "苦"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "口"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "利"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "病"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "忠"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "言"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "逆"
+                },
+                {
+                  "id": "default-item-2-10",
+                  "text": "耳"
+                },
+                {
+                  "id": "default-item-2-11",
+                  "text": "利"
+                },
+                {
+                  "id": "default-item-2-12",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-2-13",
+                  "text": "行"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "树欲静而风不止，子欲养而亲不待。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "树"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "欲"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "静"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "风"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "止"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "子"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "欲"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "养"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "亲"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "待"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "常将有日思无日，莫把无时当有时。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "常"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "将"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "思"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "莫"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "把"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "时"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "当"
+                },
+                {
+                  "id": "default-item-4-12",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-4-13",
+                  "text": "时"
+                }
+              ]
+            },
+            {
+              "id": "default-item-5",
+              "text": "书到用时方恨少，事非经过不知难。",
+              "tokens": [
+                {
+                  "id": "default-item-5-0",
+                  "text": "书"
+                },
+                {
+                  "id": "default-item-5-1",
+                  "text": "到"
+                },
+                {
+                  "id": "default-item-5-2",
+                  "text": "用"
+                },
+                {
+                  "id": "default-item-5-3",
+                  "text": "时"
+                },
+                {
+                  "id": "default-item-5-4",
+                  "text": "方"
+                },
+                {
+                  "id": "default-item-5-5",
+                  "text": "恨"
+                },
+                {
+                  "id": "default-item-5-6",
+                  "text": "少"
+                },
+                {
+                  "id": "default-item-5-7",
+                  "text": "事"
+                },
+                {
+                  "id": "default-item-5-8",
+                  "text": "非"
+                },
+                {
+                  "id": "default-item-5-9",
+                  "text": "经"
+                },
+                {
+                  "id": "default-item-5-10",
+                  "text": "过"
+                },
+                {
+                  "id": "default-item-5-11",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-5-12",
+                  "text": "知"
+                },
+                {
+                  "id": "default-item-5-13",
+                  "text": "难"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "有意栽花花不发，无心插柳柳成荫。",
+      "parseWarnings": [],
+      "id": "grade6-lesson29",
+      "gradeId": "grade6",
+      "gradeName": "六年级",
+      "lessonNo": 29,
+      "filePath": "content/grade6/lesson29.txt"
+    },
+    {
+      "title": "革新与实践",
+      "workId": "daily-2026-6-lower-5",
+      "dynasty": "古典选句",
+      "author": "《周易》《礼记》《荀子》《淮南子》",
+      "source": "六年级下册 · 语文园地5 · 日积月累 · 第96页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "苟": {
+          "pinyin": "gǒu",
+          "meaning": "如果、只要。"
+        },
+        "蓝": {
+          "pinyin": "lán",
+          "meaning": "古代用来提取青色染料的植物。"
+        },
+        "循": {
+          "pinyin": "xún",
+          "meaning": "遵循。"
+        }
+      },
+      "characters": {
+        "苟": {
+          "pinyin": "gǒu",
+          "meaning": "如果、只要。"
+        },
+        "蓝": {
+          "pinyin": "lán",
+          "meaning": "古代用来提取青色染料的植物。"
+        },
+        "循": {
+          "pinyin": "xún",
+          "meaning": "遵循。"
+        }
+      },
+      "sections": {
+        "title": "革新与实践",
+        "author": "《周易》《礼记》《荀子》《淮南子》",
+        "type": "古文",
+        "workId": "daily-2026-6-lower-5",
+        "dynasty": "古典选句",
+        "source": "六年级下册 · 语文园地5 · 日积月累 · 第96页",
+        "original": "穷则变，变则通，通则久。\n苟日新，日日新，又日新。\n青，取之于蓝，而青于蓝。\n苟利于民，不必法古；苟周于事，不必循旧。",
+        "translation": "走到困境就要改变，改变才能通达，通达才能长久。\n如果能够一天有新的进步，就应当天天进步，不断更新。\n青色染料从蓝草中提取，却比蓝草的颜色更深，比喻经过学习可以超越原来的基础。\n只要对百姓有利，就不必完全照搬古人的办法；只要有利于把事情做好，就不必拘守旧的规矩。",
+        "lineTranslations": "走到困境就要改变，改变才能通达，通达才能长久。\n如果能够一天有新的进步，就应当天天进步，不断更新。\n青色染料从蓝草中提取，却比蓝草的颜色更深，比喻经过学习可以超越原来的基础。\n只要对百姓有利，就不必完全照搬古人的办法；只要有利于把事情做好，就不必拘守旧的规矩。",
+        "knowledgePoints": "1. 穷：困境；法：效法；周：周全、适合。\n2. 学习要能改进自己，处理事情也要根据实际情况寻找适合的办法。",
+        "characterInfo": "苟：gǒu｜如果、只要。\n蓝：lán｜古代用来提取青色染料的植物。\n循：xún｜遵循。"
+      },
+      "original": "穷则变，变则通，通则久。\n苟日新，日日新，又日新。\n青，取之于蓝，而青于蓝。\n苟利于民，不必法古；苟周于事，不必循旧。",
+      "translation": "走到困境就要改变，改变才能通达，通达才能长久。\n如果能够一天有新的进步，就应当天天进步，不断更新。\n青色染料从蓝草中提取，却比蓝草的颜色更深，比喻经过学习可以超越原来的基础。\n只要对百姓有利，就不必完全照搬古人的办法；只要有利于把事情做好，就不必拘守旧的规矩。",
+      "lineTranslations": [
+        "走到困境就要改变，改变才能通达，通达才能长久。",
+        "如果能够一天有新的进步，就应当天天进步，不断更新。",
+        "青色染料从蓝草中提取，却比蓝草的颜色更深，比喻经过学习可以超越原来的基础。",
+        "只要对百姓有利，就不必完全照搬古人的办法；只要有利于把事情做好，就不必拘守旧的规矩。"
+      ],
+      "knowledgePoints": [
+        "穷：困境；法：效法；周：周全、适合。",
+        "学习要能改进自己，处理事情也要根据实际情况寻找适合的办法。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "穷则变，变则通，通则久。",
+          "translation": "走到困境就要改变，改变才能通达，通达才能长久。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "苟日新，日日新，又日新。",
+          "translation": "如果能够一天有新的进步，就应当天天进步，不断更新。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "青，取之于蓝，而青于蓝。",
+          "translation": "青色染料从蓝草中提取，却比蓝草的颜色更深，比喻经过学习可以超越原来的基础。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "苟利于民，不必法古；苟周于事，不必循旧。",
+          "translation": "只要对百姓有利，就不必完全照搬古人的办法；只要有利于把事情做好，就不必拘守旧的规矩。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "穷则变，变则通，通则久。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "穷"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "变"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "变"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "通"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "通"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "则"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "久"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "苟日新，日日新，又日新。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "苟"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "新"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "新"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "又"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "日"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "新"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "青，取之于蓝，而青于蓝。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "青"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "取"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "之"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "蓝"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "而"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "青"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "蓝"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "苟利于民，不必法古；苟周于事，不必循旧。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "苟"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "利"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "民"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "必"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "法"
+                },
+                {
+                  "id": "default-item-4-7",
+                  "text": "古"
+                },
+                {
+                  "id": "default-item-4-8",
+                  "text": "苟"
+                },
+                {
+                  "id": "default-item-4-9",
+                  "text": "周"
+                },
+                {
+                  "id": "default-item-4-10",
+                  "text": "于"
+                },
+                {
+                  "id": "default-item-4-11",
+                  "text": "事"
+                },
+                {
+                  "id": "default-item-4-12",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-4-13",
+                  "text": "必"
+                },
+                {
+                  "id": "default-item-4-14",
+                  "text": "循"
+                },
+                {
+                  "id": "default-item-4-15",
+                  "text": "旧"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "穷则变，变则通，通则久。",
+      "parseWarnings": [],
+      "id": "grade6-lesson30",
+      "gradeId": "grade6",
+      "gradeName": "六年级",
+      "lessonNo": 30,
+      "filePath": "content/grade6/lesson30.txt"
+    },
+    {
+      "title": "仁义与家国",
+      "workId": "daily-2026-6-upper-2",
+      "dynasty": "古典选句",
+      "author": "《论语》、曹植、李纲、陆游",
+      "source": "六年级上册 · 语文园地2 · 日积月累 · 第30页",
+      "story": "",
+      "intro": "",
+      "type": "古文",
+      "audio": "",
+      "characterInfo": {
+        "捐": {
+          "pinyin": "juān",
+          "meaning": "舍弃、献出。"
+        },
+        "躯": {
+          "pinyin": "qū",
+          "meaning": "身体、生命。"
+        },
+        "卑": {
+          "pinyin": "bēi",
+          "meaning": "低微。"
+        }
+      },
+      "characters": {
+        "捐": {
+          "pinyin": "juān",
+          "meaning": "舍弃、献出。"
+        },
+        "躯": {
+          "pinyin": "qū",
+          "meaning": "身体、生命。"
+        },
+        "卑": {
+          "pinyin": "bēi",
+          "meaning": "低微。"
+        }
+      },
+      "sections": {
+        "title": "仁义与家国",
+        "author": "《论语》、曹植、李纲、陆游",
+        "type": "古文",
+        "workId": "daily-2026-6-upper-2",
+        "dynasty": "古典选句",
+        "source": "六年级上册 · 语文园地2 · 日积月累 · 第30页",
+        "original": "志士仁人，无求生以害仁，有杀身以成仁。\n捐躯赴国难，视死忽如归。\n祖宗疆土，当以死守，不可以尺寸与人。\n位卑未敢忘忧国。",
+        "translation": "有志向、有仁德的人，不为贪生损害仁义，必要时愿为成就仁义献身。\n为解救国家危难而献身，把死亡看得像回家一样，表现出英勇无畏的精神。\n祖先留下的国土，应当坚决守护，不能轻易把一点一寸让给别人。\n即使地位低微，也不敢忘记关心国家的命运。",
+        "lineTranslations": "有志向、有仁德的人，不为贪生损害仁义，必要时愿为成就仁义献身。\n为解救国家危难而献身，把死亡看得像回家一样，表现出英勇无畏的精神。\n祖先留下的国土，应当坚决守护，不能轻易把一点一寸让给别人。\n即使地位低微，也不敢忘记关心国家的命运。",
+        "knowledgePoints": "1. 四句分别选自《论语》、曹植《白马篇》、李纲的言论和陆游《病起书怀》。\n2. 联系作品时代，理解古人的仁义追求与家国责任。",
+        "characterInfo": "捐：juān｜舍弃、献出。\n躯：qū｜身体、生命。\n卑：bēi｜低微。"
+      },
+      "original": "志士仁人，无求生以害仁，有杀身以成仁。\n捐躯赴国难，视死忽如归。\n祖宗疆土，当以死守，不可以尺寸与人。\n位卑未敢忘忧国。",
+      "translation": "有志向、有仁德的人，不为贪生损害仁义，必要时愿为成就仁义献身。\n为解救国家危难而献身，把死亡看得像回家一样，表现出英勇无畏的精神。\n祖先留下的国土，应当坚决守护，不能轻易把一点一寸让给别人。\n即使地位低微，也不敢忘记关心国家的命运。",
+      "lineTranslations": [
+        "有志向、有仁德的人，不为贪生损害仁义，必要时愿为成就仁义献身。",
+        "为解救国家危难而献身，把死亡看得像回家一样，表现出英勇无畏的精神。",
+        "祖先留下的国土，应当坚决守护，不能轻易把一点一寸让给别人。",
+        "即使地位低微，也不敢忘记关心国家的命运。"
+      ],
+      "knowledgePoints": [
+        "四句分别选自《论语》、曹植《白马篇》、李纲的言论和陆游《病起书怀》。",
+        "联系作品时代，理解古人的仁义追求与家国责任。"
+      ],
+      "notes": "",
+      "appreciation": "",
+      "lines": [
+        {
+          "id": "line-1",
+          "text": "志士仁人，无求生以害仁，有杀身以成仁。",
+          "translation": "有志向、有仁德的人，不为贪生损害仁义，必要时愿为成就仁义献身。",
+          "note": ""
+        },
+        {
+          "id": "line-2",
+          "text": "捐躯赴国难，视死忽如归。",
+          "translation": "为解救国家危难而献身，把死亡看得像回家一样，表现出英勇无畏的精神。",
+          "note": ""
+        },
+        {
+          "id": "line-3",
+          "text": "祖宗疆土，当以死守，不可以尺寸与人。",
+          "translation": "祖先留下的国土，应当坚决守护，不能轻易把一点一寸让给别人。",
+          "note": ""
+        },
+        {
+          "id": "line-4",
+          "text": "位卑未敢忘忧国。",
+          "translation": "即使地位低微，也不敢忘记关心国家的命运。",
+          "note": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "default-order",
+          "type": "order",
+          "mode": "characters",
+          "title": "把短句排回去",
+          "prompt": "读一读原文，从字块中拼出完整短句。",
+          "items": [
+            {
+              "id": "default-item-1",
+              "text": "志士仁人，无求生以害仁，有杀身以成仁。",
+              "tokens": [
+                {
+                  "id": "default-item-1-0",
+                  "text": "志"
+                },
+                {
+                  "id": "default-item-1-1",
+                  "text": "士"
+                },
+                {
+                  "id": "default-item-1-2",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-1-3",
+                  "text": "人"
+                },
+                {
+                  "id": "default-item-1-4",
+                  "text": "无"
+                },
+                {
+                  "id": "default-item-1-5",
+                  "text": "求"
+                },
+                {
+                  "id": "default-item-1-6",
+                  "text": "生"
+                },
+                {
+                  "id": "default-item-1-7",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-1-8",
+                  "text": "害"
+                },
+                {
+                  "id": "default-item-1-9",
+                  "text": "仁"
+                },
+                {
+                  "id": "default-item-1-10",
+                  "text": "有"
+                },
+                {
+                  "id": "default-item-1-11",
+                  "text": "杀"
+                },
+                {
+                  "id": "default-item-1-12",
+                  "text": "身"
+                },
+                {
+                  "id": "default-item-1-13",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-1-14",
+                  "text": "成"
+                },
+                {
+                  "id": "default-item-1-15",
+                  "text": "仁"
+                }
+              ]
+            },
+            {
+              "id": "default-item-2",
+              "text": "捐躯赴国难，视死忽如归。",
+              "tokens": [
+                {
+                  "id": "default-item-2-0",
+                  "text": "捐"
+                },
+                {
+                  "id": "default-item-2-1",
+                  "text": "躯"
+                },
+                {
+                  "id": "default-item-2-2",
+                  "text": "赴"
+                },
+                {
+                  "id": "default-item-2-3",
+                  "text": "国"
+                },
+                {
+                  "id": "default-item-2-4",
+                  "text": "难"
+                },
+                {
+                  "id": "default-item-2-5",
+                  "text": "视"
+                },
+                {
+                  "id": "default-item-2-6",
+                  "text": "死"
+                },
+                {
+                  "id": "default-item-2-7",
+                  "text": "忽"
+                },
+                {
+                  "id": "default-item-2-8",
+                  "text": "如"
+                },
+                {
+                  "id": "default-item-2-9",
+                  "text": "归"
+                }
+              ]
+            },
+            {
+              "id": "default-item-3",
+              "text": "祖宗疆土，当以死守，不可以尺寸与人。",
+              "tokens": [
+                {
+                  "id": "default-item-3-0",
+                  "text": "祖"
+                },
+                {
+                  "id": "default-item-3-1",
+                  "text": "宗"
+                },
+                {
+                  "id": "default-item-3-2",
+                  "text": "疆"
+                },
+                {
+                  "id": "default-item-3-3",
+                  "text": "土"
+                },
+                {
+                  "id": "default-item-3-4",
+                  "text": "当"
+                },
+                {
+                  "id": "default-item-3-5",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-3-6",
+                  "text": "死"
+                },
+                {
+                  "id": "default-item-3-7",
+                  "text": "守"
+                },
+                {
+                  "id": "default-item-3-8",
+                  "text": "不"
+                },
+                {
+                  "id": "default-item-3-9",
+                  "text": "可"
+                },
+                {
+                  "id": "default-item-3-10",
+                  "text": "以"
+                },
+                {
+                  "id": "default-item-3-11",
+                  "text": "尺"
+                },
+                {
+                  "id": "default-item-3-12",
+                  "text": "寸"
+                },
+                {
+                  "id": "default-item-3-13",
+                  "text": "与"
+                },
+                {
+                  "id": "default-item-3-14",
+                  "text": "人"
+                }
+              ]
+            },
+            {
+              "id": "default-item-4",
+              "text": "位卑未敢忘忧国。",
+              "tokens": [
+                {
+                  "id": "default-item-4-0",
+                  "text": "位"
+                },
+                {
+                  "id": "default-item-4-1",
+                  "text": "卑"
+                },
+                {
+                  "id": "default-item-4-2",
+                  "text": "未"
+                },
+                {
+                  "id": "default-item-4-3",
+                  "text": "敢"
+                },
+                {
+                  "id": "default-item-4-4",
+                  "text": "忘"
+                },
+                {
+                  "id": "default-item-4-5",
+                  "text": "忧"
+                },
+                {
+                  "id": "default-item-4-6",
+                  "text": "国"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "preview": "志士仁人，无求生以害仁，有杀身以成仁。",
+      "parseWarnings": [],
+      "id": "grade6-lesson31",
+      "gradeId": "grade6",
+      "gradeName": "六年级",
+      "lessonNo": 31,
+      "filePath": "content/grade6/lesson31.txt"
     }
   ],
   "warnings": [],
