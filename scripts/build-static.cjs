@@ -5,7 +5,7 @@ const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
 const out = path.join(root, "dist");
-const ignoredDirs = new Set([".git", ".github", ".vercel", "node_modules", "dist", "scripts", "tests", ".next"]);
+const ignoredDirs = new Set([".git", ".github", ".vercel", "node_modules", "dist", "scripts", "tests", ".next", "vendor"]);
 const ignoredFiles = new Set(["package.json", "package-lock.json", "vercel.json", ".gitignore"]);
 
 function copySite(from, to) {
@@ -65,8 +65,9 @@ for (const character of characters) {
   if (fs.existsSync(source)) {
     fs.copyFileSync(source, path.join(dataOut, filename));
     copied++;
-  } else if (fs.existsSync(path.join(dataOut, filename))) {
-    // Preserve vetted local supplements when the upstream npm package lacks the glyph.
+  } else if (fs.existsSync(path.join(root, "vendor", "hanzi-data", filename))) {
+    // Preserve vetted, separately sourced glyphs already present in the source's vendor assets.
+    fs.copyFileSync(path.join(root, "vendor", "hanzi-data", filename), path.join(dataOut, filename));
     copied++;
   } else {
     missing.push(character);

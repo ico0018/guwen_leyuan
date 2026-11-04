@@ -4,14 +4,14 @@
 
 ## 运行
 
-无需前端构建、API Key 或后端：
+本地预览无需安装依赖、API Key 或后端（正式部署前需要运行 `npm install && npm run build`）：
 
 ```bash
 python scripts/scan_content.py
 python -m http.server 4173
 ```
 
-打开 http://localhost:4173 。部署时上传根目录 HTML、CSS、JS（包括 `speech.js`、`dictation.js` 和 `dictation.css`）及完整 `content/`；有录音时也上传 `audio/`。
+打开 http://localhost:4173 。正式部署请上传构建产生的完整 `dist/` 目录（内含 HTML、CSS、JS、`content/`、`vendor/`，有录音则也包括 `audio/`），不要直接上传源码根目录。
 
 ## 内容的维护入口
 
