@@ -110,3 +110,12 @@ npm run build
 
 数据源：Hanzi Writer（MIT）与 hanzi-writer-data（Arphic Public License），
 构建文件会保留 `vendor/ARPHICPL.TXT`。
+
+### 扩展汉字笔顺
+
+古诗中的 `曈`、`晞`、`焜`、`浥` 暂不在原版 hanzi-writer-data 2.0.1 中；
+已将其 JSON 作为本地补充文件放入 `vendor/hanzi-data/`，构建时自动保留。
+补充来源：[hanzi-writer-data-youyin](https://github.com/MadLadSquad/hanzi-writer-data-youyin)
+（聚合了 hanzi-writer-data / animCJK 等项目，请遵循其上游数据许可）。
+`翃`、`緌` 暂无可信的笔顺 JSON；目前网页会提示无法加载，并在默写中允许手写后手动完成，
+不会静默卡住。不能通过用另一个字的笔画冒充解决。

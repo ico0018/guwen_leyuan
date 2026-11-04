@@ -62,9 +62,15 @@ const missing = [];
 for (const character of characters) {
   const filename = character + ".json";
   const source = path.join(dataRoot, filename);
-  if (!fs.existsSync(source)) { missing.push(character); continue; }
-  fs.copyFileSync(source, path.join(dataOut, filename));
-  copied++;
+  if (fs.existsSync(source)) {
+    fs.copyFileSync(source, path.join(dataOut, filename));
+    copied++;
+  } else if (fs.existsSync(path.join(dataOut, filename))) {
+    // Preserve vetted local supplements when the upstream npm package lacks the glyph.
+    copied++;
+  } else {
+    missing.push(character);
+  }
 }
 if (copied < 100) throw new Error("笔画文件太少，打包可能不完整: " + copied);
 fs.writeFileSync(path.join(dataOut, "manifest.json"), JSON.stringify({ copied, missing }, null, 2));
