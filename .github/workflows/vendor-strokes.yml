@@ -1,0 +1,43 @@
+name: Vendor local stroke data
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "vendor/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vendor-strokes-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install pinned client dependencies
+        run: npm install --ignore-scripts
+      - name: Build static site and bundled stroke resources
+        run: npm run build
+      - name: Publish the local assets back to the static source tree
+        run: |
+          rm -rf vendor
+          cp -a dist/vendor vendor
+          git add -A vendor
+          if git diff --cached --quiet; then
+            echo "No vendor changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "build: vendor local stroke assets [skip ci]"
+          git push origin HEAD:main
