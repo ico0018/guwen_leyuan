@@ -90,3 +90,23 @@ node --test tests/speech.test.cjs tests/curriculum.test.cjs
 ```
 
 覆盖全部目录位置、作者与作品映射、TXT 原始诗行、全部逐行译文、全部排序题、节选范围、同名作品和重复作品，以及录音成功/失败、直接 TTS、异步中文声音、停止旧音频、取消迟到的回调、设备不支持等行为。原有书写和默写功能测试继续保留。
+
+## 笔画与拼音本地部署（2026-11）
+
+所有古诗汉字笔顺、描红和全文默写采用 `Hanzi Writer 2.0.2`；
+原来从 jsDelivr 加载的程序、拼音工具和笔画 JSON 已改成构建时复制到站点同源静态资源。
+不需要浏览器访问外部笔画 CDN。
+
+```bash
+npm install
+npm run build
+```
+
+发布 **`dist/`** 目录；Vercel 使用 `vercel.json` 自动执行构建。
+`scripts/build-static.cjs` 会从课文和页面文本收集汉字，生成
+`dist/vendor/hanzi-data/字.json`。新增课文汉字后需要重新构建。
+使用腾讯云 nginx / 其他纯静态托管时，也必须发布 `dist/`，而不是直接上传仓库根目录。
+可以测试同域路径 `/vendor/hanzi-writer.min.js` 和 `/vendor/hanzi-data/鹅.json` 是否返回 200。
+
+数据源：Hanzi Writer（MIT）与 hanzi-writer-data（Arphic Public License），
+构建文件会保留 `vendor/ARPHICPL.TXT`。

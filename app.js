@@ -377,7 +377,18 @@
     state.writer = null;
     if (!window.HanziWriter) { els.writerFallback.classList.remove("is-hidden"); els.writerStatus.textContent = "笔顺动画暂时不可用，先观察田字格，再试着写一遍。"; return; }
     try {
-      state.writer = window.HanziWriter.create(els.writerTarget, character, { width: 260, height: 260, padding: 12, showCharacter: true, showOutline: true, strokeAnimationSpeed: 1.05, delayBetweenStrokes: 280, highlightOnComplete: true, characterColor: "#24332f", outlineColor: "#d9ded6", mainColor: "#24332f", highlightColor: "#e7ac56", drawingColor: "#e9826f", drawingWidth: 5 });
+      state.writer = window.HanziWriter.create(els.writerTarget, character, {
+        width: 260, height: 260, padding: 12, showCharacter: true, showOutline: true,
+        strokeAnimationSpeed: 1.05, delayBetweenStrokes: 280, highlightOnComplete: true,
+        characterColor: "#24332f", outlineColor: "#d9ded6", mainColor: "#24332f",
+        highlightColor: "#e7ac56", drawingColor: "#e9826f", drawingWidth: 5,
+        charDataLoader: window.XuebabangbangStrokeData.charDataLoader,
+        onLoadCharDataError: () => {
+          if (state.activeCharacter !== character) return;
+          els.writerFallback.classList.remove("is-hidden");
+          els.writerStatus.textContent = "笔画数据加载失败，请刷新页面重试。";
+        }
+      });
       state.writer.animateCharacter();
     } catch (error) { els.writerFallback.classList.remove("is-hidden"); els.writerStatus.textContent = "这个字的动画暂时没准备好，但仍可以在田字格中练习。"; }
   }

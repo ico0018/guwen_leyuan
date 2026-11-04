@@ -186,6 +186,10 @@
             strokeAnimationSpeed: 1.05, delayBetweenStrokes: 220, highlightOnComplete: true,
             characterColor: "#283f33", outlineColor: "#b9cbb3", mainColor: "#283f33",
             highlightColor: "#e6b85d", drawingColor: "#dc806e", drawingWidth: 5,
+            charDataLoader: root.XuebabangbangStrokeData.charDataLoader,
+            onLoadCharDataError: () => {
+              if (token === writerToken) setupTouchFallback(target, character);
+            },
           });
           activeWriter = writer;
           writer.quiz({
